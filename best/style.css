@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.header{
+    background-color: #f0e9e9;
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    background-image: url(./digitization-5140072_640.jpg);
+    background-size: cover;
+
+}
+
+.logo{
+    margin-right: 1.5rem;  
+    
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.anchor{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(248, 240, 240);
+    padding: 0 1.5rem;
+    font-weight: bold;
+}
+.anchor:hover{
+    color: rgb(241, 5, 5);
+}
+

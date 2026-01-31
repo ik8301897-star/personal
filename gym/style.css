@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+/* headersection */
+.header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.logo{
+    width: 20%;
+}
+.logoimg{
+    width: 100%;
+    ;
+        transition: all 0.3s ease;
+ 
+}
+.logoimg:hover{
+        transform: translateY(-6px);
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+     width: 100%;
+       margin-left: 50px;
+   
+}
+.anchor{
+    text-decoration: none;
+    color: red;
+    font-size: 1rem;
+    padding: 20px;
+    padding-left: 30px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+  
+   
+}
+.anchor:hover{
+    color: white;
+    transform: translateY(-6px);   
+}
+.button{
+  margin-left: 7rem;
+  color: aliceblue;
+  background-color: red;
+  border: 2px solid rgb(10, 0, 0);
+  padding: 10px;
+  border-radius: 10%;
+  transition: all 0.3s ease;
+}
+.button:hover{
+    background-color:  rgb(243, 14, 167);
+    transform: translateY(-6px);
+}
+
+.button1{
+  margin-left: 3rem;
+  color: aliceblue;
+  background-color: red;
+  border: 2px solid rgb(10, 0, 0);
+  padding: 10px;
+  border-radius: 10%;
+  transition: all 0.3s ease;
+}
+.button1:hover{
+    background-color: rgb(243, 14, 167);
+    transform: translateY(-6px);
+}
+
+
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;  
+}
+.main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    
+}
+.ovh1{
+    color: white;
+    font-size: 70px;
+    padding-top: 10rem;
+    padding-left: 40px;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ovh2{
+    color: #FF4A38;
+    font-size: 70px;
+    padding-left: 40px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ovp{
+    color: white;
+    font-size: 20px;
+     padding-left: 40px;
+     padding-top: 30px;
+
+}
+.button2{
+    width: 6rem;
+    padding: 10px;
+    color: aliceblue;
+    background-color: #FF4A38;
+    border: 2px ;
+    border-radius: 10%;
+   margin-left: 40px;
+   margin-top: 30px;
+   transition: all 0.3s ease;
+
+}
+.button2:hover{
+    background-color: #ff0342;
+    transform: translateX(-4px);
+   
+}
+#star{
+  color: yellow;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.icons{
+    color: rgb(250, 210, 213);
+    font-size: 20px;
+}
+#crowd{
+     padding-left: 40px;
+  padding-top: 20px;
+  color: rgb(2, 2, 80);
+}
+#gym{
+    padding-left: 40px;
+  padding-top: 20px;
+  color: #d2f701;
+}
+#clock{
+     padding-left: 40px;
+  padding-top: 20px;
+  color: white;
+}
+/* whychooseus */
+.why{
+    width: 100%;
+    background-color: black;
+   
+    display: flex;
+    flex-wrap: wrap;
+  
+    
+}
+.why1{
+    width: 30%;
+     position: relative;
+     min-height: 40vh; 
+     overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    margin-left: 30px;
+   
+    margin-top: 40px;
+   
+}
+.why1:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(241, 3, 23, 0.3);
+     transform: scale(1.02);
+}
+.whyh1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    color: #ff0342;
+    background-color: black;
+   
+}
+.whyimg1{
+    width: 100%;
+    object-fit: cover; 
+    
+}
+
+.overlaywhy1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+
+}
+.whyh2{
+    color: rgb(245, 245, 247);
+    text-align: center;
+    font-size: 33px;
+    padding-top: 10px;
+}
+.whyp{
+    color: rgb(243, 234, 236);
+    padding-top: 40px;
+    line-height: 1.4;
+    padding-left: 10px;
+    font-size: 19px;
+}
+/* second card end */
+
+.whyp1{
+    color: rgb(243, 234, 236);
+    padding-top: 10px;
+    line-height: 1.4;
+    padding-left: 10px;
+    font-size: 19px;
+}
+/* third card end */
+
+.whysecond{
+    width: 100%;
+    background-color: black;
+    
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+.wh{
+     width: 30%;
+     position: relative;
+     min-height: 10vh; 
+     overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    margin-left: 30px;
+    padding: 0.5;
+   
+    margin-top: 30px;
+}
+.wh:hover{
+     transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(11, 236, 67, 0.3);
+     transform: scale(1.02);
+}
+.whimg{
+     width: 100%;
+    object-fit: cover; 
+    
+}
+.overlaywh{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+}
+.whh2{
+     color: rgb(245, 245, 247);
+    text-align: center;
+    font-size: 33px;
+    padding-top: 10px;
+}
+.whp{
+     color: rgb(243, 234, 236);
+    padding-top: 10px;
+    line-height: 1.4;
+    padding-left: 10px;
+    font-size: 19px;
+}
+/* how to transform u */
+
+.main1{
+    position: relative;
+    width: 100%;
+   height: 30vh;
+   margin-top: 1rem;
+   
+  
+}
+.howimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    
+}
+.overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    
+}
+.howh1{
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+.howspan{
+    color: rgb(236, 67, 6);
+}
+.howp{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+/* divstart */
+.transmain{
+ display: flex;
+ width: 100%;
+ 
+
+  
+    
+}
+
+.trans{
+    width: 100%;
+     min-height: 25vh;   /* mobile safe */
+    height: 100vh; 
+    margin-top: 5rem;
+    opacity: 0.9;
+    
+   
+  
+}
+.trans1main{
+    display: flex;
+    flex-direction: column;
+}
+.trans1{
+    border: 1px solid rgb(63, 61, 61);
+     margin-top: 5rem;
+    margin-left: 3rem;
+    width: 90%;
+    height: max-content;
+    transition: all 0.3s ease;
+    
+    
+  
+}
+.trans1:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 20px 40px rgba(245, 15, 35, 0.3);;
+
+}
+.trah1{
+    color: rgb(247, 95, 8);
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+   
+}
+.trap{
+    color: white;
+    padding-top: 1.5rem;
+    line-height: 1.4;
+    padding-left: 1rem;
+      padding-bottom: 1rem;
+}
+.trap:hover{
+    color: rgb(230, 171, 194);
+}
+/* 2nd */
+.trans2{
+    border: 1px solid rgb(63, 61, 61);
+     margin-top: 0.5rem;
+    margin-left: 3rem;
+    width: 90%;
+    height: max-content;
+    transition: all 0.3s ease;
+}
+.trans2:hover{
+      transform: translateY(0.5rem);
+    box-shadow: 0 20px 40px rgba(245, 15, 35, 0.3);;
+
+}
+.trah2{
+    color:rgb(247, 95, 8);
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+   
+}
+.trap1{
+    color: white;
+    padding-top: 1rem;
+    line-height: 1.4;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.trap1:hover{
+     color: rgb(230, 171, 194);
+
+}
+
+/* success stories */
+.success{
+    width: 100%;
+    background-color: black;
+   
+}
+.story{
+    width: 100%;
+    display: flex;
+}
+.suh1{
+    font-size: 3.5rem;
+    color: rgb(224, 224, 9);
+    text-align: center;
+}
+.sup{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    word-spacing: 0.2rem;
+    padding-top: 0.5rem;
+}
+.story1{
+    width: 25%;
+    height: auto;
+    margin-left: 4rem;
+    border: 1px solid rgb(15, 15, 15);
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+.story1:hover{
+     transform: translateY(0.3rem);
+    box-shadow: 0 20px 40px rgba(236, 4, 217, 0.3);;
+
+}
+.story1img{
+    width: 100%;
+    height: 50%;
+}
+.suh2{
+    color: white;
+    text-align: center;
+}
+.suh4{
+    color: rgb(233, 135, 8);
+    text-align: center;
+      padding: 0.3rem; 
+      font-size: 1rem;
+}
+.sup1{
+    color: #ff0342;
+     font-size: 1.1rem;
+    text-align: center;
+    word-spacing: 0.2rem;
+    padding-top: 0.5rem;
+}
+.sup1:hover{
+    color: white;
+}
+/* membership section */
+.member{
+    width: 100%;
+    background-color: black;
+   
+}
+.member1{
+    width: 100%;
+}
+.memh1{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+     padding-top: 1.5rem;
+
+}
+    
+.memp{
+ color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    word-spacing: 0.2rem;
+    padding-top: 0.5rem;
+}

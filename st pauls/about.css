@@ -1,0 +1,309 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+/* header section */
+.div1{
+    height: 3rem;
+    width: 100%;
+    background-color: #910807
+}
+.p1{
+    margin-left: 4rem;
+    padding-top: 1rem;
+    color: white;
+    font-weight: 700;
+}
+.span1{
+    margin-left: 8rem;
+}
+.span2{
+    margin-left: 8rem;
+}
+
+.div2{
+    height: 8rem;
+    width: 100%;
+    background-color: #eff5f0;
+}
+.logo{
+    height: 6rem;
+    width: 90%;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.anchor{
+    text-decoration: none;
+    color: white;
+    margin-left: 3rem;
+    padding-top: 5rem;
+    font-weight: 700;
+    justify-content: space-between;
+    
+ 
+    }
+    .anchor:hover{
+        color: #f8a2a2;
+    }
+.nav{
+    padding-top: 1rem;
+    
+}
+.abo1{
+    background-image: url(./aboutus_inner.jpg);
+    position: relative; 
+    background-position: center; 
+    background-size: cover;
+    padding: 30px;
+    border: 3.5px solid  #a80e0e ;
+    
+}
+.abo1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(199, 185, 185, 0.9);      
+}
+.aboh1{
+    color: #a80e0e;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 25px;
+    position: relative;
+}
+
+  /* article */
+
+  .article{
+    display: flex;
+  }
+  .abo2{
+    width: 60%;
+  }
+  .abo2h2{
+    font-size: 19px;
+    padding-left: 70px;
+    padding-top: 70px;
+    color: #910807;
+  }
+  .abo2p{
+    padding-left: 70px;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .image{
+    width: 30%;
+    margin-left: 20px;
+    
+  }
+  #img{
+    padding-bottom: 100px;
+    padding-top: 70px;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 14%;
+  
+  }
+ 
+  .mainabout{
+    width: 100%;
+    display: flex;
+   
+  }
+  .aim{
+    width: 50%;
+  
+  }
+  .aimh1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(236, 4, 159);
+  }
+  .aimp{
+    font-size: 18px;
+    padding-left: 70px;
+    padding-top: 30px;
+    color: rgb(10, 10, 136);
+    line-height: 1.6;
+  }
+  .Curriculum{
+    width: 50%;
+    
+  }
+  .cuh1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(236, 4, 159);
+  }
+  /* aboutsection */
+
+  .about{
+    height: 30rem;
+    width: 100%;
+    background-color: rgb(7, 0, 0);
+    margin-top: 7rem; 
+    display: flex;
+}
+.abouti1{
+    height: 30rem;
+    width: 35%;
+    
+    
+}
+#abh2{
+    font-size: 38px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+.abimg{
+    height: 180px;
+    width: 280px;
+    padding-left: 150px;
+    padding-top: 30px;
+    text-align: center;
+}
+.abh3{
+    padding-left: 90px;
+    line-height: 2;
+
+    padding-top: 20px;
+    color: wheat;
+    font-size: 14px;
+
+}
+#insta{
+    font-size: 20px;
+    padding-top: 10px;
+    color: rgb(228, 11, 11);
+    transition: all ease 1s;
+    overflow: hidden;
+    padding-left: 100px;
+}
+#insta:hover{
+    scale: 1.1;
+}
+#fb{
+    font-size: 20px;
+    padding-left: 2px;
+    padding-top: 10px;
+    color: #0552cf;
+     transition: all ease 1s;
+    overflow: hidden;
+}
+
+#fb:hover{
+scale: 1.1;
+}
+#x{
+    font-size: 20px;
+    padding-left: 2px;
+    padding-top: 10px;
+    color: rgb(11, 176, 241);
+     transition: all ease 1s;
+    overflow: hidden;
+}
+#x:hover{
+    scale: 1.1;
+}
+#you{
+    font-size: 20px;
+    padding-left: 2px;
+    padding-top: 10px;
+    color: red;
+     transition: all ease 1s;
+    overflow: hidden;
+}
+#you:hover{
+    scale: 1.1;
+}
+.abouti2{
+    width: 18%;
+  
+}
+.ic{
+    display: flex;
+    
+}
+   
+.mainab{
+    color: white;
+    font-size: 28px;
+    padding-top: 59px;
+}
+.pab{
+    padding-left: 15px;
+    color: white;
+    padding-top: 15px;
+    font-size: 18px;
+}
+.pab:hover{
+    color: yellow;
+    cursor: pointer;
+}
+#home{
+    font-size: 15px;
+    color: white;
+    padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 18px;
+}
+#home:hover{
+    color: yellow;
+    cursor: pointer;
+}
+.dot{
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    display: block;
+}
+
+
+.abouti3{
+    width: 18%;
+  
+}
+.abouti4{
+    width: 35%;
+    margin-left: 20px;
+ 
+}
+
+.abh4{
+    color: white;
+    padding-top: 1rem;
+
+    padding-left: 0;
+}
+#iconslast{
+    font-size: 20px;
+    color: rgb(252, 242, 242);
+    padding-left: 0%;
+    padding-top: 20px;
+
+}
+.abspan{
+    color: white;
+    font-size: 16px;
+   
+ 
+    
+    
+}
+.footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: blue;
+}

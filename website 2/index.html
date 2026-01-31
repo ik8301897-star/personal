@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Royal Jewellery Shop</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+nav {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+header {
+    background: gold;
+    padding: 60px;
+    text-align: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+}
+
+button {
+    padding: 8px 15px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Royal Jewellery Shop</h1>
+<p>Best Gold and Diamond Collection</p>
+</header>
+
+<nav>
+<a href="#" onclick="showPage('home')">Home</a>
+<a href="#" onclick="showPage('collection')">Collection</a>
+<a href="#" onclick="showPage('products')">Products</a>
+<a href="#" onclick="showPage('about')">About</a>
+<a href="#" onclick="showPage('contact')">Contact</a>
+</nav>
+
+<section id="home" class="active">
+<h2>Welcome to Our Shop</h2>
+<p>
+We offer premium quality gold, diamond and silver jewellery.  
+Explore latest designs for wedding, party and daily wear.  
+Trusted shop with best pricing and purity guarantee.
+</p>
+
+<img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e" width="100%">
+</section>
+
+<section id="collection">
+<h2>Our Collection</h2>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d" width="200">
+<h3>Gold Necklace</h3>
+<p>Price: ₹45,000</p>
+<button>View</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1602752250015-73af800ba843" width="200">
+<h3>Diamond Ring</h3>
+<p>Price: ₹75,000</p>
+<button>View</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f" width="200">
+<h3>Bridal Set</h3>
+<p>Price: ₹1,20,000</p>
+<button>View</button>
+</div>
+
+</section>
+
+<section id="products">
+<h2>All Products</h2>
+
+<div id="productList"></div>
+
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+
+<p>
+Royal Jewellery Shop is serving customers since 2010.  
+We provide hallmark gold jewellery and certified diamonds.  
+Customer satisfaction is our first priority.  
+Best designs, custom orders and repair services also available.
+</p>
+
+<img src="https://images.unsplash.com/photo-1600721391689-2564bb8055de" width="100%">
+
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+
+<form onsubmit="submitForm(event)">
+<input placeholder="Your Name" required>
+<input placeholder="Email" required>
+<textarea placeholder="Message" required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+
+<p id="msg"></p>
+
+<h3>Address</h3>
+<p>Main Market, City Center, India</p>
+<p>Phone: 9876543210</p>
+
+</section>
+
+<script>
+function showPage(id) {
+    var pages = document.querySelectorAll("section");
+
+    for (var i = 0; i < pages.length; i++) {
+        pages[i].classList.remove("active");
+    }
+
+    document.getElementById(id).classList.add("active");
+}
+
+var products = [
+{ name: "Gold Chain", price: 20000 },
+{ name: "Diamond Pendant", price: 50000 },
+{ name: "Silver Anklet", price: 3000 },
+{ name: "Gold Earrings", price: 15000 }
+];
+
+function loadProducts() {
+    var list = "";
+
+    for (var i = 0; i < products.length; i++) {
+        list += "<div class='product'>";
+        list += "<h3>" + products[i].name + "</h3>";
+        list += "<p>Price: ₹" + products[i].price + "</p>";
+        list += "<button>Add to Cart</button>";
+        list += "</div>";
+    }
+
+    document.getElementById("productList").innerHTML = list;
+}
+
+function submitForm(e) {
+    document.getElementById("msg").innerHTML =
+    "Thank you! Your message has been sent.";
+}
+
+loadProducts();
+</script>
+
+</body>
+</html>
