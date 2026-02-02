@@ -102,6 +102,8 @@
     padding-left: 40px;
     font-weight: 800;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-clip: text;
+    background-image: url();
 }
 .ovh2{
     color: #FF4A38;
@@ -486,6 +488,8 @@
 }
 .member1{
     width: 100%;
+   display: flex;
+   justify-content: flex-start;
 }
 .memh1{
     color: white;
@@ -494,6 +498,21 @@
      padding-top: 1.5rem;
 
 }
+.plan-divider2{
+    width: 78%;
+    height: 1px;
+   background: linear-gradient(
+        to right,
+        transparent,
+        #edf1e4,
+        transparent
+    );
+    margin: 5px 0;
+    margin-left: 5rem;
+     opacity: 0.7;
+     text-align: center;
+}
+
     
 .memp{
  color: white;
@@ -502,3 +521,341 @@
     word-spacing: 0.2rem;
     padding-top: 0.5rem;
 }
+/* 1st */
+.member2{
+    width: 23%;
+    border: 1.5px solid rgb(8, 8, 8);
+    border-radius: 10%;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    transition: all 0.3s ease-in;
+}
+.member2:hover{
+      transform: translateY(-0.3rem
+    );
+      box-shadow: 0 20px 40px rgba(253, 1, 1, 0.3);;
+
+}
+
+.memh2{
+    color: #0f0f0f;
+    text-align: center;
+    background-color: #f7f304;
+    border: 1px solid rgb(241, 241, 10);
+    border-radius: 5%;
+    margin-top: 0.3rem;
+     box-shadow:
+        0 8px 25px rgba(218, 164, 2, 0.35),
+        0 0 18px rgba(242, 201, 76, 0.25);
+}
+  
+
+.mem2h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+#rupees{
+    color: #ecc411;
+     text-shadow: 
+        0 8px 25px rgba(218, 164, 2, 0.35),
+        0 0 18px rgba(242, 201, 76, 0.25);
+    
+}
+#month{
+    color: white;
+    font-size: 1.4rem;
+}
+.plan-divider{
+    width: 90%;
+    height: 1px;
+   background: linear-gradient(
+        to right,
+        transparent,
+        #D9FF2F,
+        transparent
+    );
+    margin: 14px 0;
+     opacity: 0.7;
+}
+
+#tick{
+    color: rgb(223, 238, 10);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+}
+.basic{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.plan-divider1{
+    width: 90%;
+    height: 1px;
+   background: linear-gradient(
+        to right,
+        transparent,
+        #e1eccb,
+        transparent
+    );
+    margin: 14px 0;
+     opacity: 0.7;
+}
+.membutton{
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 2.2rem;
+    background: linear-gradient(
+        to right,
+        transparent,
+        yellow,
+        transparent
+    );
+    opacity: 1;
+    border: 0.5px solid yellow;
+    transition: all 0.3s ease;
+}
+.membutton:hover{
+    transform: translateY(-0.4rem);
+}
+/* 2nd */
+.member3{
+    width: 23%;
+    border: 1.5px solid rgb(10, 10, 10);
+    
+    
+    margin-left: 5rem;
+    margin-top: 3rem;
+    transition: all 0.2s ease-in;
+}
+.member3:hover{
+    transform: translateY(-0.3rem
+    );
+      box-shadow: 0 20px 40px rgba(253, 1, 1, 0.3);;
+
+
+}
+.mem3h1{
+    color: rgb(235, 231, 9);
+    font-size: 3rem;
+    text-align: center;
+}
+/* 3rd */
+.member4{
+    width: 23%;
+    border: 1.5px solid rgb(10, 10, 10);
+    
+    
+    margin-left: 5rem;
+    margin-top: 3rem;
+    transition: all 0.2s ease-in;
+}
+.member4:hover{
+    transform: translateY(-0.3rem
+    );
+      box-shadow: 0 20px 40px rgba(197, 231, 4, 0.3);;
+
+
+}
+.memh3{
+    color: #0f0f0f;
+    text-align: center;
+    background-color: #fa0c0c;
+    border: 1px solid#fa0c0c;
+    border-radius: 5%;
+    margin-top: 0.3rem;
+     box-shadow:
+        0 8px 25px rgba(253, 5, 5, 0.35),
+        0 0 18px rgba(255, 4, 4, 0.25);
+}
+.mem4h1{
+    color: rgb(245, 182, 182);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow:  0 8px 25px rgba(253, 5, 5, 0.35),
+        0 0 18px rgba(255, 4, 4, 0.25);
+};
+.membutton{
+     width: 80%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 2.2rem;
+    background: linear-gradient(
+        to right,
+        transparent,
+        yellow,
+        transparent
+    );
+    opacity: 1;
+    border: 0.5px solid yellow;
+    transition: all 0.3s ease;
+}
+.membutton:hover{
+    transform: translateY(-0.4rem);
+}
+
+/* Free Fitness Consultation */
+
+.frh1{
+    color: white;
+    font-size: 3rem;
+    padding-top: 6rem;
+    padding-left: 6rem;
+}
+.frh4{
+    color: rgb(241, 158, 4);
+    font-size: 1.7rem;
+    padding-left: 6rem;
+     padding-top: 3rem;
+    
+}
+.frp{
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    word-spacing: 0.2rem;
+     padding-left: 6rem;
+     padding-top: 1.2rem;
+    
+}
+.freeic{
+    margin-top: 3rem;
+   
+}
+.free1{
+    width: 50%;
+   
+}
+#freeicons{
+    color:  rgb(241, 158, 4);
+     
+    font-size: 1.6rem;
+    padding-top: 1rem
+    ;
+   
+    padding-left: 6rem;
+}
+.basicfree{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.basicfree1{
+    color: rgb(241, 158, 4);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+/* form */
+.form{
+    text-align: center;
+    border: 1px solid rgb(8, 8, 8);
+    margin-top: 12rem;
+    margin-left: 4rem;
+    height: auto;
+    transition: all 0.3s ease;
+    
+   
+}
+.form:hover{
+ text-shadow:  0 8px 25px rgba(253, 5, 5, 0.35),
+        0 0 18px rgba(255, 4, 4, 0.25);
+}
+.free3{
+    width: 100%;
+   
+    display: flex;
+}
+.formh4{
+    color: rgb(241, 158, 4);
+    font-size: 2rem;
+}
+.plan-divider2{
+    width: 100%;
+    height: 1px;
+   background: linear-gradient(
+        to right,
+        transparent,
+        #e1eccb,
+        transparent
+    );
+    margin: 10px 0;
+     opacity: 0.9;}
+   
+     .text{
+        padding: 9px 12px;
+        color: #0f0f0f;
+        margin: 7px
+        ;
+        width: 90%;
+     }
+     .formbu{
+        padding: 8px 12px 8px 12px;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 90%;
+        background-color: #f8e804;
+        border: 1px solid black;
+     }
+     .formbu:hover{
+       background-color: #ff0342;
+     }
+    .button11{
+        display: flex;
+    }
+    .call{
+        margin-top: 1rem;
+        margin-left: 1rem;
+       padding: 8px 12px ;
+        font-size: 1rem;
+        font-weight: 700;
+        background-color: green;
+        color: white;
+        border: 1px solid rgb(12, 12, 12);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    #call{
+        color: white;
+        padding-right: 0.5rem;
+    }
+    .call:hover{
+        background-color: #fa0c0c;
+        transform: translateY(-0.3rem);
+    }
+
+    /* footersection */
+
+    /* .footer{
+        width: 100%;
+        background-color: rgb(43, 42, 42);
+    }
+    .foot1{
+        width: 20%;
+        margin-left: 4rem
+        ;
+       
+    }
+    .footh1{
+        color: rgb(252, 214, 4);
+        font-size: 3rem;
+        padding-top: 8rem;
+    }
+    .logoimg1{
+        padding-top: 5rem;
+    }
+    .footh2{
+        color: rgb(250, 238, 238);
+    } */
