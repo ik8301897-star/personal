@@ -9,6 +9,7 @@
     width: 100%;
     background-color: black;
     display: flex;
+    
 }
 .logo{
     width: 20%;
@@ -72,8 +73,62 @@
     background-color: rgb(243, 14, 167);
     transform: translateY(-6px);
 }
+.mobile{
+    display: none;
+    
+     
+}
+.icon{
+  font-size: 1.3rem;
+  color: red;
+  cursor: pointer;
+}
 
+@media (max-width:600px) {
+    .logo{
+        width: 35%;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    padding: 10px 0;
+    z-index: 999;
+    }
+    .navbar.active{
+    display: flex;
+  }
+  .anchor{
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .button,
+  .button1{
+    display: none;
+  }
+    .mobile{
+       display: flex;
+    gap: 25px;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .icon{
+    font-size: 1.4rem;
+    color: red;
+  }
+  .icon:hover{
+      color:  rgb(250, 244, 248);
+    transform: translateY(-2px);
+  }
+    
+}
 
+/* mainsection */
 .main{
     position: relative;
     width: 100%;

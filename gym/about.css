@@ -301,3 +301,216 @@
       line-height: 1.8;
 
   }
+  /* The People Behind Your Transformation */
+  .thepeople{
+     position: relative;
+    width: 100%;
+    min-height: 25vh;
+    
+  }
+  .people{
+    width: 100%;
+    height: 80%;
+    
+    
+  }
+  .peopleimg{
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  .overlaypeople{
+     position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+     background-color: rgba(0,0,0,0.7);
+     
+  }
+.theh1{
+    color:transparent;
+    font-size: 4rem;
+    text-align: center;
+    background-clip: text;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRViXnXBGr7hdkRyRrG38IVwCxuAnpAlOj8cw&s);
+}
+ .plan-divider5{
+    width: 90%;
+    height: 2px;
+   background: linear-gradient(
+        to right,
+        transparent,
+        #fa6603,
+        transparent
+    );
+    margin: 5px 0;
+     opacity: 0.6;}
+     .peoplep{
+        color: transparent;
+        font-size: 1.5rem;
+        text-align: center;
+        background-clip: text;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX-Y7cOmeH-zWWxxLrbc_kyRsaQPC8zAQc9Q&s);
+     }
+     .peoplemain{
+        width: 100%;
+        display: flex;
+     }
+     .people1{
+        width: 30%;
+         position: relative;
+         margin-left: 2rem;
+         margin-top: 2rem;
+         border: 1px solid rgb(44, 42, 42);
+         height: 60%;
+         transition: all 0.3s ease;
+       
+     }
+     .people1:hover{
+         box-shadow: 0 20px 40px rgba(240, 129, 3, 0.3);
+         transform: translatey(-00.5rem);
+
+
+     }
+     .gymtrainer{
+        width: 100%;
+         object-fit: cover;
+         height: 80%;
+       
+
+       
+     }
+     .overlayp1{
+         position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+     background-color: rgba(0,0,0,0.2);
+  }
+
+    .peopleh4{
+        color: transparent;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 25rem;
+        background-clip: text;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY0YHd-4VIika9ilUb7vEPID74-391K5vmgQ&s);
+    }
+    .pp{
+        color: white;
+        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 800;
+
+    }
+     .plan-divider6{
+    width: 90%;
+    height: 2px;
+   background: linear-gradient(
+        to right,
+        transparent,
+        #f8d50e,
+        transparent
+    );
+    margin: 5px 0;
+     opacity: 0.6;}
+     .pp1{
+         color: rgb(247, 243, 10);
+        font-size: 1.3rem;
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 800;
+     }
+     /* WHY PEOPLE TRUST */
+     .trust{
+         position: relative;
+    width: 100%;
+    min-height: 25vh;
+
+     }
+     .trust1{
+          width: 100%;
+    height: 80%;
+       
+
+     }
+     .trustimg{
+         width: 100%;
+    height: 100%;
+    object-fit: cover;
+          
+    
+
+     }
+     .overlaytrust{
+          position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+     background-color: rgba(8, 8, 8, 0.7);
+        
+
+     }
+     .trusth1{
+        color: transparent ;
+        font-size: 3rem;
+        text-align: center;
+        background-clip: text;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx376OavTWjm-Dbn4fUIHpg3_stvfpwM-geA&s);
+        margin-top: 3rem;
+     }
+     .trustp{
+        color: white;
+        font-size: 1.4rem;
+        text-align: center;
+     }
+     .trus{
+        width: 100%;
+        display: flex;
+        
+
+     }
+     .trus1{
+        width: 17%;
+       border: 1px solid rgb(24, 23, 23);
+       margin-left: 5rem;
+       margin-top: 5rem;
+       transition: all 0.3s ease;
+     }
+      .trus1:hover{
+         box-shadow: 0 20px 40px rgba(245, 121, 5, 0.3);
+         transform: translatey(-00.3rem);
+          border: 1px solid rgb(219, 128, 9);
+         
+
+      }
+     #tricons{
+        font-size: 4rem;
+        color: rgb(219, 128, 9);
+        text-align: center;
+        padding-left: 5rem;
+     }
+    .th1{
+        font-size: 3.2rem;
+        color:rgb(219, 128, 9);
+        text-align: center;
+    }
+    .tp{
+        color: white;
+        line-height: 1.5;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .trh2{
+        font-size: 3rem;
+        color:transparent;
+        text-align: center;
+        background-clip: text;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx376OavTWjm-Dbn4fUIHpg3_stvfpwM-geA&s);
+        margin-top: 4rem;
+    }
