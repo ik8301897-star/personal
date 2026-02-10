@@ -135,4 +135,186 @@
         margin-top: 1.5rem;
         font-weight: 900;
      }
-     
+     /* The process behind Every transformation */
+     .process{
+         position: relative;
+    width: 100%;
+    height: 95vh;
+
+     }
+     .process1{
+        width: 100%;
+    height: 100%;
+}
+
+     .processimg{
+         width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+     }
+     .overlayprocess{
+         position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+     background-color: rgba(8, 8, 8, 0.9);
+        
+     }
+     .processh1{
+        font-size: 4rem;
+        text-align: center;
+        color: transparent;
+        background-clip: text;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5rnlpdTghsdZC1fWneBGcy51d1FUGJO8WLg&s);
+     }
+     .processp{
+        font-size: 1.3rem;
+        text-align: center;
+        color: white;
+     }
+     /* divstart */
+     .processmain{
+        width: 100%;
+        display: flex;
+        
+     }
+     .every1{
+        width: 20%;
+        border: 1px solid rgb(43, 40, 40);
+        margin-left: 3rem;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+        height: 70%;
+       
+     }
+     .every1:hover{
+        transform: translateY(-0.3rem);
+        box-shadow: 0 10px 20px rgba(241, 3, 23, 0.3);
+
+     }
+     .everyh2{
+        color:transparent;
+        font-size: 2.3rem;
+        text-align: center;
+        background-clip: text;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjbUF8fRiC74ATsAwxb1nHN4GPMDD8QtxRQ&s);
+
+     }
+     .everyp{
+        color: white;
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: 1rem;
+        line-height: 1.7;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+     .everyimg{
+        width: 100%;
+        height: 25%;
+        padding-top: 0.5rem;
+          opacity: 0.7;
+     }
+
+     /* result reality check */
+    .reality{
+        position: relative;
+    width: 100%;
+    height: 50vh;
+    }
+    .reality1{
+          width: 100%;
+    height: 100%;
+}
+    .realityimg{
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    }
+    .overlayreality{
+      position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+     background-color: rgba(8, 8, 8, 0.9);
+
+    }
+    .realityh1{
+      color:transparent;
+      font-size: 3.5rem;
+      text-align: center;
+      background-clip: text;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRViXnXBGr7hdkRyRrG38IVwCxuAnpAlOj8cw&s);
+    }
+     .plan-divider6{
+    width: 90%;
+    height: 2.2px;
+   background: linear-gradient(
+        to right,
+        transparent,
+        #f8d50e,
+        transparent
+    );
+    margin: 1px 0;
+     opacity: 0.9;}
+    .realityp{
+      font-size: 1.2rem;
+      color: white;
+      text-align: center;
+      opacity: 0.7;
+    }
+    .realitymain{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+    .main1{
+      width: 20%;
+      border: 1px solid rgb(56, 53, 53);
+      margin-top: 2rem;
+      transition: all 0.3s ease;
+    }
+    .main1:hover{
+      transform: translateY(-0.3rem);
+      box-shadow: 10px 10px 50px rgb(26, 10, 10);
+    }
+    #ricons{
+      font-size: 4rem;
+      color: white;
+      text-align: center;
+      padding-left: 6rem;
+    }
+     .plan-divider7{
+    width: 100%;
+    height: 2.2px;
+   background: linear-gradient(
+        to right,
+        transparent,
+        #726e63,
+        transparent
+    );
+    margin: 2px 0;
+     opacity: 0.9;}
+     .mp{
+      font-size: 1.3rem;
+      color: #FF4A38;
+      text-align: center;
+      padding-top: 0.5rem;
+      font-weight: 800;
+     }
+     .mp1{
+       font-size: 1.3rem;
+      color: #faab01;
+      text-align: center;
+      padding-top: 0.9rem;
+     }
+     .mp2{
+       font-size: 1.3rem;
+      color: #f3efe7;
+      text-align: center;
+      padding-top: 0.9rem;
+     }

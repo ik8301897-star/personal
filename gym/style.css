@@ -83,7 +83,7 @@
   color: red;
   cursor: pointer;
 }
-
+/* mediaqueries */
 @media (max-width:600px) {
     .logo{
         width: 35%;
@@ -132,7 +132,7 @@
 .main{
     position: relative;
     width: 100%;
-    min-height: 80vh;  
+   
 }
 .main img{
     width: 100%;
@@ -192,12 +192,12 @@
 }
 #star{
   color: yellow;
-  padding-left: 40px;
-  padding-top: 30px;
+  padding-left: 2.3rem;
+  padding-top: 1.8rem;
 }
 .icons{
     color: rgb(250, 210, 213);
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 #crowd{
      padding-left: 40px;
@@ -214,20 +214,23 @@
   padding-top: 20px;
   color: white;
 }
+
 /* whychooseus */
 .why{
     width: 100%;
     background-color: black;
+    
    
     display: flex;
     flex-wrap: wrap;
+    
   
     
 }
 .why1{
     width: 30%;
      position: relative;
-     min-height: 40vh; 
+     min-height: auto; 
      overflow: hidden;
     transition: all 0.4s ease;
     display: flex;
@@ -252,6 +255,8 @@
 .whyimg1{
     width: 100%;
     object-fit: cover; 
+    height: 100%;
+    display: block;
     
 }
 
@@ -279,6 +284,7 @@
     padding-left: 10px;
     font-size: 19px;
 }
+
 /* second card end */
 
 .whyp1{
@@ -288,6 +294,7 @@
     padding-left: 10px;
     font-size: 19px;
 }
+
 /* third card end */
 
 .whysecond{
@@ -296,7 +303,7 @@
     
    
     display: flex;
-    flex-wrap: wrap;
+    
 }
 .wh{
      width: 30%;
@@ -343,6 +350,7 @@
     padding-left: 10px;
     font-size: 19px;
 }
+
 /* how to transform u */
 
 .main1{
@@ -409,14 +417,16 @@
 .trans1main{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .trans1{
     border: 1px solid rgb(63, 61, 61);
      margin-top: 5rem;
     margin-left: 3rem;
     width: 90%;
-    height: max-content;
+    height: auto;
     transition: all 0.3s ease;
+    overflow: hidden;
     
     
   
@@ -475,6 +485,10 @@
      color: rgb(230, 171, 194);
 
 }
+
+
+
+
 
 /* success stories */
 .success{
