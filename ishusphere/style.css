@@ -1,0 +1,692 @@
+@font-face {
+    font-family: new;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: man;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+@font-face {
+    font-family: bold;
+    src: url(./);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+}
+
+.logoimg {
+    width: 10%;
+    margin-left: 1rem;
+}
+
+.logoh3 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-family: new;
+    font-weight: 100;
+
+    padding-top: 0.6rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-family: new;
+    font-weight: 100;
+    color: white;
+}
+
+a:hover {
+    color: rgb(240, 141, 50);
+    transform: translateY(-0.2rem);
+}
+
+.button {
+    width: 20%;
+    margin-left: 9rem;
+}
+
+.button1 {
+    padding: 12px 25px;
+    background: linear-gradient(to right, #1e90ff, #8a2be2);
+    border-radius: 6px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.button1:hover {
+    background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+    color: #f3f4f6;
+    transform: translatex(0.2rem);
+}
+
+
+/* mainsection */
+.homemain {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+    
+}
+
+.main1 {
+    max-width: 900px;
+
+}
+
+.mainp {
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-family: man;
+    margin-bottom: 1rem;
+    color: #DB601F;
+}
+
+.mainh1 {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: man;
+
+}
+
+.mainp1 {
+    font-family: man;
+    font-weight: 100;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+}
+
+.small {
+    width: 1.5rem;
+
+}
+
+span {
+    color: #DB601F;
+    font-weight: 700;
+}
+
+.mainp2 {
+    font-size: 1rem;
+    font-family: man;
+    padding-top: 1rem;
+    font-weight: 100;
+}
+
+.startbutton {
+    padding: 12px 25px;
+    color: #f3f4f6;
+    background-color: #DB601F;
+    border-radius: 6px;
+    border: none;
+    margin-top: 3rem;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.startbutton:hover {
+    background-color: #f75803;
+    transform: translateY(-0.2rem);
+}
+
+/* why we stand ahead */
+.stand {
+    width: 100%;
+   
+
+}
+.standmain{
+    display: flex;
+
+}
+
+.standh1 {
+    text-align: center;
+    font-size: 3.8rem;
+    color: white;
+    font-family: man;
+    font-weight: 100;
+}
+
+.standp {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    font-family: man;
+    font-weight: 100;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.stand1 {
+    position: relative;
+    width: 20%;
+    border: 1px solid rgb(31, 30, 30);
+    background-image: url(./stand1.jpg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2rem;
+
+}
+
+.stand1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.constand {
+    position: relative;
+    z-index: 2;
+    margin-top: 9rem;
+}
+
+.standh2 {
+    color: #DB601F;
+    font-family: man;
+
+}
+
+.standp1 {
+    color: #f3f4f6;
+    font-family: man;
+    padding-top: 1rem;
+}
+
+.standbutton {
+    padding: 10px 20px;
+    font-weight: 900;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1rem;
+    background-color: #f75803;
+    color: rgb(223, 221, 221);
+    transition: all 0.3s ease;
+}
+
+.standbutton:hover {
+    background-color: #f86110;
+    transform: translateY(-0.2rem);
+}
+/* 2nd */
+.stand2 {
+    position: relative;
+    width: 20%;
+    border: 1px solid rgb(31, 30, 30);
+    background-image: url(./stand2.jpg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2rem;
+
+}
+.stand2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+/* 3rd */
+.stand3 {
+    position: relative;
+    width: 20%;
+    border: 1px solid rgb(31, 30, 30);
+    background-image: url(./stand3.jpg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2rem;
+
+}
+.stand3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+/* 4th */
+.stand4 {
+    position: relative;
+    width: 20%;
+    border: 1px solid rgb(31, 30, 30);
+    background-image: url(./stand4.jpg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2rem;
+
+}
+.stand4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+/* not sure which course fits you? Don't worry,We're Here to Help. */
+.Course{
+    width: 100%;
+    margin-top: 2rem;
+   
+}
+.coh1{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-family: man;
+    font-weight: 100;
+}
+.buttonco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coursemain{
+    width: 100%;
+    display: flex;
+}
+.imgcourse{
+    width: 35%;
+    border-radius: 10px;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    height: 80%;
+}
+.main2{
+    width: 50%;
+     margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.couh1{
+    color: white;
+    font-family: man;
+    font-size: 2.8rem;
+
+}
+.coup{
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-family: new;
+    color: rgb(247, 230, 230);
+    opacity: 0.8;
+}
+.mainicon{
+    display: flex;
+    gap: 180px;
+    margin-left: 0rem;
+}
+.icon{
+    margin-top: 1.5rem;
+    display: flex;
+   
+}
+#clock{
+    font-size: 1.5rem
+    ;
+    color: #DB601F;
+}
+.iconp{
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 1rem;
+    font-weight: 800;
+}
+.pricep{
+    font-size: 1.8rem;
+    color: white;
+    font-family: man;
+    margin-top: 1.4rem;
+}
+.del{
+    font-size: 0.2rem;
+}
+.checkbutton{
+    padding: 8px 23px;
+    margin-top: 2rem;
+    font-weight: 900;
+     background-color: #0a0a0a;
+     color: white;
+     border: none;
+     border-radius: 6px;
+     transition: all 0.3s ease;
+
+}
+.checkbutton:hover{
+    transform: scale(1.1);
+  
+}
+.rupee{
+    font-size: 1rem
+    ;
+}
+/* comparison */
+.comh1{
+     font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-family: man;
+    font-weight: 100;
+    margin-top: 4rem;
+}
+.comparimain{
+    width: 90%;
+    border: 1px solid rgb(54, 54, 54);
+    margin-left: 5rem;
+    margin-top: 1rem;
+    display: flex;
+}
+.ishutech{
+   
+    width: 50%;
+    border: 1px solid green;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 7px;
+    box-shadow: 5px 5px 10px green;
+}
+.logoh4{
+      color: #FFFFFF;
+    font-size: 1.7rem;
+    font-family: new;
+    font-weight: 100;
+     text-align: center;
+
+    padding-top: 0.6rem;
+}
+#check{
+   color: green;
+   font-size: 1.1rem;
+   margin-left: 3rem;
+   margin-top: 2rem;
+
+}
+.comparip{
+    font-size: 1.3rem;
+    color: white;
+    font-family: man;
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+/* others */
+.others{
+    width: 50%;
+}
+.spother{
+   font-size: 1.9rem;
+    font-family: new;
+    font-weight: 100;
+     text-align: center;
+     color: white;
+     padding-left: 0.5rem;
+
+  
+}
+.other1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+#group{
+    font-size: 1.7rem;
+    color: white;
+    
+}
+#wrong{
+     color: rgb(253, 143, 0);
+   font-size: 1.1rem;
+   margin-left: 3rem;
+   margin-top: 2rem;
+}
+/* Ready to Transform Your Career? */
+.readyh1{
+      font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-family: man;
+    font-weight: 100;
+    margin-top: 4rem;
+}
+.readyp{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    font-family: man;
+    opacity: 0.7;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+.careermain{
+    width: 100%;
+    display: flex;
+  
+}
+.youget{
+    width: 45%;
+      border: 1px solid rgb(44, 43, 43);
+      margin-top: 1rem;
+}
+#bolt{
+    font-size: 2rem;
+    color: rgb(248, 120, 15);
+}
+.uget1{
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+.get{
+    font-size: 2rem;
+    color: white;
+}
+.uget2{
+     margin-left: 3rem;
+     margin-top: 2rem; 
+}
+.geth2{
+    color: #DB601F;
+    font-size: 1.4rem;
+    font-family: man;
+}
+.getp{
+    color: white;
+    padding-top: 0.7rem;
+    line-height: 1.5;
+     font-family: man;
+}
+/* start your journey */
+.journey{
+    width: 45%;
+}
+.uget3{
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+input{
+    width: 70%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+#email{
+     width: 70%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1;
+    margin-left: 6rem;
+}
+input::placeholder{
+    font-size: 0.8rem;
+}
+form{
+    margin-top: 1rem;
+}
+textarea{
+    width: 70%;
+    padding: 10px 8px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+.submitbutton{
+    padding: 10px 24px;
+    width: 70%;
+    margin-top: 2rem;
+    margin-left:6rem ;
+    font-weight: 900;
+    background-color: #DB601F;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+.submitbutton:hover{
+    transform: translateY(-0.3rem);
+    background-color: #fa5700;
+}
+.bigtext{
+    font-size: 18vw;         
+    font-weight: 900;
+    text-align: center;
+    color: transparent;       
+    -webkit-text-stroke: 1px #333;  
+    letter-spacing: 5px;
+}
+.bigtext:hover{
+    background: linear-gradient(45deg,#f04902,#f5aa78);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px transparent;
+}
+/* footer */
+footer{
+    width:100%;
+    border: 1px solid rgb(14, 13, 13);
+    display: flex;
+    justify-content: space-between;
+    font-family: new;
+    height: auto;
+}
+.footericon{
+    width:30%
+}
+.footerh3{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: new;
+    margin-top: 1rem;
+}
+#footericon{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+   
+}
+.icon{
+    margin-left: 8rem;
+}
+.aboutus{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;   
+}
+.abouth4{
+      font-size: 2rem;
+    font-family: new;
+    margin-top: 1rem;
+    color: white;
+}
+.footera{
+   margin-top: 2rem;
+   display: block;
+}
+.footera1{
+  display: flex;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+.footerp{
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 1rem;
+
+}
+.footeropa{
+    margin-top: 0.5rem;
+    color: white;
+    opacity: 0.5;
+}
+

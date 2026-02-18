@@ -283,6 +283,7 @@
     line-height: 1.4;
     padding-left: 10px;
     font-size: 19px;
+    opacity: 0.8;
 }
 
 /* second card end */
@@ -293,6 +294,7 @@
     line-height: 1.4;
     padding-left: 10px;
     font-size: 19px;
+     opacity: 0.8;
 }
 
 /* third card end */
@@ -349,6 +351,7 @@
     line-height: 1.4;
     padding-left: 10px;
     font-size: 19px;
+     opacity: 0.8;
 }
 
 /* how to transform u */
@@ -449,6 +452,7 @@
     line-height: 1.4;
     padding-left: 1rem;
       padding-bottom: 1rem;
+       opacity: 0.8;
 }
 .trap:hover{
     color: rgb(230, 171, 194);
@@ -480,6 +484,7 @@
     line-height: 1.4;
     padding-left: 1rem;
     padding-bottom: 1rem;
+     opacity: 0.8;
 }
 .trap1:hover{
      color: rgb(230, 171, 194);

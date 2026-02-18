@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="headh1">Day 12: Pseudo-Classes & Pseudo-Elements</h1>
+        <p class="headp">Master CSS interactions and advanced styling tricks </p>
+    </header>
+    <!-- mainsection -->
+    <div class="class1">
+        <h3 class="mainh3">1.Pseudo-Classes</h3>
+        <p class="mainp">Pseudo classes are used to define the special state of an element(hover,focus,etc),without
+            changing the HTML structure.</p>
+    </div>
+    <!-- 1st -->
+    <div class="hovermain">
+        <div class="hover">
+
+            <h3 class="hoverh3">a) :hover</h3>
+            <p class="hoverp"> <span>What</span>: Applies style when a user hovers over an element.</p>
+            <p class="hoverp1"> <span>Why</span>: Enhances user experience with feedback like color changes.</p>
+            <p class="hoverp1"> <span>How:</span< /p>
+                    <div class="hover1">
+                        <div class="hover2">
+                            <p class="innerp">
+                                button:hover{ <br>
+                                background-color:blue;<br>
+                                color:white;<br>
+                                }
+                            </p>
+                        </div>
+                    </div>
+
+        </div>
+ <!-- 2nd -->
+
+         <div class="hover">
+
+            <h3 class="hoverh2">b) :focus</h3>
+            <p class="hoverp"> <span>What</span>: Applies styles when an element (like input) gains focus.</p>
+            <p class="hoverp1"> <span>Why</span>:Helps highlight input fields,imporving accessibility.</p>
+            <p class="hoverp1"> <span>How:</span< /p>
+                    <div class="hover1">
+                        <div class="hover2">
+                            <p class="innerp">
+                               input:focus { <br>
+                                border:2px solid green; <br>
+                                outline:none; <br>
+                               }
+                            </p>
+                        </div>
+                    </div>
+
+        </div>
+        </div>
+       
+
+
+        <!-- 2nd section -->
+         <!-- mainsection -->
+           <div class="class2">
+        <h3 class="mainh4">2.Pseudo-Element</h3>
+        <p class="mainp">Pseudo-elements allow you to style parts of an element or insert content before/after without modifying HTML.</p>
+    </div>
+
+      <!-- 1st -->
+    <div class="hovermain">
+        <div class="hover">
+
+            <h3 class="hoverh4">a) ::before</h3>
+            <p class="hoverp"> <span>What</span>: Inserts content before the element's actual content.</p>
+            <p class="hoverp1"> <span>Why</span>: Add labels or design elements without HTML changes.</p>
+            <p class="hoverp1"> <span>How:</span< /p>
+                    <div class="hover1">
+                        <div class="hover2">
+                            <p class="innerp">
+                              p::before{ <br>
+                                content: "Note:"; <br>
+                                font-weight:bold; <br>
+                              }
+                            </p>
+                        </div>
+                    </div>
+
+        </div>
+ <!-- 2nd -->
+
+         <div class="hover">
+
+            <h3 class="hoverh5">b) :: after</h3>
+            <p class="hoverp"> <span>What</span>: Inserts content after the main element content.</p>
+            <p class="hoverp1"> <span>Why</span>: Useful for footnotes, highlights,or extra info.</p>
+            <p class="hoverp1"> <span>How:</span< /p>
+                    <div class="hover1">
+                        <div class="hover2">
+                            <p class="innerp">
+                               p:: after{ <br>
+                                content: "(Read more)"; <br>
+                                font-style:italic; <br>
+                               }
+
+                
+                            </p>
+                        </div>
+                    </div>
+
+        </div>
+        </div>
+
+        <!-- 3rd -->
+          <div class="class2">
+        <h3 class="mainh4">Extra:CSS Variables</h3>
+        <p class="mainp">Custom properties (variables) make CSS reusable,readable,and easy to manage.</p>
+    </div>
+
+    <!-- divstart -->
+     <div class="css">
+        <div class="css1">
+            
+            <p class="hoverp1"> <span>Why</span>: Maintain consistency,easy global changes,and better scalalbity</p>
+          
+            <p class="hoverp1"> <span>How:</span< /p>
+                    <div class="hover8">
+                        <div class="hover3">
+                            <p class="innerp1">
+                              :root { <br>
+                                --primary-color:#3498db; <br>
+                                --font-size:16px; <br>
+                              }
+                            </p>
+                            <p class="innerp1">
+                             button { <br>
+                                background-color:var(--primary-color); <br>
+                                font-size:var(--font-size); <br>
+                             } 
+                            </p>
+                        </div>
+                    </div>
+        </div>
+     </div>
+
+       
+
+        
+
+</body>
+
+</html>

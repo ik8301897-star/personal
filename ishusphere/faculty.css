@@ -1,0 +1,314 @@
+@font-face {
+    font-family: new;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: man;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+@font-face {
+    font-family: bold;
+    src: url(./);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 30%;
+    display: flex;
+}
+
+.logoimg {
+    width: 10%;
+    margin-left: 1rem;
+}
+
+.logoh3 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-family: new;
+    font-weight: 100;
+
+    padding-top: 0.6rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-family: new;
+    font-weight: 100;
+    color: white;
+}
+
+a:hover {
+    color: rgb(240, 141, 50);
+    transform: translateY(-0.2rem);
+}
+
+.button {
+    width: 20%;
+    margin-left: 9rem;
+}
+
+.button1 {
+    padding: 12px 25px;
+    background: linear-gradient(to right, #1e90ff, #8a2be2);
+    border-radius: 6px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.button1:hover {
+    background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+    color: #f3f4f6;
+    transform: translatex(0.2rem);
+}
+/* mainsection */
+.mainh1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: man;
+    margin-top: 3rem;
+    font-weight: 100;
+}
+.mainspan{
+   color:  #DB601F;
+}
+.mainp{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-family: man;
+    margin-top: 1rem;
+}
+.main{
+    width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+}
+.main1{
+    width: 25%;
+    border: 1px solid rgb(14, 13, 13);
+    margin-top: 3rem;
+}
+.imgmain{
+    height: 30vh;
+    width: 90%;
+    margin-left: 1rem;
+    border-radius: 50%;
+}
+.innerdiv{
+    border: 2px solid rgb(75, 72, 72);
+    margin: 5px 10px;
+    border-radius: 20px;
+    background-color: #c42b05;
+    border: none;
+}
+.innerh1{
+    color: white;
+    text-align: center;
+    font-family: man;
+    font-weight: 100;
+}
+.innerp{
+     color: white;
+    text-align: center;
+    font-family: man;
+    font-weight: 100;
+}
+#mainicon{
+    color: burlywood;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+#mainicon1{
+    color: rgb(70, 5, 248);
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+#mainicon2{
+    color: rgb(255, 104, 4);
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+#mainicon3{
+    color: rgb(244, 248, 1);
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.innerspan{
+    color: white;
+    font-size: 1.3rem;
+    font-family: man;
+    font-weight: 100;
+}
+.buttonst{
+    padding: 9px 22px;
+     background-color: #DB601F;
+     font-weight: bold;
+     border: none;
+     border-radius: 6px;
+     margin-left: 2.5rem;
+     margin-top: 2rem;
+     font-size: 1.2rem;
+}
+#button{
+    color: #f1efed;  
+}
+.buttonst1{
+    padding: 9px 22px;
+     background-color: #3104fc;
+     font-weight: bold;
+     border: none;
+     border-radius: 6px;
+     margin-left: 2.5rem;
+     margin-top: 2rem;
+     font-size: 1.2rem;
+}
+
+/* How Our Mentorship Transform You */
+.mentorh1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 100;
+    font-family: man;
+}
+.mentorp{
+    font-size: 1.3rem;
+     color: white;
+    text-align: center;
+    margin-top: 0.6rem;
+    font-weight: 100;
+    font-family: man;
+}
+.mentor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mentor1{
+    width: 20%;
+    border: 1px solid rgb(12, 12, 12);
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.imgmentor{
+    height: 25vh;
+    width: 100%;
+}
+.innerh1{
+    color: white;
+}
+.innerp1{
+    font-size: 1rem;
+    color: #c42b05;
+    font-weight: 300;
+    font-family: man;
+    text-align: center;
+}
+/* bigtext */
+
+.bigtext{
+    font-size: 18vw;         
+    font-weight: 900;
+    text-align: center;
+    color: transparent;       
+    -webkit-text-stroke: 1px #333;  
+    letter-spacing: 5px;
+}
+.bigtext:hover{
+    background: linear-gradient(45deg,#f04902,#f5aa78);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px transparent;
+}
+/* footer */
+footer{
+    width:100%;
+    border: 1px solid rgb(14, 13, 13);
+    display: flex;
+    justify-content: space-between;
+    font-family: new;
+    height: auto;
+}
+.footericon{
+    width:30%
+}
+.footerh3{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: new;
+    margin-top: 1rem;
+}
+#footericon{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+   
+}
+.icon{
+    margin-left: 8rem;
+}
+.aboutus{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;   
+}
+.abouth4{
+      font-size: 2rem;
+    font-family: new;
+    margin-top: 1rem;
+    color: white;
+}
+.footera{
+   margin-top: 2rem;
+   display: block;
+}
+.footera1{
+  display: flex;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+.footerp{
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 1rem;
+
+}
+.footeropa{
+    margin-top: 0.5rem;
+    color: white;
+    opacity: 0.5;
+}

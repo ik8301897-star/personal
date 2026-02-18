@@ -1,0 +1,29 @@
+@media screen and (max-width:480px) {
+    .mainp{
+        font-size: 0.9rem;
+    }
+    .class1{
+        margin-left: 1rem;
+        margin-top: 1rem;
+
+    }
+    .hovermain{
+        flex-direction: column;
+    }
+    .hovermain{
+        width: 100%;
+    }
+    .hover{
+        width: 90%;
+        margin-left: 1rem;
+    }
+    .class2{
+        margin-left: 1rem;
+    }
+    .css1{
+        margin-left: 1rem;
+        width: 90%;
+    }
+   
+
+        

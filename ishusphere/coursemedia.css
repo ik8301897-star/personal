@@ -1,0 +1,131 @@
+@media screen and (max-width:600px) {
+    /* header */
+    @media(max-width:600px){
+
+    /* Enroll button hide */
+    .button{
+        display:none;
+    }
+
+    /* Menu icon show */
+    .menu-toggle{
+        display:block;
+        position:absolute;
+        right:20px;
+        font-size:1.8rem;
+        color:white;
+        cursor:pointer;
+    }
+
+    /* Nav mobile style */
+    nav{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#111827;
+        flex-direction:column;
+        align-items:center;
+        gap:1.5rem;
+        padding:2rem 0;
+        display:none;
+    }
+
+    nav.active{
+        display:flex;
+    }
+}
+.logoimg{
+    width: 50%;
+}
+/* mainsection */
+.mainh1{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.course{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.course1{
+    width: 90%;
+    margin-left: 0rem;
+    padding-bottom: 1rem;
+}
+.tag{
+    font-size: 10px;
+}
+.courseh2{
+    font-size: 1.4rem;
+}
+.pricep{
+    font-size: 1.1rem;
+}
+.checkbutton{
+    width: 80%;
+    
+}
+/* Why IshuSphere Tech is Different? */
+.techh1{
+    font-size: 2.5rem;
+}
+.techp{
+    font-size: 1.1rem;
+}
+.techmain{
+    flex-direction: column;
+}
+.techimg{
+    width: 90%;
+}
+.techright{
+    width: 98%;
+    margin-left: 1rem;
+}
+#check{
+    margin-left: 0.5rem;
+}
+.comparip{
+    font-size: 1.1rem;
+}
+.techrightp{
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+}
+footer{
+        flex-direction: column;
+        height: auto;
+     }
+    .footericon{
+          width:90%
+
+    }
+    .footerh3{
+        font-size: 1.5rem;
+        
+    }
+    #footericon{
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+.aboutus{
+width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.abouth4{
+    font-size: 1.5rem;
+}
+.footerp{
+    font-size: 0.8rem;
+}
+.footeropa{
+     font-size: 0.8rem;
+}
+.footera1{
+     font-size: 0.8rem;
+}
+}

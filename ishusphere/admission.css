@@ -1,0 +1,334 @@
+@font-face {
+    font-family: new;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: man;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+@font-face {
+    font-family: bold;
+    src: url(./);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 30%;
+    display: flex;
+}
+
+.logoimg {
+    width: 10%;
+    margin-left: 1rem;
+}
+
+.logoh3 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-family: new;
+    font-weight: 100;
+
+    padding-top: 0.6rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-family: new;
+    font-weight: 100;
+    color: white;
+}
+
+a:hover {
+    color: rgb(240, 141, 50);
+    transform: translateY(-0.2rem);
+}
+
+.button {
+    width: 20%;
+    margin-left: 9rem;
+}
+
+.button1 {
+    padding: 12px 25px;
+    background: linear-gradient(to right, #1e90ff, #8a2be2);
+    border-radius: 6px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.button1:hover {
+    background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+    color: #f3f4f6;
+    transform: translatex(0.2rem);
+}
+/* mainsection  */
+.comh1{
+     font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-family: man;
+    font-weight: 100;
+    margin-top: 4rem;
+}
+.comparimain{
+    width: 90%;
+    border: 1px solid rgb(54, 54, 54);
+    margin-left: 5rem;
+    margin-top: 1rem;
+    display: flex;
+}
+.ishutech{
+   
+    width: 50%;
+    border: 1px solid rgb(245, 38, 1);
+    border-radius: 20px;
+    margin: 4px;
+    padding: 7px;
+    box-shadow: 5px 5px 10px rgb(245, 38, 1);
+}
+.logoh4{
+      color: #FFFFFF;
+    font-size: 1.9rem;
+    font-family: new;
+    font-weight: 100;
+     text-align: center;
+
+    padding-top: 0.6rem;
+}
+#check{
+   color: green;
+   font-size: 1.1rem;
+   margin-left: 3rem;
+   margin-top: 2rem;
+
+}
+.comparip{
+    font-size: 1.3rem;
+    color: white;
+    font-family: man;
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+/* others */
+.others{
+    width: 50%;
+}
+.spother{
+   font-size: 1.9rem;
+    font-family: new;
+    font-weight: 100;
+     text-align: center;
+     color: white;
+     padding-left: 0.5rem;
+
+  
+}
+.other1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+#group{
+    font-size: 1.7rem;
+    color: white;
+    
+}
+#wrong{
+     color: rgb(253, 143, 0);
+   font-size: 1.1rem;
+   margin-left: 3rem;
+   margin-top: 2rem;
+}
+
+span{
+    color: #DB601F;
+}
+/* admission  */
+.admission{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+}
+.admission1{
+    width: 40%;
+    border: 1px solid rgb(59, 57, 57);
+    height: fit-content;
+}
+.adh1{
+    color: white;
+    font-size: 2.5rem;
+    font-family: man;
+    font-weight: 100;
+    margin-left: 3rem;
+
+}
+.admission2{
+    width: 50%;
+   
+    margin-left: 2rem;
+}
+.get{
+    font-size: 2rem;
+    color:#DB601F;
+}
+.uget3{
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+ 
+}
+input{
+    width: 70%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+#email{
+     width: 70%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1;
+    margin-left: 6rem;
+}
+input::placeholder{
+    font-size: 0.8rem;
+}
+form{
+    margin-top: 1rem;
+}
+textarea{
+    width: 70%;
+    padding: 10px 8px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+.submitbutton{
+    padding: 10px 24px;
+    width: 70%;
+    margin-top: 2rem;
+    margin-left:6rem ;
+    font-weight: 900;
+    background-color: #DB601F;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+.submitbutton:hover{
+    transform: translateY(-0.3rem);
+    background-color: #fa5700;
+}
+#select{
+       width: 70%;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+
+
+.bigtext{
+    font-size: 18vw;         
+    font-weight: 900;
+    text-align: center;
+    color: transparent;       
+    -webkit-text-stroke: 1px #333;  
+    letter-spacing: 5px;
+}
+.bigtext:hover{
+    background: linear-gradient(45deg,#f04902,#f5aa78);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px transparent;
+}
+/* footer */
+footer{
+    width:100%;
+    border: 1px solid rgb(14, 13, 13);
+    display: flex;
+    justify-content: space-between;
+    font-family: new;
+    height: auto;
+}
+.footericon{
+    width:30%
+}
+.footerh3{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: new;
+    margin-top: 1rem;
+}
+#footericon{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+   
+}
+.icon{
+    margin-left: 8rem;
+}
+.aboutus{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;   
+}
+.abouth4{
+      font-size: 2rem;
+    font-family: new;
+    margin-top: 1rem;
+    color: white;
+}
+.footera{
+   margin-top: 2rem;
+   display: block;
+}
+.footera1{
+  display: flex;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+.footerp{
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 1rem;
+
+}
+.footeropa{
+    margin-top: 0.5rem;
+    color: white;
+    opacity: 0.5;
+}

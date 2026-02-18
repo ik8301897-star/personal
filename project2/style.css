@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      /* background-color: rgb(221, 248, 248);  */
+}
+.headh1{
+    color: rgb(3, 3, 112);
+    text-align: center;
+    margin-top: 1rem;
+}
+.headp{
+  opacity: 0.7;
+    text-align: center;
+}
+.class1{
+    width: 100%;
+   
+    margin-left: 5rem;
+    
+}
+.mainh3{
+     color: rgb(3, 3, 112);
+     font-weight: 800;
+     font-size: 1.5rem;
+}
+.mainp{
+    font-size: 1rem;
+    word-spacing: 2px;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+.hovermain{
+    width: 100%;
+    display: flex;
+  
+
+
+}
+
+.hover{
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border: 1px solid rgb(177, 177, 166);
+    background-color:rgb(255, 254, 254);
+    width: 40%;
+}
+.hoverh3{
+    color: blue;
+    padding-left: 3rem;
+}
+.hoverp{
+     padding-left: 3rem;
+     padding-top: 1rem;
+}
+span{
+    font-weight: 900;
+}
+.hoverp1{
+     padding-left: 3rem;
+     padding-top: 0.5rem;
+}
+.hover1{
+     margin-left: 3rem;
+    margin-top: 2rem;
+    /* border: 0.5px solid rgb(216, 205, 205); */
+    background-color: rgb(236, 237, 238);
+    
+    border-left: 4px solid rgb(13, 9, 226);
+    border-radius: 2px;
+}
+
+
+.hover2{
+    /* border: 0.2px solid rgb(122, 118, 118); */
+    margin: 10px;
+    width: 50%;
+    background-color: rgb(205, 206, 206);
+}
+.innerp{
+    padding: 1rem;
+    font-weight: 500;
+}
+.hoverh2{
+    color: rgb(42, 243, 2);
+     padding-left: 3rem;
+
+}
+
+/* 2nd */
+.class2{
+    width: 100%;
+   margin-top: 2rem;
+    margin-left: 5rem;
+    
+}
+.mainh4{
+     color: rgb(86, 7, 235);
+     font-weight: 800;
+     font-size: 1.5rem;
+}
+.hoverh4{
+    color: rgb(86, 7, 235);
+     padding-left: 3rem;
+
+}
+.hoverh5{
+    color: rgb(248, 4, 85);
+     padding-left: 3rem;
+
+}
+
+
+/* 3rd */
+.css1{
+     margin-left: 5rem;
+    margin-top: 2rem;
+    border: 1px solid rgb(177, 177, 166);
+    background-color:rgb(255, 254, 254);
+    width: 80%;
+}
+.hoverp1{
+     padding-left: 3rem;
+     padding-top: 0.5rem;
+}
+.hover8{
+     margin-left: 3rem;
+    margin-top: 2rem;
+    /* border: 0.5px solid rgb(216, 205, 205); */
+    background-color: rgb(236, 237, 238);
+    
+    border-left: 4px solid rgb(13, 9, 226);
+    border-radius: 2px;
+}
+
+
+.hover3{
+    /* border: 0.2px solid rgb(122, 118, 118); */
+    margin: 10px;
+    width: 50%;
+    background-color: rgb(205, 206, 206);
+}
+.innerp1{
+    padding: 1rem;
+    font-weight: 500;
+}
+
+

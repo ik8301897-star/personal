@@ -1,0 +1,130 @@
+@media screen and (max-width:600px) {
+    /* header */
+    @media(max-width:600px){
+
+    /* Enroll button hide */
+    .button{
+        display:none;
+    }
+
+    /* Menu icon show */
+    .menu-toggle{
+        display:block;
+        position:absolute;
+        right:20px;
+        font-size:1.8rem;
+        color:white;
+        cursor:pointer;
+    }
+
+    /* Nav mobile style */
+    nav{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#111827;
+        flex-direction:column;
+        align-items:center;
+        gap:1.5rem;
+        padding:2rem 0;
+        display:none;
+    }
+
+    nav.active{
+        display:flex;
+    }
+}
+.logoimg{
+    width: 50%;
+}
+/* mainsection */
+.mainh1{
+    font-size: 2.5rem;
+}
+.main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main1{
+    width: 100%;
+}
+.imgmain{
+    width: 50%;
+    margin-left: 5rem;
+    
+}
+#mainicon{
+    font-size: 1.5rem;
+}
+#mainicon1{
+ font-size: 1.5rem;
+}
+#mainicon2{
+ font-size: 1.5rem;
+}
+#mainicon3{
+ font-size: 1.5rem;
+}
+.innerspan{
+    font-size: 1.2rem;
+}
+.buttonst{
+    width: 100%;
+    margin-left: 0rem;
+}
+.buttonst1{
+     width: 100%;
+    margin-left: 0rem;
+}
+/* How Our Mentorship Transform You */
+.mentorh1{
+    font-size: 2.5rem;
+}
+.mentorp{
+    font-size: 1rem;
+}
+.mentor{
+    flex-direction: column;
+}
+.mentor1{
+    width: 90%;
+    margin-left: 0rem;
+}
+/* footer  */
+ footer{
+        flex-direction: column;
+        height: auto;
+     }
+    .footericon{
+          width:90%
+
+    }
+    .footerh3{
+        font-size: 1.5rem;
+        
+    }
+    #footericon{
+        margin-top: 1rem;
+        margin-left: 6rem;
+    }
+.aboutus{
+width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.abouth4{
+    font-size: 1.5rem;
+}
+.footerp{
+    font-size: 0.8rem;
+}
+.footeropa{
+     font-size: 0.8rem;
+}
+.footera1{
+     font-size: 0.8rem;
+}
