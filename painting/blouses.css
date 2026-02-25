@@ -1,0 +1,152 @@
+@font-face {
+    font-family: new;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: man;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(./);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8E2BE;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 18%;
+    display: flex;
+}
+
+.logoimg {
+    width: 50%;
+    margin-left: 3rem;
+    transition: all 0.3s ease;
+}
+
+.logoimg:hover {
+    transform: translateY(-0.2rem);
+
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+li {
+    color: #F8E2BE;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #0f0f0f;
+    transition: 0.4s ease;
+}
+
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.icon {
+    width: 20%;
+
+    margin-left: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#search {
+    font-size: 1.3rem;
+    color: rgb(12, 12, 12);
+    padding-left: 2rem;
+    opacity: 0.7;
+
+}
+#menuToggle{
+    display: none;
+}
+/* mainsection */
+.mainh1{
+     font-family: man;
+    font-weight: 100;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.blousecol1{
+    width: 100%;
+    display: flex;
+    height: 97vh;
+}
+.featurecard1img {
+    width: 100%;
+}
+
+.feature1 {
+    width: 22%;
+    height: 50vh;
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+}
+
+.feature1 a {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.feature1 a:hover {
+    text-decoration: underline;
+}
+
+.price {
+    margin-top: 1.2rem;
+}
+
+.price a {
+    font-size: 1.1rem;
+    font-family: new;
+}
+
+.price p {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-family: new;
+}
+#star1{
+    margin-top: 0.5rem;
+    color: rgb(22, 22, 22);
+}

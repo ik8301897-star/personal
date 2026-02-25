@@ -1,246 +1,312 @@
 @media screen and (max-width:600px) {
+
     /* header */
-    @media(max-width:600px){
+    @media(max-width:600px) {
 
-    /* Enroll button hide */
-    .button{
-        display:none;
+        /* Enroll button hide */
+        .button {
+            display: none;
+        }
+
+        /* Menu icon show */
+        .menu-toggle {
+            display: block;
+            position: absolute;
+            right: 20px;
+            font-size: 1.8rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Nav mobile style */
+        nav {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background: #111827;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem 0;
+            display: none;
+        }
+
+        nav.active {
+            display: flex;
+        }
     }
 
-    /* Menu icon show */
-    .menu-toggle{
-        display:block;
-        position:absolute;
-        right:20px;
-        font-size:1.8rem;
-        color:white;
-        cursor:pointer;
+    .logoimg {
+        width: 50%;
     }
 
-    /* Nav mobile style */
-    nav{
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background:#111827;
-        flex-direction:column;
-        align-items:center;
-        gap:1.5rem;
-        padding:2rem 0;
-        display:none;
-    }
-
-    nav.active{
-        display:flex;
-    }
-}
-.logoimg{
-    width: 50%;
-}
-    .mainp{
+    .mainp {
         font-size: 1rem;
     }
-    .homemain{
+
+    .homemain {
         height: auto;
     }
-    .mainh1{
-         font-size: 2rem;
+
+    .mainh1 {
+        font-size: 2rem;
     }
-    .mainp1{
-           font-size: 1rem
+
+    .mainp1 {
+        font-size: 1rem
     }
-    .small{
+
+    .small {
         width: 1rem;
     }
-    .startbutton{
+
+    .startbutton {
         margin-top: 2rem;
     }
+
     /* why we stand ahead */
-    .standh1{
+    .standh1 {
         font-size: 2rem;
     }
-    .standmain{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
-.stand1{
-    width: 60%;
-    margin-left: 0;
-}
-.stand2{
-     width: 60%;
-    margin-left: 0;
-}
-.stand3{
-    width: 60%;
-    margin-left: 0;
-}
-.stand4{
-     width: 60%;
-    margin-left: 0;
-}
-/* not sure which course fits you? Don't worry,We're Here to Help. */
-.coh1{
-     font-size: 2rem;
-}
-.coursemain{
-    flex-direction: column;
-     justify-content: center;
-    align-items: center;
-
-}
-.imgcourse{
-    width: 90%;
-    margin-left: 0.5rem;
-}
-.main2{
-    width: 90%;
-      margin-left: 0.5rem;
-        margin-top: 1.5rem;
-}
-.couh1{
-    font-size: 2rem;
-}
-.coup{
-     font-size: 1rem;
-}
-.mainicon{
-    flex-direction: column;
-    gap: 0px;
-}
-#clock{
-    font-size: 1rem;
-}
-.icon{
-    margin-left: 0;
-}
-.iconp{
-    font-size: 1rem;
-}
-.pricep{
-    font-size: 1rem;
-}
-.rupee{
-    font-size: 0.6rem;
-}
-.checkbutton{
-    width: 100%;
-}
-/* comparison  */
-    .comh1{
-        font-size: 2rem;
-    }
-    .comparimain{
+    .standmain {
         flex-direction: column;
-         margin-left: 1.5rem;
-         justify-content: center;
-         align-items: center;
+        justify-content: center;
+        align-items: center;
+
     }
-    .ishutech{
+
+    .stand1 {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    .stand2 {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    .stand3 {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    .stand4 {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    /* not sure which course fits you? Don't worry,We're Here to Help. */
+    .coh1 {
+        font-size: 2rem;
+    }
+
+    .coursemain {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .imgcourse {
+        width: 90%;
+        margin-left: 0.5rem;
+    }
+
+    .main2 {
+        width: 90%;
+        margin-left: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .couh1 {
+        font-size: 2rem;
+    }
+
+    .coup {
+        font-size: 1rem;
+    }
+
+    .mainicon {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #clock {
+        font-size: 1rem;
+    }
+
+    .icon {
+        margin-left: 0;
+    }
+
+    .iconp {
+        font-size: 1rem;
+    }
+
+    .pricep {
+        font-size: 1rem;
+    }
+
+    .rupee {
+        font-size: 0.6rem;
+    }
+
+    .checkbutton {
+        width: 100%;
+    }
+
+    /* comparison  */
+    .comh1 {
+        font-size: 2rem;
+    }
+
+    .comparimain {
+        flex-direction: column;
+        margin-left: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ishutech {
         width: 90%;
 
     }
-    #check{
-        font-size: 1rem;
-         margin-left: 0rem;
-    }
-    .comparip{
-         font-size: 1rem;
-    }
-     /* others */
-     .others{
-        width: 90%;
-     }
-     .spother{
-        padding-left: 0;
-     }
-     .other1{
-        margin-left: 0;
-     }
-     #wrong{
+
+    #check {
         font-size: 1rem;
         margin-left: 0rem;
-     }
-     .compari{
+    }
+
+    .comparip {
+        font-size: 1rem;
+    }
+
+    /* others */
+    .others {
+        width: 90%;
+    }
+
+    .spother {
         padding-left: 0;
-     }
-     /* Ready to Transform Your Career? */
-     .readyh1{
+    }
+
+    .other1 {
+        margin-left: 0;
+    }
+
+    #wrong {
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+
+    .compari {
+        padding-left: 0;
+    }
+
+    /* Ready to Transform Your Career? */
+    .readyh1 {
         font-size: 2rem;
-     }
-     .careermain{
+    }
+
+    .careermain {
         flex-direction: column;
-     }
-     .youget{
+    }
+
+    .youget {
         width: 100%;
-     }
-     .get{
+    }
+
+    .get {
         text-align: center;
-     }
-     .uget1{
+    }
+
+    .uget1 {
         margin-left: 0rem;
         justify-content: center;
-     }
-     .geth2{
+    }
+
+    .geth2 {
         font-size: 1.2rem;
-     }
-     .journey{
+    }
+
+    .journey {
         width: 100%;
-     }
-     input{
+    }
+
+    input {
         width: 85%;
         margin-left: 3rem;
-     }
-     #email{
-         width: 85%;
+    }
+
+    #email {
+        width: 85%;
         margin-left: 3rem;
-     }
-     textarea{
-          width: 85%;
+    }
+
+    textarea {
+        width: 85%;
         margin-left: 3rem;
-     }
-     .submitbutton{
-          width: 85%;
+    }
+
+    .submitbutton {
+        width: 85%;
         margin-left: 3rem;
-     }
-     /* footer */
-     footer{
+    }
+    /* certificate */
+   .certificate{
+    flex-direction: column;
+   }
+   .certificate1{
+    width: 100%;
+   }
+   .certificate2{
+    width: 100%;
+   }
+
+    /* footer */
+    footer {
         flex-direction: column;
         height: auto;
-     }
-    .footericon{
-          width:90%
+    }
+
+    .footericon {
+        width: 90%
+    }
+
+    .footerh3 {
+        font-size: 1.5rem;
 
     }
-    .footerh3{
-        font-size: 1.5rem;
-        
-    }
-    #footericon{
+
+    #footericon {
         margin-top: 1rem;
         margin-left: 6rem;
     }
-.aboutus{
-width: 100%;
-flex-direction: column;
-justify-content: center;
-align-items: center;
 
-}
-.abouth4{
-    font-size: 1.5rem;
-}
-.footerp{
-    font-size: 0.8rem;
-}
-.footeropa{
-     font-size: 0.8rem;
-}
-.footera1{
-     font-size: 0.8rem;
-}
+    .aboutus {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .abouth4 {
+        font-size: 1.5rem;
+    }
+
+    .footerp {
+        font-size: 0.8rem;
+    }
+
+    .footeropa {
+        font-size: 0.8rem;
+    }
+
+    .footera1 {
+        font-size: 0.8rem;
+    }
 
 }

@@ -1,0 +1,282 @@
+@media screen and (max-width:600px) {
+    header {
+        padding: 1rem;
+    }
+
+    .logoimg {
+        width: 70px;
+        margin-left: 0;
+    }
+
+    /* Hide nav by default */
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: none;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: end;
+        padding: 1rem 0;
+        gap: 20px;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+       margin-left: 25rem;
+        font-size: 2rem;
+    }
+    /* mainsection */
+    .poster{
+        width: 100%;
+    }
+    .posterh1{
+        font-size: 2.5rem;
+    }
+    .button{
+        margin-top: 2rem;
+    }
+    .shopbutton{
+        width: 40%;
+    }
+    /* mithila */
+    .mithila{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mithila1{
+        width:100%;
+    }
+    .mithila2 h1{
+        margin-top: 2rem;
+    }
+    .mithila2 {
+        width: 100%;
+    }
+    /* heart of mithila  */
+    .heart{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .heartimg1{
+        width: 100%;
+        height: 500px;   /* 100vh hata diya */
+    }
+
+    .overlayheart{
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .overlayp{
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .shopbutton1{
+        width: auto;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    /* featurecard  */
+    .featureh1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .featuremain{
+        flex-direction: column;
+        align-items: center;
+        height: auto;           /* 80vh remove */
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .feature1{
+        width: 100%;            /* full width */
+        height: auto;           /* 50vh remove */
+    }
+
+    .featurecard1img{
+        width: 100%;
+        height: auto;
+    }
+
+    .price{
+        text-align: center;
+    }
+
+    .price a{
+        font-size: 1rem;
+    }
+
+    .price p{
+        font-size: 1rem;
+    }
+    /* feature card 2nd  */
+    .card{
+        flex-direction: column;
+        align-items: center;
+        height: auto;          /* 80vh remove */
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .card .feature1{
+        width: 100%;           /* full width */
+        height: auto;          /* 50vh remove */
+    }
+
+    .card .featurecard1img{
+        width: 100%;
+        height: auto;
+    }
+    /* hand painted */
+    .handh1{
+        font-size: 2.6rem;
+        margin-top: 1.5rem;
+    }
+
+    .handmademain{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .handmade{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .handmadeimg{
+        height: 600px;   
+    }
+
+    .handmadea{
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .button2{
+        margin-top: 2rem;
+    }
+
+    .shopbutton2{
+        width: auto;     
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    /* let customers speak for us  */
+    .leth1{
+        font-size: 2.6rem;
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .star{
+        margin-top: 0.5rem;
+    }
+
+    #star{
+        font-size: 1.2rem;
+    }
+
+    .commentmain{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .comment1{
+        width: 100%;      /* full width */
+    }
+
+    .comment1 p{
+        font-size: 1rem;
+        margin-top: 0.8rem;
+    }
+
+    .p1{
+        font-size: 0.9rem;   /* readable */
+        line-height: 1.6;
+    }
+
+    .p11{
+        font-size: 0.95rem;
+    }
+
+    .smallimg img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    /* footer  */
+    {
+        flex-direction: column;
+        height: auto;              /* 80vh remove */
+        padding-bottom: 2rem;
+    }
+
+    .footer1,
+    .aboutus{
+        width: 100%;
+    }
+
+    .footerp{
+        font-size: 1.4rem;
+        margin-left: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .footerp1,
+    .footerp2{
+        font-size: 0.95rem;
+        margin-left: 1.5rem;
+    }
+
+    input{
+        width: 85%;               /* full width feel */
+        margin-left: 1.5rem;
+    }
+
+    #fb{
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    #fb1{
+        margin-left: 1rem;
+    }
+
+    .anchorfooter{
+        margin-top: 1.5rem;
+    }
+
+    .footera{
+        margin-left: 1.5rem;
+        font-size: 0.95rem;
+        line-height: 2;
+    }
+
+
+
+}
