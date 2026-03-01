@@ -320,8 +320,11 @@
      </footer> -->
 
 <script>
-  document.getElementById("menuBtn").addEventListener("click", function () {
-    document.querySelector(".navbar").classList.toggle("active");
+  const menuBtn = document.getElementById("menuBtn");
+  const navbar = document.querySelector(".navbar");
+
+  menuBtn.addEventListener("click", function() {
+    navbar.classList.toggle("active");
   });
 </script>
 
