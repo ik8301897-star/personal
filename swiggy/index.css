@@ -1,0 +1,541 @@
+@font-face {
+    font-family: new;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: man;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+
+@font-face {
+    font-family: gill;
+    src: url(./Gilroy-Bold.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 120vh;
+    background-color: #FF5200;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    padding-left: 8rem;
+    padding-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav img {
+    width: 22%;
+}
+
+.navbar {
+    /* background-color: #0f3c91; */
+    margin-left: 3rem;
+    width: 60%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: new;
+    font-weight: 800;
+    margin-left: 2rem;
+}
+
+#menu {
+    display: none;
+}
+
+button {
+    margin-left: 2rem;
+    padding: 12px 26px;
+    border-radius: 6px;
+    border: none;
+    color: rgb(247, 245, 245);
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: rgb(7, 7, 7);
+}
+
+#get {
+    border: 2px solid white;
+    padding: 10px 10px ;
+}
+
+
+
+.header1 {
+    width: 100%;
+    display: flex;
+
+
+}
+
+.leftside {
+    width: 20%;
+}
+
+.leftsideimg {
+    width: 100%;
+}
+
+.heading {
+    width: 60%;
+
+}
+
+.heading h1 {
+    font-size: 3.4rem;
+    color: white;
+    font-family: man;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+.rightside {
+    width: 20%;
+}
+
+.rightsideimg {
+    width: 100%;
+    margin-right: 0;
+}
+
+.heading input {
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    width: 39%;
+    font-weight: 700;
+    color: rgb(15, 15, 15);
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.heading input :active {
+    border: none;
+}
+
+#input2 {
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    width: 54%;
+    font-weight: 700;
+    color: rgb(15, 15, 15);
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.heading img {
+    width: 33%;
+    /* min-height: 30%; */
+    margin-top: 2rem;
+}
+
+/* Order our best food options */
+.ourbestfood {
+    width: 100%;
+
+}
+
+.ourbestfood h2 {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    font-family: new;
+    font-size: 2rem;
+}
+
+.foodrow1 {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+
+.foodrow1 a {
+    width: 15%;
+}
+
+.foodrow2 {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+
+.foodrow2 img {
+    width: 15%;
+}
+
+.foodrow1 a,
+.foodrow2 a {
+    width: 15%;
+    display: block;
+}
+
+.foodrow1 a img,
+.foodrow2 a img {
+    width: 100%;
+    display: block;
+}
+
+/* Shop groceries on Instamart */
+.shop {
+    width: 100%;
+
+}
+
+.shoprow1 a {
+    text-decoration: none;
+}
+
+.shop h2 {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    font-family: new;
+    font-size: 2rem;
+}
+
+.shoprow1 {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+
+.shopimg1 {
+    width: 15%;
+}
+
+.vegeimg {
+    width: 100%;
+}
+
+.shopimg1 h3 {
+    font-size: 1.2rem;
+    color: rgb(67, 68, 68);
+    text-align: center;
+    font-family: new;
+}
+
+/* Discover best restaurants on Dineout */
+.dineout {
+    width: 100%;
+
+}
+
+.dineout1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    /* gap: 20px; */
+
+}
+
+.dineoutfirst-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.dineoutfirst {
+    width: 28%;
+
+}
+
+.dinerow1 {
+    width: 100%;
+    position: relative;
+}
+
+.dinerow1 img {
+    width: 100%;
+    border-radius: 10px 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.girf {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff4d4d;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.girf a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(252, 248, 248);
+    font-size: 1.3rem;
+}
+
+.img-text a {
+    text-decoration: none;
+    /* underline remove */
+    color: inherit;
+}
+
+.rating {
+    background: #16a34a;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* content  */
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.content2 {
+    background-color: #1BA672;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-top: 0.3rem;
+}
+
+.offer {
+    width: 7%;
+}
+
+.offerh5 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: white;
+    padding-left: 1rem;
+
+}
+
+.offerh5 a {
+    text-decoration: none;
+    /* underline remove */
+    color: inherit;
+}
+
+.offerh51 {
+    padding-left: 4rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: white;
+}
+
+.content3 {
+    background-color: #C8F9E5;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 6px 6px;
+    margin-top: 0.5rem;
+
+    border-radius: 10px;
+}
+
+.conh4 {
+    font-size: 1.2rem;
+    color: #1FA875;
+}
+
+/* app banner */
+.banner {
+    width: 100%;
+}
+
+.bannerimg {
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.allcities {
+    width: 90%;
+    margin-left: 4.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 20px;
+
+}
+
+.city1 {
+    width: 20%;
+    border: 1px solid rgb(156, 151, 151);
+    border-radius: 10px 10px;
+    line-height: 1.2;
+
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.city1:hover {
+    background-color: #FF5200;
+    color: black;
+}
+
+.citya {
+    text-decoration: none;
+    text-align: center;
+    color: #414449;
+    font-weight: 800;
+}
+
+.citya:hover {
+    color: black;
+}
+
+/* about section  */
+footer {
+    width: 100%;
+
+    margin-top: 5rem;
+
+}
+
+.footerdiv {
+    width: 80%;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: new;
+
+}
+
+.img {
+    margin-top: 3rem;
+}
+
+.company {
+    width: 15%;
+    margin-top: 3rem;
+    text-align: center;
+
+
+}
+
+.company a {
+    text-decoration: none;
+    line-height: 2;
+    color: #414449;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.contactus {
+    width: 15%;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.contactus a {
+    text-decoration: none;
+    line-height: 2;
+    color: #414449;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.legal {
+    margin-top: 5rem;
+}
+
+.availablein {
+    width: 15%;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.availablein a {
+    text-decoration: none;
+    line-height: 2;
+    color: #414449;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.lifeatswiggy {
+    width: 20%;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.lifeatswiggy a {
+    text-decoration: none;
+    line-height: 2;
+    color: #414449;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.footerdiv p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.social {
+    margin-top: 4rem;
+}
+
+/* footer1  */
+.div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div h1 {
+    font-family: new;
+    color: #414449;
+    font-size: 1.7rem;
+}
+
+.div img {
+    margin-left: 1rem;
+}

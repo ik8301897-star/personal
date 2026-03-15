@@ -1,0 +1,228 @@
+ /* =========================
+   RESPONSIVE NAVBAR
+========================= */
+
+@media (max-width:600px) {
+    header{
+        height: auto;
+    }
+
+    nav {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    header nav img {
+        width: 45%;
+    }
+
+    /* menu icon show */
+    #menu {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* navbar mobile style */
+    .navbar {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: #FF5200;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+
+        /* hidden by default */
+        display: none;
+    }
+
+    .navbar a {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    /* active class (JS add karega) */
+    .navbar.active {
+        display: flex;
+    }
+
+    .leftside{
+        margin-top: 2rem;
+    }
+    .rightside{
+        margin-top: 2rem
+        ;
+    }
+    .heading h1{
+        font-size: 1.7rem;
+        margin-left: 0rem;
+        margin-top: 5rem;
+
+    }
+    .heading input{
+        width: 100%;
+        padding: 15px 15px;
+    }
+    #input2{
+        width: 100%;
+        padding: 15px 15px;
+        margin-top: 1rem;
+    }
+    .heading{
+        width: 100%;
+    }
+    .heading img{
+        width: 32%;
+    }
+
+    /* Order our best food options */
+    .ourbestfood h2{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+    .foodrow1{
+        width: 100%;
+        margin-left: 1rem;
+    }
+    .foodrow2{
+          width: 100%;
+        margin-left: 1rem;
+    }
+
+    /* Shop groceries on Instamart */
+    .shop h2{
+         margin-top: 1rem;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+    .shoprow1{
+        width: 100%;
+        margin-left: 1rem;
+    }
+    .shopimg1 h3{
+        font-size: 0.7rem;
+    }
+
+    /* Discover best restaurants on Dineout */
+    .dineout1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dineoutfirst{
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    /* app banner  */
+
+    .bannerimg{
+        margin-top: 2rem;
+    }
+
+    /* Cities with food delivery */
+    .allcities{
+        width: 100%;
+        margin-left: 1rem;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    .citya{
+        font-size: 0.8rem;
+    }
+
+    /* aboutsection  */
+
+   footer{
+        margin-top:3rem;
+    }
+
+    .footerdiv{
+        width:100%;
+        margin-left:0;
+        padding:0 20px;
+
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    /* logo */
+    .img{
+        margin-top:2rem;
+    }
+
+    .img img{
+        width:140px;
+    }
+
+    /* all sections full width */
+    .company,
+    .contactus,
+    .availablein,
+    .lifeatswiggy{
+        width:100%;
+        margin-top:2rem;
+    }
+
+    /* headings */
+    .footerdiv p{
+        font-size:1.1rem;
+        margin-bottom:10px;
+    }
+
+    /* links spacing */
+    .company a,
+    .contactus a,
+    .availablein a,
+    .lifeatswiggy a{
+        font-size:1rem;
+        line-height:1.2;
+        display:inline-block;
+    }
+
+    /* legal section spacing fix */
+    .legal{
+        margin-top:2rem;
+    }
+
+    /* social icons */
+    .social{
+        margin-top:2rem;
+    }
+
+    .social i{
+        font-size:22px;
+        margin:0 8px;
+    }
+
+    /* footer1 */
+    .div{
+        width: 100%;
+        margin-top: 1rem
+        ;
+       
+    }
+    .div h1{
+        font-size: 1rem;
+    }
+    .div img{
+        width: 30%;
+        margin-left: 0.5rem;
+    }
+
+
+
+
+
+
+
+
+
+    
+}

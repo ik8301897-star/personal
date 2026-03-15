@@ -1,0 +1,216 @@
+
+@font-face {
+    font-family: new;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: man;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color:#131921;
+    display: flex;
+
+}
+.logo{
+    width: 10%;
+    background-color: black;
+}
+.logo img {
+    width: 100%;
+}
+#iconlocation{
+    color: white;
+  align-items: center;
+  display: flex;
+  margin-left: 1.1rem;
+  
+}
+.location{
+    width: 15%;
+    color: white;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 0.5rem
+    /* background-color: brown; */
+}
+.location p {
+    opacity: 0.7;
+}
+.location h5 {
+    color: white;
+    font-size: 1rem;
+}
+.input{
+    width: 45%;
+    display: flex;
+    
+
+}
+.input input {
+    width: 100%;
+    height: 70%;
+    border-radius: 6px;
+    border: none;
+    margin-top: 0.8rem;
+}
+.input input:hover{
+    border: 2px solid rgb(94, 5, 238);
+}
+
+input::placeholder{
+    font-size: 1rem;
+    opacity: 0.7;
+    font-weight: 500;
+}
+#Search{
+    color: rgb(245, 243, 243);
+    font-size: 1.3rem;
+  padding-top: 8px;
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+      height: 70%;
+      border-radius: 3px;
+    
+}
+.input span{
+   margin-left: 1rem;
+     margin-top: 0.6rem;
+}
+.input h5{
+    color: white;
+    font-size: 1rem;
+     margin-top: 1.6rem;
+     margin-left: 0.5rem;
+}
+.signin{
+    margin-left: 1rem;
+}
+.signin p{
+    color: white;
+     margin-top: 1rem;
+     margin-left: 0.9rem;
+}
+.signin h5 {
+    color: white;
+    font-size: 1rem;
+     margin-left: 0.9rem;
+}
+.return{
+    margin-left: 1rem;
+}
+.return p {
+    color: white;
+     font-size: 1rem;
+     margin-left: 0.9rem;
+     margin-top: 1rem;
+}
+.cart{
+    display: flex;
+}
+.cart i{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.cart h5{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+/* navbar  */
+nav{
+    width: 100%;
+    background-color:#232F3E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav i{
+    font-size: 1.2rem;
+    color: white;
+    /* margin-left: 1rem; */
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: new;
+    font-size: 0.8rem;
+    padding: 8px 8px;
+
+}
+.main{
+    width: 100%;
+    position: relative;
+    
+}
+.main img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    display: flex;
+   margin-left: 1rem;
+   align-items: center;
+   margin-top: 10rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+}
+.inner1{
+    width: 23%;
+    background-color: white;
+    /* display: flex; */
+}
+.inner1 h3{
+    font-family: new;
+    text-align: center;
+    margin-top: 1rem;
+}
+.bedsheet{
+    display: flex;
+    width: 100%;
+ 
+}
+.bedsheet1{
+    width: 50%;
+}
+.bedsheet img{
+    width: 80%;
+    height: 18vh;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.inner1{
+    height: 62vh;
+}
+.bedsheet p{
+    font-size: 0.8rem;
+    font-family: man;
+     margin-left: 1rem;
+     line-height: 1.5;
+        cursor: pointer;
+}
+.Explorep{
+    color: blue;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    /* padding-bottom: 1.5rem; */
+    cursor: pointer;
+}
