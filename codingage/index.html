@@ -15,7 +15,7 @@
 
     <!-- LOGO -->
     <div class="logo">
-        <h4>Ishutech</h4>
+        <h4>Coding Age Lite</h4>
     </div>
 
     <!-- MENU ICON -->
@@ -27,12 +27,8 @@
     <nav id="navMenu">
         <a href="./index.html" class="navbar">Home</a>
         <a href="./course.html" class="navbar">Courses</a>
-        <a href="#" class="navbar">Kids</a>
-        <a href="#" class="navbar">Olympiad</a>
-        <a href="#" class="navbar">Create CV</a>
-        <a href="#" class="navbar">Blogs</a>
         <a href="./hirefromus.html" class="navbar">Hire for us</a>
-        <a href="#" class="navbar">More</a>
+        <a href="./learningpath.html" class="navbar">Learning Path</a>
 
         <!-- MOBILE LOGIN BUTTON -->
         <button class="mobile-btn">
@@ -769,6 +765,34 @@ menuIcon.addEventListener("click", () => {
         icon.classList.replace("fa-xmark","fa-bars");
     }
 });
+
+
+
+
+window.onload = function () {
+
+   
+    let savedName = localStorage.getItem("username");
+
+  
+    if (!savedName) {
+
+        let username = prompt("Welcome! Please enter your name:");
+
+        if (username !== null && username.trim() !== "") {
+
+         
+            localStorage.setItem("username", username);
+
+            alert(` Hello ${username}! 
+
+Welcome to our website 
+Please explore the full website and check all sections carefully.
+Enjoy your visit!`);
+
+        }
+    }
+};
 </script>
 
 
