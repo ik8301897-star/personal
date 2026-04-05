@@ -1,13 +1,10 @@
-/* ========== Mobile View ========== */
-@media (max-width:600px) {
-
-  .logo{
-    width: 35%;
-  }
-
-  .navbar{
-    display: none;
-    position: absolute;
+@media screen and (max-width:600px) {
+     .logo{
+        width: 35%;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
@@ -15,38 +12,147 @@
     flex-direction: column;
     padding: 10px 0;
     z-index: 999;
-  }
-
-  .navbar.active{
+    }
+    .navbar.active{
     display: flex;
   }
-
   .anchor{
     padding: 15px 20px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
   }
-
   .button,
   .button1{
     display: none;
   }
-
-  .mobile{
-    display: flex;
+    .mobile{
+       display: flex;
     gap: 25px;
     margin-left: auto;
     align-items: center;
     margin-right: 1rem;
   }
-
   .icon{
     font-size: 1.4rem;
     color: red;
-    cursor: pointer;
+  }
+  .icon:hover{
+      color:  rgb(250, 244, 248);
+    transform: translateY(-2px);
   }
 
-  .icon:hover{
-    color: white;
-    transform: translateY(-2px);
+  /* aboutmainsection */
+  @media (max-width:600px){
+
+/* ---------- ABOUT SECTION ---------- */
+
+.about{
+    min-height: auto;
+    background-image: url(./aboutmain.jpeg);
+    background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.aboutimg{
+    height: auto;
+    display: none;
+}
+
+.overlayabout{
+    position: relative;   /* absolute hata diya mobile me */
+    padding: 2rem 1rem;
+}
+
+.abh1{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.abh3{
+    font-size: 1.2rem;
+}
+
+.abp{
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* bottom boxes column me */
+.bottom{
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom1,
+.bottom2{
+    width: 100%;
+    text-align: center;
+}
+
+/* icons center */
+#freeicons,
+#wrong{
+    padding-left: 0;
+}
+
+/* button responsive */
+.abbutton{
+    width: 70%;
+    font-size: 0.9rem;
+}
+
+
+/* ---------- OUR PHILOSOPHY SECTION ---------- */
+
+.our{
+    min-height: auto;
+}
+
+.overlayour{
+    position: relative;  /* overlap fix */
+    padding: 2rem 1rem;
+}
+
+.ourh1{
+    font-size: 1.8rem;
+}
+
+/* image + content stack */
+.full{
+    flex-direction: column;
+    align-items: center;
+}
+
+.full1{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.imgfull{
+    width: 90%;
+    height: auto;
+}
+
+/* text cards */
+.full2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ul1{
+    width: 95%;
+    margin-top: 1.5rem;
+}
+
+.fullh2{
+    font-size: 1.4rem;
+}
+
+.fullp{
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
   }
 }

@@ -100,12 +100,13 @@
         font-size: 1.2rem;
         margin-left: 1rem;
     }
+    
     .shoprow1{
         width: 100%;
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
     .shopimg1 h3{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     /* Discover best restaurants on Dineout */
@@ -128,12 +129,18 @@
     /* Cities with food delivery */
     .allcities{
         width: 100%;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
         align-items: center;
         /* justify-content: space-between; */
+       
+    }
+    .city1{
+        padding: 0px 10px;
+        width: 22%;
+        text-align: center;
     }
     .citya{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     /* aboutsection  */

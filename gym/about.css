@@ -9,6 +9,7 @@
     width: 100%;
     background-color: black;
     display: flex;
+    
 }
 .logo{
     width: 20%;
@@ -71,6 +72,16 @@
 .button1:hover{
     background-color: rgb(243, 14, 167);
     transform: translateY(-6px);
+}
+.mobile{
+    display: none;
+    
+     
+}
+.icon{
+  font-size: 1.3rem;
+  color: red;
+  cursor: pointer;
 }
 /* aboutmainsection */
  .about{

@@ -1,0 +1,233 @@
+@media(max-width:600px){
+
+    .menu-icon{
+        display:block;
+        background-color: black;
+    }
+
+    .button{
+        display:none;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background:black;
+        flex-direction:column;
+        justify-content:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
+
+    nav.active{
+        right:0;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .navbar{
+        font-size:22px;
+    }
+
+    /* mainsection */
+    .batch{
+        margin-left: 2rem;
+    }
+    .Master{
+        margin-left: 2rem;
+        width: 100%;
+        margin-top: 2rem;
+       
+    }
+    .Master h1{
+        font-size: 2.8rem;
+    }
+    .Master P{
+        font-size: 1rem;
+    }
+    .mainbutton{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+    .coures{
+        width: 90%;
+        margin-top: 0.7rem;
+        margin-left: 0;
+    }
+    /* our job ready courses */
+    .course h1{
+        font-size: 1.8rem;
+    }
+    .course p{
+        font-size: 0.9rem;
+    }
+    .maincourse{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .dineoutfirst{
+        width: 90%;
+        margin-top: 1rem;
+    }
+    .img-text{
+        right: 0px;
+        left: 350px;
+    }
+    /* why choose coding age  */
+    .choose{
+        margin-top: 5rem;
+    }
+    .choose h1{
+        font-size: 1.8rem;
+    }
+    .choosep{
+        font-size: 0.9rem;
+    }
+    .divmain{
+         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .world{
+        width: 70%;
+        margin-top: 2rem;
+         border: 1px solid rgb(17, 17, 17);
+    }
+    /* Join Our Free Webinars  */
+    .webinars h1{
+        font-size: 1.8rem;
+    }
+    .webp{
+        font-size: 0.9rem;
+    }
+  .img-text1{
+    right: 0px;
+    left: 350px;
+  }
+   /* Don't Miss Our Upcoming Webinars */
+   .upcoming h1{
+    font-size: 1.8rem;
+   }
+   .upcoming p{
+    font-size: 0.9rem;
+   }
+   .img-text2{
+      right: 0px;
+    left: 320px;
+   }
+   /* Interactive Coding Sessions */
+   .session h1{
+    font-size: 1.8rem;
+   }
+   .sessionp{
+    font-size: 0.9rem;
+   }
+   .sessionmain{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .sessionyou{
+    width: 90%;
+    margin-top: 2rem;
+   }
+    /* Want to Join Our Next Live Session? */
+    .democlass{
+        width: 80%
+        ;
+    }
+    /* Student Success Stories */
+    .success h1{
+        font-size: 1.8rem;
+    }
+    .successp1{
+        font-size: 0.9rem;
+    }
+    .card{
+        width: 320px;
+    }
+    /* Industry-Relevant Projects */
+    .industry h1{
+        font-size: 1.8rem;
+    }
+    .projectp{
+        font-size: 0.9rem;
+    }
+    .projectmain{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projectfirst{
+        width: 90%;
+        margin-top: 2.5rem;
+    }
+
+    .counselling{
+        width: 90%;
+        margin-left: 1rem;
+        flex-wrap: nowrap;
+       padding: 10px;
+    }
+    .left h1{
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        
+    }
+    .input-area input{
+        width: 300px;
+    }
+ /* footer  */
+ footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    /* FULL WIDTH SECTIONS */
+    .footer1,
+    .footer2,
+    .footer3{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* ADDRESS TEXT FIX */
+    .footer1 h4{
+        margin-left: 0;
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* HEADINGS */
+    .footer2 h4,
+    .footer3 h4{
+        font-size: 18px;
+    }
+
+    /* LINKS */
+    .footer2 p,
+    .footer3 p{
+        margin-top: 12px;
+        font-size: 15px;
+    }
+
+    /* ICON ALIGNMENT */
+    #footericon{
+        margin-right: 8px;
+    }
+}

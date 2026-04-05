@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(./IosevkaCharonMono-Bold.ttf);
+}
+@font-face {
+    font-family: new;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: open;
+    src: url(./Open_Sans/static/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: sans;
+    src: url(./Open_Sans/static/OpenSans-Light.ttf);
+}
+
+header{
+    width:100%;
+    background:black;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 30px;
+}
+
+.logo h4{
+    color:#E8602E;
+    font-size:28px;
+}
+nav{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.navbar{
+    color:white;
+    text-decoration:none;
+    position:relative;
+}
+
+.navbar:hover{
+    color:#E8602E;
+}
+
+.button button,
+.mobile-btn{
+    background:#da3e06;
+    border:none;
+    padding:12px 20px;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+.menu-icon{
+    display:none;
+    color:rgb(228, 5, 5);
+    font-size:24px;
+    cursor:pointer;
+    z-index:1001;
+    background-color: #da3e06;
+}
+.mobile-btn{
+    display:none;
+}
+#righticon{
+    background-color: #da3e06;
+    color: white;
+}
+/* mainsection */
+.powering{
+    width: 100%;
+    margin-top: 2rem;
+
+}
+.powering h1{
+    text-align: center;
+    font-family: sans;
+    font-size: 1.5rem;
+}
+.talentmain{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+}
+.talentfirst{
+    width: 50%;
+}
+.firsth1{
+    font-size: 3rem;
+   margin-left: 3rem;
+    font-family: open;
+}
+.span1{
+    color: #da3e06;
+}
+.firsth2{
+    font-size: 2rem;
+    margin-left: 3rem;
+    font-family: open;
+}
+.firstp{
+    font-size: 1.2rem;
+    font-family: sans;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    color: #686565;
+}
+.firstbutton{
+    padding: 15px 15px;
+    width: 50%;
+    background-color: #da3e06;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    transition: all ease 0.3s;
+}
+.firstbutton:hover{
+    transform: scale(1.1);
+}
+.calcu{
+    display: flex;
+  
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    align-items: center;
+}
+.calcuh4{
+    font-size: 1.9rem;
+    color: #da3e06;
+}
+.calcup{
+    font-size: 1rem;
+    color: #686565;
+}
+.rate{
+     border: 1px solid rgb(20, 20, 20);
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.rate:hover{
+    border: 1px solid white;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.rightimg{
+    width: 50%;
+}
+.hireimg{
+    width: 90%;
+}
+
+/* Why Choose Coding Age? */
+.why{
+    margin-top: 5rem;
+    width: 100%;
+}
+.why h2{
+    font-size: 2rem;
+    font-family: open;
+    margin-left: 3rem;
+}
+.whymain{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.whyfirst{
+    width: 30%;
+    border: 1px solid rgb(56, 55, 55);
+    border-top: 3px solid orangered;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+}
+.whyfirst:hover{
+    transform: translateY(-0.3rem);
+}
+#clock{
+    font-size: 1.9rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: #da3e06;
+
+}
+.whyfirst h4{
+    font-size: 1.3rem;
+     margin-left: 2rem;
+    margin-top: 1rem; 
+}
+.whyfirst p{
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color: #686565;
+    padding-bottom: 1rem;
+}
+/* Available High-Demand Tech Positions */
+.demand{
+    width: 100%;
+    margin-top: 5rem;
+}
+.demand h2{
+    font-size: 2rem;
+    font-family: open;
+    margin-left: 3rem;
+}
+.h2span{
+    color: #da3e06;
+}
+.demand p{
+    font-size: 1rem;
+    font-family: sans;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    color: #797777;
+}
+.demandmain{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-left: 1.5rem;
+}
+.demandfirst{
+    width: 45%;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 10px;
+     margin-left: 2rem;
+}
+#fullicon{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+     color: #da3e06;
+}
+.headingpan{
+    color: #da3e06;
+    font-size: 1.3rem;
+    font-family: new;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.demandfirst p{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    color: #797777;
+    line-height: 1.5;
+}
+
+.market{
+    margin-top:15px;
+}
+
+.label{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    margin-bottom:6px;
+    margin-left: 2rem;
+}
+.label span{
+    color: #f55f08;
+    font-weight: 800;
+}
+
+.progress{
+    width:90%;
+    height:8px;
+    background:#dcdcdc;
+    border-radius:10px;
+    overflow:hidden;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.progress-fill{
+    height:100%;
+    background:#da3e06;
+    border-radius:10px;
+}
+.per{
+    margin-right: 0.9rem;
+}
+
+/* Industry-Ready Professionals */
+.industry{
+    width: 100%;
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+.industry h2{
+    font-size: 2rem;
+      font-family: open;
+    
+}
+.industry span{
+    color: #da3e06;
+}
+.industrymain{
+    width: 80%;
+    border: 1px solid rgb(80, 78, 78);
+    margin-top: 3rem;
+    margin-left: 5rem;
+    border-radius: 10px;
+ background-color:#191fda;
+   
+}
+.inp{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    line-height: 1.6;
+     background-color:#191fda;
+}
+
+.calcu1{
+    display: flex;
+  
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    align-items: center;
+  background-color:#191fda;
+  margin-bottom: 2rem;
+}
+.calcuh5{
+    font-size: 1.9rem;
+    color: #ebe7e5;
+  background-color:#191fda;
+}
+.calcup1{
+    font-size: 1rem;
+    color: #bebaba;
+  background-color:#191fda;
+}
+.rate1{
+     /* border: 1px solid rgb(20, 20, 20); */
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color:#191fda;
+}
+.rate1:hover{
+    border: 1px solid white;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+ /* Technical Skills */
+ .technical{
+    width: 100%;
+    margin-top: 5rem;
+ }
+ .technical h2{
+    font-size: 2rem;
+    font-family: open;
+    margin-left: 3rem;
+ }
+ .technical span{
+    color: #f55f08;
+ }
+ .technicalmain{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+
+ }
+ .technicalfirst{
+    width: 40%;
+    border: 1px solid rgb(49, 47, 47);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+ }
+ .technicalfirst:hover{
+    border: 1px solid white;
+    transform: translateY(-0.3rem);
+ }
+ #terminal{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+      color: rgb(7, 212, 7);
+ }
+ .lan{
+    color: rgb(7, 212, 7);
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    font-family: new;
+ }
+ #circle{
+font-size: 0.55rem;
+color: rgb(12, 124, 17);
+ margin-top: 2rem;
+    margin-left: 2rem;
+ }
+ .circlespan{
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+ }
+
+ /* footer  */
+
+ footer{
+    width: 100%;
+    margin-top: 4rem;
+    border: 1px solid white;
+    display: flex;
+   
+   
+}
+.footer1{
+    width: 40%;
+    
+   
+    font-family: new;
+}
+.footer1 h4{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #f04806;
+}
+#footericon{
+    color: white;
+    background-color: #000000;
+    margin-right: 1rem;
+}
+.footer2{
+    width: 10%;
+
+    margin-left: 5rem;
+}
+.footer2 h4{
+     margin-top: 2rem;
+    font-family: new;
+    text-align: center;
+}
+.footer2 h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer2 p{
+      margin-top: 2rem;
+    font-family: new;
+    text-align: center;
+      color: #f04806;
+}
+.footer2 p:hover{
+     text-decoration: underline;
+    cursor: pointer;
+}
+.footer3{
+    width: 20%;
+    margin-left: 5rem;
+}
+.footer3 h4{
+      margin-top: 2rem;
+    font-family: new;
+    text-align: center;
+}
+.footer3 h4:hover{
+      text-decoration: underline;
+    cursor: pointer;
+}
+.footer3 p{
+     margin-top: 2rem;
+    font-family: new;
+    text-align: center;
+      color: #f04806;
+}
+.footer3 p:hover{
+     text-decoration: underline;
+    cursor: pointer;
+}

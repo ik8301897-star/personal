@@ -1,0 +1,145 @@
+@media (max-width:600px){
+      .menu-icon{
+        display:block;
+        background-color: black;
+    }
+
+    .button{
+        display:none;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background:black;
+        flex-direction:column;
+        justify-content:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
+
+    nav.active{
+        right:0;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .navbar{
+        font-size:22px;
+    }
+    /* mainsection  */
+   .talentmain{
+    flex-direction: column;
+   }
+   .talentfirst{
+    width: 100%;
+   }
+   .firstbutton{
+    width: 90%;
+    margin-left: 1rem;
+   }
+   .rightimg{
+    width: 90%;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+   }
+   .hireimg{
+    width: 100%;
+}
+ /* Why Choose Coding Age */
+ .why{
+    margin-top: 3rem;
+ }
+ .why h2{
+    margin-left: 1.5rem;
+ }
+ .whymain{
+    flex-direction: column;
+ }
+ .whyfirst{
+    width: 90%;
+    margin-top: 1.7rem;
+ }
+ /* Available High-Demand Tech Positions */
+ .demand{
+    margin-top: 3rem;
+ }
+ .demandmain{
+    flex-direction: column;
+ }
+ .demandfirst{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 1.7rem;
+ }
+  /* Industry-Ready Professionals */
+  .industry{
+    margin-top: 3rem;
+  }
+  .industrymain{
+    width: 95%;
+    margin-left: 0.7rem;
+    margin-top: 1.5rem;
+  }
+  /* Technical Skills */
+  .technical{
+    margin-top: 3rem;
+  }
+  .technicalmain{
+    flex-direction: column;
+  }
+  .technicalfirst{
+    width: 90%;
+    margin-left: 1.5rem;
+    margin-top: 1.7rem;
+  }
+/* footer  */
+ footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    /* FULL WIDTH SECTIONS */
+    .footer1,
+    .footer2,
+    .footer3{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* ADDRESS TEXT FIX */
+    .footer1 h4{
+        margin-left: 0;
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* HEADINGS */
+    .footer2 h4,
+    .footer3 h4{
+        font-size: 18px;
+    }
+
+    /* LINKS */
+    .footer2 p,
+    .footer3 p{
+        margin-top: 12px;
+        font-size: 15px;
+    }
+
+    /* ICON ALIGNMENT */
+    #footericon{
+        margin-right: 8px;
+    }
+}
+
