@@ -1,158 +1,290 @@
 @media screen and (max-width:600px) {
-     .logo{
-        width: 35%;
+     .menu-icon{
+        display:block;
+        background-color: black;
     }
+
+    .button{
+        display:none;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background:black;
+        flex-direction:column;
+        justify-content:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
+
+    nav.active{
+        right:0;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
     .navbar{
-        display: none;
-        position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    flex-direction: column;
-    padding: 10px 0;
-    z-index: 999;
+        font-size:22px;
     }
-    .navbar.active{
-    display: flex;
-  }
-  .anchor{
-    padding: 15px 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-  }
-  .button,
-  .button1{
-    display: none;
-  }
-    .mobile{
-       display: flex;
-    gap: 25px;
-    margin-left: auto;
-    align-items: center;
-    margin-right: 1rem;
-  }
-  .icon{
-    font-size: 1.4rem;
-    color: red;
-  }
-  .icon:hover{
-      color:  rgb(250, 244, 248);
-    transform: translateY(-2px);
-  }
 
-  /* aboutmainsection */
-  @media (max-width:600px){
+    /* mainsection  */
+    .aboutimg{
+        display: none;
 
-/* ---------- ABOUT SECTION ---------- */
+    }
+    .about{
+        background-image:url(./aboutmain.jpeg) ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 120vh;
 
-.about{
+    }
+    .abh1{
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+    .abh3{
+        font-size: 1.5rem;
+    }
+    .abp br{
+        display: none;
+    }
+    .abp{
+        font-size: 0.9rem;
+    }
+    .bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ab2h3{
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+    .bottom1{
+        width: 100%;
+    }
+    /* .bottom1 br{
+        display: none;
+    } */
+    #freeicons{
+        padding-left: 5rem;
+        font-size: 1rem;
+    }
+    .basicfree{
+        font-size: 0.9rem;
+    }
+    .ab3h3{
+        font-size: 1.3rem;
+    }
+    #wrong{
+          padding-left: 0rem;
+        font-size: 1rem;
+    }
+    .bottomh2{
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+    .bop{
+        font-size: 0.9rem;
+        padding-top: 0.5rem;
+    }
+    .abbutton{
+        width: 90%;
+    }
+    /* Our Training Philosophy section */
+    .ourimg{
+        display: none;
+    }
+    .our{
+        background-image:url(./our1.jpg);
+          background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 250vh;
+    }
+    .ourh1{
+        font-size: 2rem;
+         padding-top: 1rem;
+    }
+    .full{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .full1{
+        width: 90%;
+    }
+    .imgfull{
+        width: 90%;
+        height: 20%;
+    }
+    .full2{
+        width: 100%;
+    }
+    .ul1{
+        width: 90%;
+        margin-left: 1.5rem;
+    }
+    .fullh2{
+        font-size: 1.5rem;
+    }
+    .fullp{
+        font-size: 0.9rem;
+    }
+    /* The People Behind Your Transformation */
+    /* .peopleimg{
+        display: none;
+    }
+    .thepeople{
+        min-height: 150vh;
+        
+
+    } */
+
+     .thepeople{
     min-height: auto;
-    background-image: url(./aboutmain.jpeg);
-    background-repeat: no-repeat;
- background-size: cover;
-}
-
-.aboutimg{
-    height: auto;
+    padding-bottom: 3rem;
+     background-image:url(./people1.jpg);
+          background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+  }
+  .peopleimg{
     display: none;
-}
+  }
 
-.overlayabout{
-    position: relative;   /* absolute hata diya mobile me */
-    padding: 2rem 1rem;
-}
+  .people{
+    height: auto;
+  }
 
-.abh1{
+  .overlaypeople{
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  /* heading size mobile */
+  .theh1{
     font-size: 2rem;
-    padding-top: 1rem;
-}
+    padding: 1rem;
+  }
 
-.abh3{
-    font-size: 1.2rem;
-}
+  .peoplep{
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 
-.abp{
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-/* bottom boxes column me */
-.bottom{
+  /* cards column me aa jayenge */
+  .peoplemain{
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.bottom1,
-.bottom2{
-    width: 100%;
-    text-align: center;
-}
-
-/* icons center */
-#freeicons,
-#wrong{
-    padding-left: 0;
-}
-
-/* button responsive */
-.abbutton{
+  .people1{
     width: 70%;
-    font-size: 0.9rem;
-}
+    margin-left: 0;
+    height: 50%;
+  }
 
+  .gymtrainer{
+    height: 10%;
+  }
 
-/* ---------- OUR PHILOSOPHY SECTION ---------- */
+  /* BIG FIX — overflow remove */
+  .peopleh4{
+    padding-top: 1rem;   /* 25rem hata diya */
+    font-size: 1.5rem;
+  }
 
-.our{
-    min-height: auto;
-}
+  .overlayp1{
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    padding: 1rem;
+  }
 
-.overlayour{
-    position: relative;  /* overlap fix */
-    padding: 2rem 1rem;
-}
-
-.ourh1{
-    font-size: 1.8rem;
-}
-
-/* image + content stack */
-.full{
-    flex-direction: column;
-    align-items: center;
-}
-
-.full1{
-    width: 100%;
-    margin: 0;
-    text-align: center;
-}
-
-.imgfull{
-    width: 90%;
-    height: auto;
-}
-
-/* text cards */
-.full2{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ul1{
-    width: 95%;
-    margin-top: 1.5rem;
-}
-
-.fullh2{
-    font-size: 1.4rem;
-}
-
-.fullp{
+  .pp{
     font-size: 0.95rem;
-    line-height: 1.6;
-}
+  }
+
+  .pp1{
+    font-size: 1rem;
+  }
+  /* WHY PEOPLE TRUST */
+ .trust{
+    min-height: auto;
+    background-image: url(./how2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .trust1{
+    height: auto;
+  }
+  .trustimg{
+    display: none;
+  }
+
+  .overlaytrust{
+    position: relative;
+    padding: 2rem 1rem;
+  }
+
+  /* heading */
+  .trusth1{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  .trustp{
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* cards layout change */
+  .trus{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trus1{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  /* icon center fix */
+  #tricons{
+    font-size: 3rem;
+    padding-left: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .th1{
+    font-size: 2.2rem;
+  }
+
+  .tp{
+    font-size: 1rem;
+  }
+
+  .trh2{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    line-height: 1.4;
+    padding: 0 10px;
   }
 }
+
+
+ 

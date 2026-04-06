@@ -1,92 +1,283 @@
-@media (max-width:767px) {
-  .logo {
-    width: 35%;
-  }
+@media screen and (max-width:600px) {
+    .menu-icon{
+        display:block;
+        background-color: black;
+    }
 
-  .navbar {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    flex-direction: column;
-    padding: 10px 0;
-    z-index: 999;
-  }
+    .button{
+        display:none;
+    }
 
-  .navbar.active {
-    display: flex;
-  }
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background:black;
+        flex-direction:column;
+        justify-content:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
 
-  .anchor {
-    padding: 15px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
+    nav.active{
+        right:0;
+    }
 
-  .button,
-  .button1 {
-    display: none;
-  }
+    .mobile-btn{
+        display:block;
+    }
 
-  .mobile {
-    display: flex;
-    gap: 25px;
-    margin-left: auto;
-    align-items: center;
-    margin-right: 1rem;
-  }
+    .navbar{
+        font-size:22px;
+    }
 
-  .icon {
-    font-size: 1.4rem;
-    color: red;
-  }
-
-  .icon:hover {
-    color: rgb(250, 244, 248);
-    transform: translateY(-2px);
-  }
-
-}
-@media screen and (max-width:991px){
-/* mainsection */
-.services{
+    /* mainsection */
+    .services{
     height: auto;
-     
-}
-.overlayser{
-    height: auto;
-   
-}
-.serimg{
-    height: fit-content;
-}
-.serh1{
-    font-size: 2.5rem;
-}
- .plan-divider6{
-    margin: 2px 0px;
- }
- .pp1{
-    font-size: 1rem;
- }
+    background-image: url(./ser.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .serimg{
+    display: none;
+  }
+
+  .overlayser{
+    position: relative;
+    padding: 2rem 1rem;
+  }
+
+  /* heading */
+  .serh1{
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
   .serp{
     font-size: 1rem;
+    padding: 0 10px;
   }
-   .serh2{
-    font-size: 1.7rem;
-   }
-   .serp1{
-    font-size: 0.99rem;
-    
-   }
-    #sricons{
-        font-size: 1.3rem;
-    }
-     .srh2{
-        font-size: 1.3rem;
-        padding-left: 0.5rem;
-     }
-}
-    
 
+  /* layout column */
+  .sermain{
+    flex-direction: column;
+    border: none;
+  }
+
+  .ser1,
+  .sr2main{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .sr2{
+    border: none;
+  }
+
+  /* sub headings */
+  .serh2{
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  /* paragraph fix */
+  .serp1{
+    padding-left: 0;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  /* icon + text alignment */
+  .sr1{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  #sricons{
+    padding-left: 0;
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+  }
+
+  .srh2,
+  .srh21{
+    padding-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .srspan{
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 5px;
+  }
+
+ /* Why Our Coaching Work */
+
+    .work{
+    height: auto;
+     background-image: url(./work.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+.workimg{
+    display: none;
+}
+  .overlaywork{
+    position: relative;
+    padding: 2rem 1rem;
+  }
+
+  /* heading */
+  .workh1{
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  /* layout column */
+  .workmain{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* left text block */
+  .work2{
+    width: 100%;
+  }
+
+  .workp{
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  /* right cards area */
+  .work3{
+    width: 100%;
+    border: none;
+  }
+
+  .workside{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work4{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  /* icon center FIX (important) */
+  #workicons{
+    padding-left: 0;
+    display: block;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  .workh2{
+    font-size: 1.4rem;
+  }
+
+  .workp1{
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+/* Is This Program Right For You */
+
+  .right{
+    height: auto;
+      background-image: url(./right.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .rightimg{
+    display: none;
+  }
+
+  .overlayright{
+    position: relative;
+    padding: 2rem 1rem;
+  }
+
+  /* heading */
+  .righth1{
+    font-size: 1.9rem;
+    padding: 0 10px;
+  }
+
+  .rightp{
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* layout column */
+  .main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sideri,
+  .sidel{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  /* sub headings */
+  .sideh1,
+  .sidelh1{
+    font-size: 1.6rem;
+  }
+
+  /* icon alignment FIX */
+  #sideicon,
+  #sidelicon{
+    margin-left: 0;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 8px;
+  }
+
+  /* text */
+  .sidespan,
+  .sidespan1{
+    font-size: 1rem;
+    margin-left: 0;
+    display: inline;
+  }
+
+  /* remove extra spacing */
+  .sidespan1{
+    margin-left: 0;
+  }
+
+  /* bottom text */
+  .bottomp{
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  /* BUTTON FIX (MOST IMPORTANT) */
+  .rightbutton{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 1rem;
+  }
+  }

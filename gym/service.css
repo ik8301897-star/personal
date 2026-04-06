@@ -5,73 +5,64 @@
    
 }
 /* headersection */
-.header{
-    width: 100%;
-    background-color: black;
-    display: flex;
-}
-.logo{
-    width: 20%;
-}
-.logoimg{
-    width: 100%;
-    ;
-        transition: all 0.3s ease;
- 
-}
-.logoimg:hover{
-        transform: translateY(-6px);
-}
-.navbar{
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-     width: 100%;
-       margin-left: 50px;
-   
-}
-.anchor{
-    text-decoration: none;
-    color: red;
-    font-size: 1rem;
-    padding: 20px;
-    padding-left: 30px;
-    transition: all 0.3s ease;
-    font-weight: 700;
-  
-   
-}
-.anchor:hover{
-    color: white;
-    transform: translateY(-6px);   
-}
-.button{
-  margin-left: 7rem;
-  color: aliceblue;
-  background-color: red;
-  border: 2px solid rgb(10, 0, 0);
-  padding: 10px;
-  border-radius: 10%;
-  transition: all 0.3s ease;
-}
-.button:hover{
-    background-color:  rgb(243, 14, 167);
-    transform: translateY(-6px);
+header{
+    width:100%;
+    background:black;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 30px;
 }
 
-.button1{
-  margin-left: 3rem;
-  color: aliceblue;
-  background-color: red;
-  border: 2px solid rgb(10, 0, 0);
-  padding: 10px;
-  border-radius: 10%;
-  transition: all 0.3s ease;
+.logo{
+    width: 30%;
 }
-.button1:hover{
-    background-color: rgb(243, 14, 167);
-    transform: translateY(-6px);
+.logo img{
+    width: 40%;
 }
+nav{
+    display:flex;
+    width: 40%;
+    gap:25px;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.navbar{
+    color:white;
+    text-decoration:none;
+    position:relative;
+}
+
+.navbar:hover{
+    color:#E8602E;
+}
+
+.button button,
+.mobile-btn{
+    background:#da3e06;
+    border:none;
+    padding:12px 20px;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+.menu-icon{
+    display:none;
+    color:rgb(228, 5, 5);
+    font-size:24px;
+    cursor:pointer;
+    z-index:1001;
+    background-color: #da3e06;
+}
+.mobile-btn{
+    display:none;
+}
+#righticon{
+    background-color: #da3e06;
+    color: white;
+}
+
 /* mainsection */
 .services{
   position: relative;
