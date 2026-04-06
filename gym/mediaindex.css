@@ -35,6 +35,16 @@
     }
 
   /* headersection */
+  .main{
+    background-image: url(./main\ img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+  }
+  .main img{
+    display: none;
+  }
   .ovh1{
     font-size: 1.5rem;
     padding-top: 0.5rem;
