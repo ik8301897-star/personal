@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: regular;
+    src: url(./NeueMachina-Regular.woff2);
+}
+@font-face {
+    font-family: bold ;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+header{
+    width:100%;
+    background-color:#d33b75;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 30px;
+}
+
+.logo h4{
+    color:#f3f0ee;
+    font-size:28px;
+    font-family: regular;
+}
+nav{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.navbar{
+    color:white;
+    text-decoration:none;
+    position:relative;
+    font-family: regular;
+}
+
+.navbar:hover{
+    color:#29022c;
+}
+
+.button button,
+.mobile-btn{
+    background:#f103de;
+    border:none;
+    padding:12px 20px;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+.menu-icon{
+    display:none;
+    color:rgb(228, 5, 5);
+    font-size:24px;
+    cursor:pointer;
+    z-index:1001;
+    background-color: #da3e06;
+}
+.mobile-btn{
+    display:none;
+}
+#righticon{
+    background-color: #da3e06;
+    color: white;
+}
+/* mainsection */
+.main{
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 0, 85, 0.308), rgb(255, 0, 98));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 74vh;
+    display: flex;
+}
+.main1{
+    width: 50%;
+   
+   
+    
+}
+.main1 h1{
+    font-size: 3.5rem;
+    font-family: bold;
+     margin-left: 3rem;
+    padding-top: 4rem;
+    
+     color: #D70D58;
+}
+.main p{
+    font-size: 1.1rem;
+    font-family: regular;
+    margin-top: 1.4rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: rgb(20, 19, 19);
+      margin-left: 3rem;
+}
+.buttonmain{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+     margin-left: 3rem;
+}
+.emer button{
+    padding: 12px 12px;
+    width: 100%;
+    font-weight: 700;
+    background-color:  #d3141d;
+    border: 1px solid #d3141d;
+    border-radius: 6px;
+    color: white;
+    transition: all ease 0.3s;
+    cursor: pointer;
+   
+}
+.emer button:hover{
+    background-color: #D70D58;
+    transform: translateY(-0.3rem);
+}
+.safety button{
+     padding: 12px 10px;
+    width: 100%;
+    font-weight: 700;
+    background-color: #d3141d;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin-left: 2rem;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.safety button:hover{
+    background-color: #da3e06;
+    transform: translateY(-0.3rem);
+}
+.sideimg{
+    width: 50%;
+   
+}
+.rightimg{
+    width: 70%;
+    height: 70%;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    border-radius: 10px;
+    
+}
+   /* why safety matters  */
+   .whysafety{
+    width: 100%;
+    margin-top: 6rem;
+   }
+   .matters{
+    padding: 8px 8px;
+    border-radius: 20px;
+    margin-left: 3rem;
+    color: #D70D58;
+    background-color: #f79fc1;
+    font-weight: 700;
+    border: none;
+   }
+   .whymain{
+    width: 100%;
+      margin-left: 3rem;
+      margin-top: 2rem;
+      display: flex;
+   }
+   .whyfirst{
+    width: 50%;
+   }
+   .whyfirst h1{
+    font-size: 5.5rem;
+    font-family: bold;
+    color: #03061b;
+    font-weight: 700;
+   }
+   .whyfirst span{
+    color: #D70D58;
+   }
+   .whyfirst p{
+    color: 1.1rem;
+    font-family: regular;
+    margin-top: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+   }
+   .explore{
+    padding: 14px 14px;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    color: #eaebec;
+    background-color: #010a31;
+    border: none;
+    transition: all ease 0.3s;
+   }
+   .explore:hover{
+    transform: translateY(-0.3rem);
+    background-color: #D70D58;
+   }
+   .whysafetyimg{
+    width: 50%;
+   }
+   .safetyimg{
+    width: 90%;
+    border-radius: 10px;
+   }
+   /* our core pillars of protection */
+   .protection{
+    width: 100%;
+    margin-top: 5rem;
+   }
+   .protection h1{
+    font-size: 2.4rem;
+    margin-left: 2rem;
+    color: #D70D58;
+    font-family: bold;
+   }
+   .protection p{
+    font-size: 1rem;
+    font-family: regular;
+    margin-left: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: rgb(44, 43, 43);
+   }
+   .pillarsmain{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    /* margin-left: 3rem; */
+   }
+   .pillarone{
+    width: 40%;
+    border: 1px solid #E7E8EA;
+    background-color: #E7E8EA;
+    margin-left: 3rem;
+   }
+   #shield{
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #010a31;
+   }
+   .pillarone h2{
+    font-size: 1.5rem;
+     margin-left: 1rem;
+    margin-top: 1rem;
+    font-family: bold;
+    color: #010a31;
+
+   }
+   .pillarone p{
+    font-size: 0.9rem;
+    font-family: regular;
+      margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    color: #414144;
+    font-weight: 700;
+   }
+ /* 2nd  */
+  .pillarone1{
+    width: 40%;
+    border: 1px solid #CFF5F6;
+    background-color:#CFF5F6;
+    margin-left: 3rem;
+   }
+   #support{
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #1E7879;
+   }
+   .pillarone1 h2{
+    font-size: 1.5rem;
+     margin-left: 1rem;
+    margin-top: 1rem;
+    font-family: bold;
+    color:#1E7879;
+
+   }
+   .pillarone1 p{
+    font-size: 0.9rem;
+    font-family: regular;
+      margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #414144;
+   }
+   /* 3rd  */
+
+    .pillarone3{
+    width: 40%;
+    border: 1px solid#FFDDC4;
+    background-color:#FFDDC4;
+    margin-left: 3rem;
+   }
+   #resources{
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color:#794B27;
+   }
+   .pillarone3 h2{
+    font-size: 1.5rem;
+     margin-left: 1rem;
+    margin-top: 1rem;
+    font-family: bold;
+    color:#794B27;
+
+   }
+   .pillarone3 p{
+    font-size: 0.9rem;
+    font-family: regular;
+      margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #414144;
+   }
+   /* 4th  */
+    .pillarone4{
+    width: 40%;
+    border: 1px solid #CFF5F6;
+    background-color:#f0b1c9;
+    margin-left: 3rem;
+   
+   }
+   #monitoring{
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #ee0a69;
+   }
+   .pillarone4 h2{
+    font-size: 1.5rem;
+     margin-left: 1rem;
+    margin-top: 1rem;
+    font-family: bold;
+    color: #ee0a69;
+
+   }
+   .pillarone4 p{
+    font-size: 0.9rem;
+    font-family: regular;
+      margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #414144;
+   }
+
+   /* quotes  */
+   .quotes{
+    width: 100%;
+    margin-top: 6rem;
+   }
+   #quotesicon{
+    font-size: 3rem;
+    text-align: center;
+    color: #414144;
+   }
+   .qu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .quotes h1{
+    text-align: center;
+    font-family: bold;
+    font-size: 2.5rem;
+    color: #414144;
+   }
+   /* core safety Protocol */
+   .core{
+    width: 100%;
+    margin-top: 5rem;
+   }
+   .core h1{
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    font-family: bold;
+    color: #016064;
+   }
+   .core p{
+    font-size: 1.1rem;
+    margin-left: 3rem;
+    font-family: regular;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #414144;
+   }
+   .leftmain{
+    width: 40%;
+
+   }
+   .leftone{
+    width: 95%;
+    border: 0.5px solid rgb(221, 215, 215);
+    border-radius: 10px;
+     border-left: 7px solid  #016064;
+     margin-left: 3rem;
+     margin-top: 2rem;
+     background-color: #cfd1d1;
+   }
+   #eye{
+    font-size: 1.7rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+     color:  #016064;
+   }
+   .leftone span{
+    font-size: 1.9rem;
+    color:  #016064;
+    font-weight: 700;
+    margin-left: 0.4rem;
+   }
+   .leftone p{
+    font-size: 1rem;
+    font-family: regular;
+    margin-left: 3rem;
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+   
+
+   }
+
+  

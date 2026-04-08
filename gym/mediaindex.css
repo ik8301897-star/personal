@@ -36,53 +36,55 @@
 
   /* headersection */
   .main{
-    background-image: url(./main\ img.jpg);
+    /* background-image: url(./main\ img.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 50vh;
+    background-size: cover; */
+   height: auto;
   }
-  .main img{
+  /* .main img{
     display: none;
-  }
+  } */
   .ovh1{
     font-size: 1.5rem;
     padding-top: 0.5rem;
+    
   }
   .ovh2{
     font-size: 1.5rem;
   }
   .ovp{
-    font-size: 0.7rem;
-    padding-top: 0.5rem;
+    font-size: 0.6rem;
+    padding-top: 0.3rem;
   }
   #star{
-    padding-top: 0.5rem
+    padding-top: 0.3rem
     ;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   .icons{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   #crowd{
-    padding-top: 0.5rem
+    padding-top: 0.3rem
     ;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   #gym{
-     padding-top: 0.5rem
+     padding-top: 0.3rem
     ;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   #clock{
-     padding-top: 0.5rem
+     padding-top: 0.3rem
     ;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   .button2{
     padding: 6px;
     border-radius: 6px;
-    margin-top: 10px;
+    margin-top: 5px;
+   width: 6rem;
   }
   /* whychooseus */
   .whyh1{
