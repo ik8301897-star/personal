@@ -1,0 +1,349 @@
+@media(max-width:600px){
+
+    .menu-icon{
+        display:block;
+        background-color:  #300415;
+    }
+
+    .button{
+        display:none;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background: #300415;
+        flex-direction:column;
+        justify-content:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
+
+    nav.active{
+        right:0;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .navbar{
+        font-size:22px;
+    }
+    /* mainsection */
+ 
+
+    .main {
+        flex-direction: column;
+        max-height: none;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .main1 {
+        width: 100%;
+    }
+
+    .main1 h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        padding-top: 1rem;
+        line-height: 1.3;
+    }
+
+    .main p {
+        font-size: 0.95rem;
+        margin-left: 0;
+        padding: 0 0.5rem;
+        line-height: 1.5;
+    }
+
+    .buttonmain {
+        flex-direction: column;
+       
+        margin-left: 0;
+        gap: 12px;
+    }
+    .buttonmain{
+        width: 100%;
+    }
+
+    .emer button,
+    .safety button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sideimg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    .rightimg {
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+    /* why safety matters */
+    .whysafety{
+        margin-top: 2rem;
+    }
+    .whymain{
+        flex-direction: column;
+        margin-left: 1.5rem;
+       
+        justify-content: center;
+    }
+    .whyfirst{
+        width: 100%;
+    }
+    .whyfirst h1{
+        font-size: 2.5rem;
+    }
+    .whyfirst p{
+        font-size: 0.6rem;
+        
+    }
+    .whyfirst p br{
+        display: none;
+    }
+    .explore{
+        width: 90%;
+    }
+    .whysafetyimg{
+        width: 90%;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+     /* our core pillars of protection */
+     .protection{
+        margin-top: 4rem;
+     }
+     .protection p{
+        font-size: 0.8rem;
+     }
+     .protection p br{
+        display: none;
+     }
+     .pillarsmain{
+        flex-direction: column;
+        justify-content: center;
+        
+     }
+     .pillarone{
+        width: 90%;
+        margin-left: 1.5rem;
+     }
+     .pillarone p{
+        font-size: 0.7rem;
+     }
+     /* 2nd  */
+     .pillarone1{
+          width: 90%;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+     }
+    .pillarone1 p{
+        font-size: 0.7rem;
+     }
+     /* 3rd  */
+     .pillarone3{
+          width: 90%;
+        margin-left: 1.5rem;
+      
+     }
+    .pillarone3 p{
+        font-size: 0.7rem;
+     }
+     /* 4th  */
+     .pillarone4{
+          width: 90%;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+     }
+    .pillarone4 p{
+        font-size: 0.7rem;
+     }
+
+     /* quotes */
+     .quotes{
+        margin-top: 4rem;
+     }
+     .quotes h1{
+        font-size: 2rem;
+     }
+     /* core safety Protocol */
+     .core{
+        margin-top: 3rem;
+     }
+     .core h1{
+        font-size: 2.4rem;
+        margin-left: 1.5rem;
+     }
+     .core P{
+        font-size: 0.9rem;
+        margin-left: 1.5rem;
+     }
+     .coremain{
+        flex-direction: column;
+     }
+     .leftmain{
+        width: 90%;
+     }
+     #eye{
+        font-size: 1.4rem;
+        
+     }
+     .leftone span{
+        font-size: 1.4rem;
+     }
+     .leftone p{
+        font-size: 0.8rem;
+     }
+     /* 2nd  */
+     #dot{
+          font-size: 1.4rem;
+     }
+     .leftone1 span{
+        font-size: 1.4rem;
+         margin-left: 0rem;
+     }
+     .leftone1 p{
+        font-size: 0.8rem;
+     }
+     /* 3rd  */
+     #live{
+         font-size: 1.4rem;
+     }
+      .leftone2 span{
+        font-size: 1.2rem;
+         margin-left: 0rem;
+     }
+     .leftone2 p{
+        font-size: 0.8rem;
+     }
+     /* right side  */
+     .rightmain{
+        width: 100%;
+     }
+     .rightonemain{
+        flex-direction: column;
+     }
+     .rightone{
+        width: 90%;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+     }
+     .rightone h3{
+        font-size: 1.5rem;
+     }
+     .rightone p {
+        font-size: 0.8rem;
+     }
+     /* 2nd  */
+     .rightone1{
+         width: 90%;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+     }
+      .rightone1 h3{
+        font-size: 1.5rem;
+     }
+     .rightone1 p {
+        font-size: 0.8rem;
+     }
+     /* 3rd  */
+     .rightone3{
+          width: 90%;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+     }
+      .rightone3 h3{
+        font-size: 1.5rem;
+     }
+     .rightone3 p {
+        font-size: 0.8rem;
+     }
+     /* 4th  */
+      .rightone4{
+          width: 90%;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+     }
+      .rightone4 h3{
+        font-size: 1.5rem;
+     }
+     .rightone4 p {
+        font-size: 0.8rem;
+     }
+
+
+      .instantmain {
+        flex-direction: column;
+        height: auto;
+        margin-top: 3rem;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    /* TEXT SECTION */
+    .instant {
+        width: 100%;
+    }
+
+    .instant h1 {
+        font-size: 2rem;
+        padding-top: 0;
+        padding-left: 0;
+        line-height: 1.3;
+    }
+
+    .instant p {
+        font-size: 0.95rem;
+        margin-left: 0;
+        padding: 0 0.5rem;
+        line-height: 1.6;
+    }
+
+    /* CARDS */
+    .instantcard {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .instantcardone {
+        width: 95%;
+        text-align: left;
+        padding-bottom: 1rem;
+    }
+
+    .instantcardone h3 {
+        margin-left: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    #phone {
+        margin-left: 1.5rem;
+    }
+
+    /* IMAGE SECTION */
+    .phoneimg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .phi {
+        width: 85%;
+        margin: 0;
+        height: auto;
+    }
+}
