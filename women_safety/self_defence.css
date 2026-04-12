@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: regular;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+
+header {
+    width: 100%;
+    background-color: #d33b75;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.logo h4 {
+    color: #f3f0ee;
+    font-size: 28px;
+    font-family: regular;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navbar {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-family: regular;
+}
+
+.navbar:hover {
+    color: #29022c;
+}
+
+.button button,
+.mobile-btn {
+    background: #42053d;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    color: rgb(228, 5, 5);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    background-color: #dfdade;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+#righticon {
+    background-color: #42053d
+}
+/* mainsection  */
+.powermain{
+    width: 100%;
+    display: flex;
+}
+.power{
+    width: 50%;
+    margin-top: 2rem;
+    
+}
+.power h4{
+    margin-left: 3rem;
+     color: #016e75;
+}
+.power h1{
+    font-size: 5rem;
+    margin-left: 2rem;
+    font-family: bold;
+    margin-top: 1rem;
+}
+.power span{
+    color: #016e75;
+}
+.power p{
+    font-size: 1rem;
+    font-family: regular;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.train{
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: #016e75;
+    font-weight: 600;
+    border: 1px solid#016e75;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    transition: all ease 0.3s;
+}
+.train:hover{
+    transform: translateY(-0.3rem);
+    color: #016e75;
+    background-color: white;
+
+}
+.explore{
+    padding: 10px 30px;
+    color: #016e75;
+    background-color: white;
+    font-weight: 800;
+    border: 2px solid rgb(167, 162, 162);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    margin-left: 1rem;
+}
+.explore:hover{
+    background-color: #016e75;
+    color: white;
+    border: 1px solid #016e75;
+    transform: translateY(-0.3rem);
+}
+.right{
+    width: 50%;
+}
+.right img{
+    width: 90%;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+}
+
+ /* situational Awareness   */
+ .aware{
+    width: 100%;
+    margin-top: 7rem;
+ }
+ .aware h1{
+    font-size: 2.8rem;
+    margin-left: 2rem;
+    font-family: bold;
+ }
+ .aware p{
+    font-size: 1rem;
+    font-family: regular;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+ }
+ .situation{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .situation1{
+    width: 26%;
+    border: 1px solid #F3F4F6;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: #e6e8ec;
+    transition: all ease 0.3s;
+    border-radius: 10px;
+ }
+ .situation1:hover{
+    background-color: rgb(250, 250, 250);
+    transform: translateY(-0.3rem);
+ }
+ #rotate{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color:  #016e75;;
+ }
+ .situation1 h2{
+      font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-family: bold;
+ }
+ .situation1 p{
+      margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-family: regular;
+    line-height: 1.6;
+    color: rgb(69, 70, 70);
+    font-weight: 700;
+ }
+.situation1 h3{
+    font-family: regular;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-left: 2rem;
+     color:  #016e75;;
+}
+
+/* 2nd  */
+.situation2{
+    width: 26%;
+    border: 1px solid #F3F4F6;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: #01464B;
+    transition: all ease 0.3s;
+     border-radius: 10px;
+ }
+ .situation2:hover{
+    background-color:#01464B;
+    color: black;
+    transform: translateY(-0.3rem);
+ }
+ #halved{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color:  #F3F4F6;;
+ }
+ .situation2 h2{
+      font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-family: bold;
+      color:  #F3F4F6;;
+ }
+ .situation2 p{
+      margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-family: regular;
+    line-height: 1.6;
+     color:  #F3F4F6;;
+    font-weight: 400;
+ }
+.situation2 h3{
+    font-family: regular;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color:  #F3F4F6;;
+}
+/* 3rd  */
+
+ .situation3{
+    width: 26%;
+    border: 1px solid #F3F4F6;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: #e6e8ec;
+    transition: all ease 0.3s;
+    border-radius: 10px;
+ }
+ .situation3:hover{
+    background-color: rgb(250, 250, 250);
+    transform: translateY(-0.3rem);
+ }
+ #brain{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color:  #016e75;;
+ }
+ .situation3 h2{
+      font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-family: bold;
+ }
+ .situation3 p{
+      margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-family: regular;
+    line-height: 1.6;
+    color: rgb(69, 70, 70);
+    font-weight: 700;
+ }
+.situation3 h3{
+    font-family: regular;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-left: 2rem;
+     color:  #016e75;;
+}
+/* the mindset  */
+.mindset{
+    width: 100%;
+    margin-top: 7rem;
+}
+.mindset h1{
+    font-size: 2.8rem;
+    font-family: bold;
+    text-align: center;
+}
+.mindset p{
+    font-size: 1rem;
+    font-family: regular;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+.mindsetmain{
+    width: 100%;
+    margin-top: 4rem;
+}
+.mindset1{
+    width: 80%;
+    border: 1px solid rgb(241, 240, 240);
+    display: flex;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    transition: all ease 0.3s;
+}
+.mindset1:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-0.3rem);
+}
+.no{
+    width: 25%;
+}
+.no h1{
+    font-size: 2.8rem;
+    font-family: bold;
+    text-align: center;
+    color: #aaaaac;
+}
+.content{
+    width: 75%;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+}
+.content h2{
+    font-size: 2rem;
+
+}
+.content p{
+    font-size: 1rem;
+    font-family: regular;
+    line-height: 1.6;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+ /* daily empowerment */
+ .dailymain{
+    width: 100%;
+    border: 2px solid rgb(240, 238, 238);
+    margin-top: 7rem;
+    display: flex;
+    background-color: #f5f3f4;
+ }
+ .daily1{
+    width: 53%;
+
+    padding-bottom: 1rem;
+    
+ }
+ .daily1 h1{
+    margin-top: 4rem;
+    font-family: bold;
+    font-size: 2.3rem;
+    margin-left: 2rem;
+    color:  #016e75;
+ }
+ .daily1 p{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-family: regular;
+    font-weight: 600;
+
+ }
+ #heart{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: #9b048e;
+ }
+ .daily1 span{
+    font-size: 1.1rem;
+    font-family: regular;
+    font-weight: 600;
+ }
+ .rightimg{
+    width: 40%;
+ }
+ .rightimg img{
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+ }
+
+ /* footer  */
+.footer {
+    background: #f3f5f7;
+    padding: 60px 80px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer h2 {
+    font-size: 22px;
+    color: #0f3f3f;
+    margin-bottom: 10px;
+    font-family: bold;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0f3f3f;
+    font-family: bold;
+}
+
+.footer p {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 14px;
+    font-family: regular;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    font-family: regular;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #6b7280;
+    transition: 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #0f766e;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    margin-right: 15px;
+    color: #6b7280;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #0f766e;
+}
