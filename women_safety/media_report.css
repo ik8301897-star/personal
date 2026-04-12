@@ -1,0 +1,107 @@
+
+@media (max-width:600px){
+
+    
+    .menu-icon{
+        display:block;
+        background-color:  #300415;
+    }
+
+    .button{
+        display:none;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background: #300415;
+        flex-direction:column;
+        justify-content:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
+
+    nav.active{
+        right:0;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .navbar{
+        font-size:22px;
+    }
+  .report h1{
+    font-size:1.8rem;
+    padding:0 1rem;
+  }
+
+  .report p{
+    font-size:0.9rem;
+    padding:0 1rem;
+  }
+
+  .reportsec{
+    flex-direction:column;
+    padding:1rem;
+    gap:1.2rem;
+  }
+
+  .form{
+    width:100%;
+    padding:1.2rem;
+  }
+
+  .stepper{
+    flex-direction:column;
+    gap:0.5rem;
+    font-size:0.9rem;
+  }
+
+  .row{
+    flex-direction:column;
+    gap:0.8rem;
+  }
+
+  .field input,
+  .field select,
+  .field textarea{
+    font-size:0.9rem;
+  }
+
+  .map{
+    height:220px;
+  }
+
+  .map iframe{
+    width:100%;
+    height:100%;
+  }
+
+
+  .upload{
+    padding:1rem;
+    font-size:0.85rem;
+  }
+
+  .primarybutton{
+    width:100%;
+  }
+
+  .side{
+    width:100%;
+  }
+
+  .card{
+    padding:1.2rem;
+  }
+
+  .purple-btn{
+    width:100%;
+  }
+}

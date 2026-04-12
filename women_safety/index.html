@@ -25,18 +25,18 @@
             <a href="./index.html" class="navbar">Home</a>
             <a href="./safety.html" class="navbar">Safety Guide</a>
             <a href="./self_defence.html" class="navbar">Learn-Self defence</a>
-            <a href="" class="navbar">Report Incident</a>
+            <a href="./report_.html" class="navbar">Report Incident</a>
 
             <!-- MOBILE  -->
             <button class="mobile-btn">
-                Login/Signup <i class="fa-solid fa-arrow-right" id="righticon"></i>
+                Report <i class="fa-solid fa-arrow-right" id="righticon"></i>
             </button>
         </nav>
 
         <!-- DESKTOP BUTTON -->
         <div class="button">
             <button>
-                Login/Signup <i class="fa-solid fa-arrow-right" id="righticon"></i>
+                Report<i class="fa-solid fa-arrow-right" id="righticon"></i>
             </button>
         </div>
 
@@ -254,6 +254,26 @@
   </div>
 </footer>
 
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <h2>Welcome</h2>
+
+    <input type="text" id="username" placeholder="Enter your name">
+
+    <select id="gender">
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Prefer not to say</option>
+    </select>
+
+    <button id="continueBtn">Continue</button>
+    <p id="msg"></p>
+  </div>
+</div>
+
+<h1 class="content">Your Website Starts Here</h1>
+
 
 
  <script>
@@ -271,7 +291,54 @@ menuIcon.addEventListener("click", () => {
         icon.classList.replace("fa-xmark","fa-bars");
     }
 });
+
+
+
+
+
+
+
+
+
+
+const popup = document.getElementById("popup");
+const btn = document.getElementById("continueBtn");
+const msg = document.getElementById("msg");
+
+// Agar user pehle hi aa chuka hai
+if(localStorage.getItem("visited") === "yes"){
+  popup.style.display = "none";
+}
+
+btn.addEventListener("click", function(){
+
+  const name = document.getElementById("username").value;
+  const gender = document.getElementById("gender").value;
+
+  if(name === "" || gender === ""){
+    msg.style.color = "red";
+    msg.innerText = "Please fill all details";
+    return;
+  }
+
+  // Save user so popup never shows again
+  localStorage.setItem("visited", "yes");
+
+  if(gender === "male"){
+    msg.style.color = "green";
+    msg.innerText = `Hi ${name}, being aware and respectful helps create safer spaces.`;
+
+    setTimeout(()=>{
+      popup.style.display = "none";
+    },2000);
+
+  } else {
+    popup.style.display = "none";
+  }
+});
 </script>
+
+
 </body>
 
 </html>

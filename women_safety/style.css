@@ -900,3 +900,52 @@ nav {
 .social-icons i:hover {
   color: #0f766e;
 }
+
+
+
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.popup-box{
+  background:white;
+  padding:25px;
+  width:300px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.popup-box input,
+.popup-box select{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+
+.popup-box button{
+  width:100%;
+  padding:10px;
+  background:#0f766e;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+#msg{
+  margin-top:10px;
+  font-size:14px;
+  color:green;
+}
+
+.content{
+  text-align:center;
+  margin-top:60px;
+}

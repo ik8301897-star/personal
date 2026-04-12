@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Safety</title>
+    <link rel="stylesheet" href="./report_.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     <link rel="stylesheet" href="./media_report.css">
+</head>
+<body>
+      <header>
+        <div class="logo">
+            <h4>SafeHer</h4>
+        </div>
+        <div class="menu-icon" id="menuIcon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+        <nav id="navMenu">
+            <a href="./index.html" class="navbar">Home</a>
+            <a href="./safety.html" class="navbar">Safety Guide</a>
+            <a href="./self_defence.html" class="navbar">Learn-Self defence</a>
+            <a href="./report_.html" class="navbar">Report Incident</a>
+
+            <!-- MOBILE  -->
+            <button class="mobile-btn">
+                Report <i class="fa-solid fa-arrow-right" id="righticon"></i>
+            </button>
+        </nav>
+
+        <!-- DESKTOP BUTTON -->
+        <div class="button">
+            <button>
+                Report <i class="fa-solid fa-arrow-right" id="righticon"></i>
+            </button>
+        </div>
+    </header>
+    <!-- main section  -->
+     <div class="report">
+        <h1>Report an Incident</h1>
+        <p>Your voice is your power. We are here to help you document and heal. <br> This information is stored securely and will not be shared without your explicit consent.</p>
+     </div>
+
+
+     <section class="reportsec">
+
+ 
+  <div class="form">
+
+   
+    <div class="stepper">
+      <span class="active">1 Details</span>
+      <span>2 Evidence</span>
+      <span>3 Review</span>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Type of Incident</label>
+        <select>
+          <option>Select type…</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Date & Time</label>
+        <input type="datetime-local">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Location</label>
+      <input type="text" placeholder="Where did this happen?">
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1837543.8726236548!2d85.80700585!3d25.903919600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5844f0bb6903%3A0x57ad3fed1bbae325!2sBihar!5e0!3m2!1sen!2sin!4v1775970637425!5m2!1sen!2sin" width="765" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="field">
+      <label>Detailed Description</label>
+      <textarea placeholder="Describe the event in your own words…"></textarea>
+    </div>
+
+    <div class="upload">
+      <i class="fa-solid fa-cloud-arrow-up"></i>
+      <p>Drag & drop photos, screenshots, or audio files</p>
+    </div>
+
+    <button class="primarybutton">Continue to Evidence</button>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="side">
+
+    <div class="card purple">
+      <h4><i class="fa-solid fa-list-check"></i> Safety Checklist</h4>
+      <ul>
+        <li><input type="checkbox"> Are you in a safe location?</li>
+        <li><input type="checkbox"> Have you contacted a trusted person?</li>
+        <li><input type="checkbox"> Do you need medical assistance?</li>
+      </ul>
+      <a href="#">Find Nearest Shelter →</a>
+    </div>
+
+    <div class="card">
+      <h4>Documentation Protocol</h4>
+      <p><i class="fa-solid fa-clock"></i> Timestamps</p>
+      <p><i class="fa-solid fa-file-lines"></i> Neutral Language</p>
+      <p><i class="fa-solid fa-lock"></i> Secure Backups</p>
+      <button class="purple-btn">Quick Exit</button>
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Left -->
+            <div class="footer-col">
+                <h2>SafeHer</h2>
+                <p>
+                    Providing a resilient sanctuary for women worldwide
+                    through expert knowledge and community-led safety
+                    initiatives.
+                </p>
+            </div>
+
+            <!-- Center -->
+            <div class="footer-col">
+                <h3>Safety Links</h3>
+                <ul>
+                    <li><a href="#">Safety Guidelines</a></li>
+                    <li><a href="#">Contact Info</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Right -->
+            <div class="footer-col">
+                <h3>Our Sanctuary</h3>
+                <p>© 2026 SafeHer. Your Resilient Sanctuary.</p>
+
+                <div class="social-icons">
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+ <script>
+const menuIcon = document.getElementById("menuIcon");
+const navMenu = document.getElementById("navMenu");
+const icon = menuIcon.querySelector("i");
+
+menuIcon.addEventListener("click", () => {
+
+    navMenu.classList.toggle("active");
+
+    if(navMenu.classList.contains("active")){
+        icon.classList.replace("fa-bars","fa-xmark");
+    }else{
+        icon.classList.replace("fa-xmark","fa-bars");
+    }
+});
+</script>
+
+</body>
+</html>
