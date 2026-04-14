@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: regular;
+    src: url(./NeueMachina-Regular\ copy.woff2);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+
+header {
+    width: 100%;
+    background-color: #074fd6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.logo h4 {
+    color: #f3f0ee;
+    font-size: 28px;
+    font-family: regular;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navbar {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-family: regular;
+}
+
+.navbar:hover {
+    color: #d40c0c;
+}
+
+.button button,
+.mobile-btn {
+    background: #42053d;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    color: rgb(228, 5, 5);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    background-color: #dfdade;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+#righticon {
+    background-color: #42053d
+}
+/* mainsection  */
+.digitalmain{
+    width: 100%;
+    display: flex;
+}
+.digitalleft{
+    width: 50%;
+    margin-top: 3rem;
+}
+.digitalbutton{
+    font-size: 1rem;
+    font-family: regular;
+    border: 1px solid blue;
+    padding: 8px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #074fd6;
+    background-color: #D5E3FB;
+    border: none;
+    margin-left: 2rem;
+}
+.digitalleft h1{
+    font-size: 4rem;
+    font-family: bold;
+    margin-left: 2rem;
+    font-weight: 800;
+}
+.digitalleft span{
+    color: #034790;
+}
+.digitalleft p{
+    font-family: regular;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    line-height: 1.7;
+    font-weight: 700;
+}
+.buttonmain{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.startbutton{
+    padding: 12px 26px;
+    background-color: #02488D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: all ease 0.3s;
+}
+.startbutton:hover{
+ transform: translateY(-0.3rem);
+   
+}
+.checkbutton{
+      padding: 12px 26px;
+      border-radius: 6px;
+      border: none;
+      background-color: #A0BCCF;
+      color: #02488D;
+      font-weight: 700;
+      transition: all ease 0.3s;
+      margin-left: 1rem;
+}
+.checkbutton:hover{
+    transform: translateY(-0.3rem);
+}
+.rightside{
+    width: 50%;
+    margin-top: 3rem;
+}
+.rightside img{
+    width: 90%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    
+}
+/* scam awareness  */
+.scam{
+    width: 100%;
+    margin-top: 7rem;
+    background-color: #e6e8ec;
+}
+.scam h1{
+    font-size: 2.8rem;
+    font-family: bold;
+    margin-left: 4.5rem;
+}
+.scam p{
+    font-size: 1rem;
+    font-family: regular;
+    margin-left: 4.5rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+.scammain{
+    width: 100%;
+   padding-top: 2rem;
+  background-color: #e6e8ec;
+     display: flex;
+     justify-content: space-evenly;
+         padding-bottom: 3rem;
+}
+.scamfirst{
+    width: 26%;
+    border: 1px solid black;
+     background-color: white;
+     padding-bottom: 2rem;
+     border: none;
+     border-radius: 10px;
+}
+
+#enve{
+    font-size: 1.8rem;
+    margin-top: 1.1rem;
+    margin-left: 2rem;
+    color: #02488D;
+    justify-content: center;
+    align-items: center;
+  
+}
+.scamfirst h2{
+    font-size: 1.8rem;
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+      font-family: bold;
+}
+.scamfirst p{
+    font-size: 1rem;
+    font-family: regular;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    line-height: 1.6;
+    font-weight: 700;
+   
+}
+
+.market{
+    margin-top:15px;
+}
+
+.label{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    margin-top: 0.4rem;
+
+    margin-left: 2rem;
+}
+.spanmar{
+    color:#413d3d;
+    font-weight: 800;
+}
+
+.progress{
+    width:90%;
+    height:8px;
+    background:#dcdcdc;
+    border-radius:10px;
+    overflow:hidden;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.progress-fill{
+    height:100%;
+    background:#9F2323;
+    border-radius:10px;
+}
+.spanmar{
+    color: #87888a;
+}
+.per{
+    margin-right: 0.9rem;
+    color: red;
+    font-weight: 700;
+}
+/* 2nd  */
+.progress-fill1{
+    height:100%;
+    background:#eb0606;
+    border-radius:10px;
+}
+
+/* 3rd  */
+.progress-fill2{
+    height:100%;
+    background:#5a0303;
+    border-radius:10px;
+}
+
+/* safety tips for every journey */
+.safety{
+    width: 100%;
+    margin-top: 7rem;
+
+}
+.safety h1{
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: bold;
+
+}
+.safetymain{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+}
+.safetyfirst{
+    width: 50%;
+    background-color: #005EB8;
+    display: flex;
+    border-radius: 10px;
+   
+    align-items: center;
+}
+.inner{
+    margin-top: 3rem;
+    
+}
+#leftsafety{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color: #68AAF4;
+}
+.safetyfirst h2{
+    font-size: 2rem;
+    font-family: bold;
+    margin-left: 2rem;
+    margin-top: 1rem;
+      color: #68AAF4;
+}
+.safetyfirst p{
+      margin-left: 2rem;
+      font-size: 1rem;
+      font-family: regular;
+    margin-top: 1rem;
+      color: #68AAF4;
+      line-height: 1.7;
+}
+.img{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+}
+.safetyimg{
+    width: 50%;
+    height: 100%;
+    opacity: 0.4;
+    
+    border-radius: 10px;
+}
+
+/* rightside  */
+.rightmain{
+    width: 55%;
+}
+.safetyright{
+    width: 90%;
+    background-color:#CED0D2;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    border-radius: 10px;
+    margin-left: 1.5rem;
+}
+.icon-box{
+    width:80px;
+    height:80px;
+    background:#ffffff;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    margin-left: 2rem;
+}
+
+.icon-box i{
+    font-size:28px;
+    color:#2563eb; /* blue color */
+}
+.rightinner h2{
+   font-size: 2rem;
+   font-family: bold;
+   margin-left: 2rem;
+}
+.rightinner p{
+    font-size: 1rem;
+    font-family: regular;
+    line-height: 1.7;
+    margin-left: 2rem;
+    font-weight: 700;
+
+}
+
+/* right 2nd  */
+.rush{
+    width: 35%;
+    background-color: #9E4600;
+    border: 1px solid black;
+}
