@@ -1,0 +1,310 @@
+@media(max-width:600px){
+
+    .menu-icon{
+        display:block;
+    }
+
+    .button{
+        display:none;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background:black;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
+
+    nav.active{
+        right:0;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .navbar{
+        font-size:22px;
+    }
+    /* mainsection  */
+    .digitalmain{
+        flex-direction: column;
+    }
+    .digitalleft{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .digitalbutton{
+        font-size: 0.8rem;
+        margin-left: 1rem;
+
+    }
+    .digitalleft h1{
+        font-size: 2.4rem;
+        margin-left: 1rem;
+    }
+    .digitalleft p{
+        font-size: 0.9rem;
+        margin-left: 1rem;
+
+    }
+    .digitalleft p br{
+        display: none;
+    }
+    .buttonmain{
+        flex-direction: column;
+    }
+    .startbutton{
+        width: 90%;
+    }
+    .checkbutton{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .rightside{
+        width: 100%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    /* scam awareness  */
+    .scam{
+        margin-top: 4rem;
+    }
+    .scam h1{
+        font-size: 2.4rem;
+        margin-left: 1rem;
+    }
+    .scam p{
+        font-size: 0.9rem;
+        margin-left: 1rem;
+    }
+    .scammain{
+        flex-direction: column;
+    }
+    .scamfirst{
+        width: 90%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+     /* safety tips for every journey */
+     .safety{
+        margin-top: 4rem;
+     }
+     .safetymain{
+        flex-direction: column;
+     }
+     .safetyfirst{
+        width: 90%;
+        margin-left: 1.3rem;
+     }
+     .rightmain{
+        width: 100%;
+       
+        margin-top: 1rem;
+     }
+     .rightinner h2{
+        font-size: 1.7rem;
+     }
+     .rightinner p{
+        font-size: 0.9rem;
+     }
+     .bottommain{
+    flex-direction: column;
+     }
+     .rush{
+        width: 90%;
+        margin-top: 1rem;
+        margin-left: 1.3rem;
+     }
+     .update{
+        width: 90%;
+        margin-top: 1rem;
+         margin-left: 1.3rem;
+     }
+
+      /* what to do if scammed  */
+       .scammed-main{
+        flex-direction: column;  
+        height: auto;
+        padding: 3rem;
+        margin-top: 4rem;
+    }
+
+    .scammedleft{
+        width: 100%;
+        margin-left: 0;
+        padding-top: 1rem;
+    }
+
+    .scammedleft h1{
+        font-size: 1.8rem;
+    }
+
+    .scammedp{
+        font-size: 0.9rem;
+    }
+
+    .contact{
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .icon-box1{
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-box1 h1{
+        font-size: 1rem;
+    }
+
+    .contact h2{
+        font-size: 1.2rem;
+    }
+
+    .contact-p{
+        font-size: 0.9rem;
+    }
+
+   
+    .helpline{
+        width: 100%;             
+        height: auto;
+        margin: 2rem 0 0 0;      
+        padding: 1.5rem;
+    }
+
+    .helpline h2{
+        font-size: 1.4rem;
+    }
+
+    .helpline p{
+        font-size: 0.9rem;
+    }
+
+    .helpline input{
+        width: 100%;
+        margin-left: 0;
+        padding: 12px;
+    }
+
+    .hp{
+        font-size: 0.9rem;
+    }
+     /* what you should Not do  */
+     .should{
+        margin-top: 4rem;
+     }
+     .should h1{
+        font-size: 2.4rem;
+        margin-left: 1rem;
+     }
+     .should p{
+        font-size: 0.9rem;
+        margin-left: 1rem;
+     }
+     .should p br{
+        display: none;
+     }
+     .shouldmain{
+        flex-direction: column;
+        padding-top: 3rem;
+     }
+     .shouldfirst{
+        width: 90%;
+        margin-left: 1.3rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+     }
+
+
+     /* faster action  */
+     .fastermain{
+        width: 95%;
+        margin-left: 1rem;
+        padding: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .faster{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .faster h2{
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .faster p{
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+
+    .faster2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .faster2 button{
+        margin: 0;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .progress-bar{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .latemain{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lat h4,
+    .lat h5{
+        margin-left: 0;
+    }
+
+    .late{
+        margin-right: 0;
+    }
+    .verify h1{
+        font-size: 1.8rem;
+    }
+
+    .verify p{
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+    .input-box{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .input-box input{
+        width: 90%;
+        padding: 14px;
+    }
+
+    .input-box button{
+        width: 50%;
+        margin: 0;
+        padding: 10px;
+    }
+}

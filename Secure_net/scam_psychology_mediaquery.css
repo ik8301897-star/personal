@@ -1,0 +1,260 @@
+@media(max-width:600px){
+
+    .menu-icon{
+        display:block;
+    }
+
+    .button{
+        display:none;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background:black;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
+
+    nav.active{
+        right:0;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .navbar{
+        font-size:22px;
+    }
+    /* mainsection  */
+     main{
+        padding: 2rem 1rem;
+        background-position: center;
+    }
+
+    main h1{
+        font-size: 2rem;
+        margin-left: 0;
+        line-height: 1.3;
+    }
+
+    .main-p{
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+
+    .buttonmain{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .learning-button,
+    .view{
+        width: 100%;
+        text-align: center;
+    }
+    .view{
+        margin-left: 0;
+    }
+
+    .buttom-main{
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .first{
+        text-align: center;
+    }
+
+    .first h2{
+        font-size: 1.4rem;
+    }
+
+    .first p{
+        font-size: 0.8rem;
+    }
+    /* primary triggers  */
+    .trigger{
+        padding-left: 1rem;
+        margin-top: 3rem;
+    }
+
+    .trigger h1{
+        font-size: 2rem;
+    }
+
+    /* 🔹 Primary Section */
+    .primarymain{
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .primaryleft{
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .primaryright{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .primaryleft h2,
+    .primaryleft p{
+        margin-left: 0;
+    }
+
+    #warning,
+    #secure{
+        margin-left: 0;
+    }
+
+    .primaryleft span{
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    /* 🔹 Trigger Section */
+    .triggermain{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .triggerleft{
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .triggerright{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .triggerleft h2,
+    .triggerleft p{
+        margin-left: 0;
+    }
+
+    .innerdiv{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .inner{
+        margin-left: 0;
+    }
+
+    .inner h2{
+        font-size: 1.6rem;
+    }
+
+    .pp{
+        font-size: 0.9rem;
+    }
+
+    .iconbox-2{
+        margin-left: 1rem;
+    }
+    /* visulizing the infiltration  */
+   .visualmain{
+        flex-direction: column;
+        margin-top: 2.5rem;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+
+    .visualleft{
+        width: 100%;
+    }
+
+    .visualleft h1{
+        font-size: 1.5rem;
+        margin-left: 0;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .visualleft p{
+        margin-left: 0;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+
+    .visualleft i{
+        margin-left: 0;
+        margin-top: 1rem;
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+    }
+
+    .visualleft span{
+        display: inline-block;
+        width: calc(100% - 30px);
+        font-size: 0.85rem;
+        vertical-align: top;
+        line-height: 1.4;
+    }
+    .visualright{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .visualright img{
+        width: 100%;
+        max-height: 220px;  
+        object-fit: cover;   
+        border-radius: 8px;
+    }
+    /* create panic  */
+    .create{
+        margin-top: 3rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .create h1{
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .create p{
+        font-size: 0.9rem;
+        margin-top: 0.8rem;
+    }
+
+    /* ✅ Image fix (main improvement) */
+    .create img{
+        width: 100%;
+        height: auto;
+        max-height: 250px;  
+        object-fit: cover;
+        margin-left: 0;
+        margin-top: 1.5rem;
+        border-radius: 8px;
+    }
+}
