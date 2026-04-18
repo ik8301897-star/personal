@@ -246,8 +246,6 @@
         font-size: 0.9rem;
         margin-top: 0.8rem;
     }
-
-    /* ✅ Image fix (main improvement) */
     .create img{
         width: 100%;
         height: auto;

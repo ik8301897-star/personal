@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureNet</title>
+    <link rel="stylesheet" href="./scam_simulator.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+      <link rel="stylesheet" href="./scam_simulator_media.css">
+</head>
+<body>
+     <header>
+    <div class="logo">
+        <h4>SecureNet</h4>
+    </div>
+
+    <div class="menu-icon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav id="navMenu">
+        <a href="./index.html" class="navbar">Home</a>
+        <a href="./Scam_psychology.html" class="navbar">Scam Psychology</a>
+        <a href="./scam_simulator.html" class="navbar">Scam Simulator</a>
+        <a href="" class="navbar">Protection System</a>
+
+        <button class="mobile-btn">
+            Report <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </nav>
+
+    <div class="button">
+        <button>
+            Report <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+</header>
+<!-- mainsection  -->
+ <div class="mainsection">
+    <button class="button1">SIMULATION ACTIVE</button>
+    <h1>Test Your <br> <span>Cyber Defenses</span></h1>
+    <p>The human firewall is your strongest asset - and your weakest link. <br>Immerse yourself in SecureNet's advanced phishing and social <br> engineering sandbox to indentify sophisticated threats before they <br>compromise your data.</p>
+    <button class="button2">Start Lab Session <i class="fa-solid fa-arrow-right"></i></button>
+ </div>
+
+ <!-- the impersonation trap  -->
+
+ <section class="impersonation">
+    <div class="container">
+        
+        <!-- LEFT SIDE -->
+        <div class="left">
+            <span class="tag">Interactive Simulation</span>
+            <h2>The Impersonation Trap</h2>
+            <p>
+                Scammers often pose as trusted institutions like banks to create a false
+                sense of urgency. Hover or tap the highlighted areas in the simulation
+                to see why this message is dangerous.
+            </p>
+
+            <div class="alert">
+                <span class="star">★</span>
+                <div>
+                    <h4>Urgency Check</h4>
+                    <p>Real banks rarely use capital letters and high-pressure language in automated alerts.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+            <div class="phone">
+                <img src="./image/smart phone.png" alt="phone">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- what's next  -->
+ <div class="nextmain">
+    <div class="nextleft">
+        <h1>What's Next ?</h1>
+        <p>Don't let your awareness and here. Strengthen the community or sharpen your skills further with an advanced threat simulation.</p>
+        <button class="button-ad">Advanced Challenge</button>
+        <button class="button-kn">Share Knowledge</button>
+    </div>
+    <div class="nextright">
+  <div class="inner"> <h3>Earned Badge</h3>
+    <p>Guardian of the Sanctuary </p>
+    <h4>Add to Profile <i class="fa-solid fa-arrow-right"></i></h4>
+</div>
+    </div>
+ </div>
+
+
+ <!-- footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Left -->
+            <div class="footer-col">
+                <h2>SecureNet</h2>
+                <p>
+                    @2026 SecureNet Guardian editorial.Protecting your digital journey with curated safety and real time
+                    awareness.
+                </p>
+            </div>
+
+            <!-- Center -->
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Scam Alerts</a></li>
+                    <li><a href="#">Safety Tips</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Right -->
+            <div class="footer-col">
+                <h3>Support</h3>
+                <p>Terms of Service</p>
+
+                <div class="social-icons">
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+     <script>
+const menuIcon = document.getElementById("menuIcon");
+const navMenu = document.getElementById("navMenu");
+const icon = menuIcon.querySelector("i");
+
+menuIcon.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+
+    if(navMenu.classList.contains("active")){
+        icon.classList.replace("fa-bars","fa-xmark");
+    }else{
+        icon.classList.replace("fa-xmark","fa-bars");
+    }
+});
+</script>
+</body>
+</html>
