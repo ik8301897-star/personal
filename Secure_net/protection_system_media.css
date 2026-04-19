@@ -1,0 +1,130 @@
+@media(max-width:600px){
+
+    .menu-icon{
+        display:block;
+    }
+
+    .button{
+        display:none;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:100%;
+        height:100vh;
+        background:black;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:35px;
+        transition:0.4s;
+        z-index:1000;
+    }
+
+    nav.active{
+        right:0;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .navbar{
+        font-size:22px;
+    }
+/* mainsectionn  */
+     .mainsection {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .maininner {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  .maininner h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .p1 {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .p2 {
+    font-size: 0.9rem;
+    padding: 0 10px;
+    line-height: 1.4rem;
+  }
+
+  .button1 {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .buttonmain {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .button2,
+  .button3 {
+    width: 80%;
+    margin: 0;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  /* Layers protection model */
+
+  .layermain {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  .layermain h1 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .layermain p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+    line-height: 1.4rem;
+  }
+
+  .layerdiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .layerone {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .layerone h2 {
+    font-size: 1.2rem;
+  }
+
+  .layerone p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  #brain,
+  #action {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+}
