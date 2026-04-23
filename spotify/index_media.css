@@ -1,0 +1,64 @@
+@media (max-width: 600px){
+
+  header{
+    padding: 8px 10px;
+    justify-content: space-between;
+  }
+
+  /* logo section */
+  .logo{
+    width: auto;
+  }
+
+  .logo img{
+    width: 30px;
+  }
+
+  #house{
+    font-size: 1.4rem;
+    padding-left: 10px;
+  }
+
+  /* search box (center me chhota) */
+  .input-box{
+    width: 55%;
+    margin-left: 10px;
+  }
+
+  .header-input{
+    padding: 8px 8px 8px 30px;
+    font-size: 0.8rem;
+  }
+
+  #search{
+    font-size: 1rem;
+    left: 8px;
+  }
+
+  /* right side clean kar */
+  .buttonheader{
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ❌ ye hide kar (Spotify mobile jaisa) */
+  .premiumbutton,
+  .installapp-button,
+  #grp{
+    display: none;
+  }
+
+  /* ✔ sirf important icons */
+  #bell-icon{
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  #userid{
+    font-size: 1.3rem;
+    padding-left: 0;
+  }
+
+}
