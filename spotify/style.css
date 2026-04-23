@@ -85,7 +85,7 @@ header {
 }
 
 .buttonheader {
-    padding-left: 15rem;
+    padding-left: 13rem;
 }
 
 .premiumbutton {
@@ -130,7 +130,7 @@ header {
 #bell-icon {
     font-size: 1.1rem;
     color: #c2bfbf;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 #bell-icon:hover {
@@ -141,7 +141,7 @@ header {
 #grp {
     color: #c2bfbf;
     font-size: 1.1rem;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 
 #grp:hover {
@@ -152,7 +152,7 @@ header {
 #userid {
     color: #c2bfbf;
     font-size: 1.6rem;
-    padding-left: 1.5rem;
+    padding-left: 0.5rem;
 }
 
 #userid:hover {
