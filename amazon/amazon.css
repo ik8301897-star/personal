@@ -162,6 +162,7 @@ nav a{
 .overlay{
     position: absolute;
     display: flex;
+   justify-content: space-evenly;
    margin-left: 1rem;
    align-items: center;
    margin-top: 10rem;
@@ -200,7 +201,7 @@ nav a{
     height: 62vh;
 }
 .bedsheet p{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-family: man;
      margin-left: 1rem;
      line-height: 1.5;
@@ -208,9 +209,25 @@ nav a{
 }
 .Explorep{
     color: blue;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 800;
     margin-left: 1rem;
     margin-top: 1rem;
     /* padding-bottom: 1.5rem; */
     cursor: pointer;
 }
+
+
+ /* up to 60 % off  */
+ .launchpadmain{
+    margin-top: 9rem;
+ }
+ .launchpadmain h3{
+    font-size: 1.6rem;
+    margin-left: 3rem;
+ }
+ .launchpad{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+ }
