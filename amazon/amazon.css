@@ -256,6 +256,10 @@ nav a{
     display: flex;
     justify-content: space-evenly;
   }
+  .sellingmain a{
+    text-decoration: none;
+    color: black;
+  }
   .beeps{
     width: 23%;
     border: 4px solid rgb(255, 255, 255);
@@ -426,4 +430,203 @@ nav a{
 
 .price {
   font-weight: bold;
+}
+
+
+/* product row  */
+
+.live-products-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff;
+  
+}
+
+.live-product-card {
+  width: 14%;
+  cursor: pointer;
+  border: 1px solid rgb(192, 188, 188);
+  padding-left: 1.5rem;
+   padding-bottom: 1rem;
+  
+}
+.live-product-card a{
+  text-decoration: none;
+  color: black;
+}
+
+.live-img-box {
+  width: 100%;
+  height: 140px;
+  background: #f3f3f3;
+  position: relative;
+  border-radius: 5px;
+}
+.live-img-box img{
+  height: 140px;
+}
+
+.live-discount {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: #cc0c39;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+
+.live-title {
+  font-size: 13px;
+  margin: 8px 0;
+  margin-top: 1rem;
+}
+
+.live-price-box {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.live-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.live-old-price {
+  font-size: 13px;
+  color: gray;
+  text-decoration: line-through;
+ 
+}
+
+.live-deal {
+  color: #cc0c39;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* mother day */
+.mother{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+/* MAIN FOOTER */
+.amz-footer {
+  background: #232f3e;
+  color: #ddd;
+  font-family: new;
+  margin-top: 3rem;
+}
+
+/* TOP SECTION */
+.amz-footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  border-bottom: 1px solid #3a4553;
+}
+
+.amz-footer-col {
+  width: 22%;
+}
+
+.amz-footer-col h4 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.amz-footer-col a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.amz-footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* MIDDLE */
+.amz-footer-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  border-bottom: 1px solid #3a4553;
+}
+
+.amz-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.amz-options button {
+  background: transparent;
+  border: 1px solid #848688;
+  color: #ddd;
+  padding: 6px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* BOTTOM */
+.amz-footer-bottom {
+  background: #131a22;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+
+.amz-bottom-footer {
+  background: #131a22;
+  color: #ccc;
+  padding: 30px 60px;
+  font-family: new;
+}
+
+/* GRID */
+.amz-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.amz-bottom-grid h5 {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.amz-bottom-grid p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* COPYRIGHT */
+.amz-copy {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.amz-copy p {
+  margin: 5px 0;
 }
