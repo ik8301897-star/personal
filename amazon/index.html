@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amazon</title>
     <link rel="stylesheet" href="./amazon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <link rel="stylesheet" href="./media.css">
 </head>
 
 <body>
@@ -16,8 +17,9 @@
             <img src="./image/amazon logo1.png" alt="">
         </div>
 
-        <i class="fa-solid fa-location-dot" id="iconlocation"></i>
+       
         <div class="location">
+           <i class="fa-solid fa-location-dot" id="iconlocation"></i>
             <p>delivery to patna 800001</p>
             <h5>Update Location</h5>
         </div>
@@ -40,27 +42,46 @@
         </div>
     </header>
     <!-- navbar  -->
-    <nav>
-        <i class="fa-solid fa-bars"></i>
-        <a href="#">All</a>
-        <a href="#">Fresh</a>
-        <a href="#">MX Player</a>
-        <a href="#">Selt</a>
-        <a href="#">Bestsellers</a>
-        <a href="#">Mobiles</a>
-        <a href="#">Customer Service</a>
-        <a href="#">Today's Deals</a>
-        <a href="#">Prime</a>
-        <a href="#">Fashion</a>
-        <a href="#">New Releases</a>
-        <a href="#">Amazon Pay</a>
-        <a href="#">Electronics</a>
-        <a href="#">Home & Kitchen</a>
-        <a href="#">Computers</a>
-    </nav>
+   <nav class="nav-bar">
+
+  <!-- MENU ICON -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <div class="menu-offer-full">
+    <marquee behavior="scroll" direction="left" >Great Summer Sale | Up to 70% OFF</marquee> 
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#">All</a>
+    <a href="#">Fresh</a>
+    <a href="#">MX Player</a>
+    <a href="#">Sell</a>
+    <a href="#">Bestsellers</a>
+    <a href="#">Mobiles</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Today's Deals</a>
+    <a href="#">Prime</a>
+    <a href="#">Fashion</a>
+    <a href="#">New Releases</a>
+    <a href="#">Amazon Pay</a>
+    <a href="#">Electronics</a>
+    <a href="#">Home & Kitchen</a>
+    <a href="#">Computers</a>
+  </div>
+
+</nav>
     <!-- mainsection -->
     <div class="main">
-      <a href="https://www.amazon.in/events/greatsummersale/?_encoding=UTF8&ref_=DRQC1&pd_rd_w=kdFqt&content-id=amzn1.sym.93654b75-600a-43ad-a27a-a44dc9edc358&pf_rd_p=93654b75-600a-43ad-a27a-a44dc9edc358&pf_rd_r=4VW5WCT9P1Q3RFPKMAZ1&pd_rd_wg=3V0jR&pd_rd_r=e0b302d2-8f7c-404e-9650-84b53be9a39b"> <img src="./image/mainpage1.jpg" alt="mainimg"></a> 
+      <div class="slider">
+      <a href="https://www.amazon.in/events/greatsummersale/?_encoding=UTF8&ref_=DRQC1&pd_rd_w=kdFqt&content-id=amzn1.sym.93654b75-600a-43ad-a27a-a44dc9edc358&pf_rd_p=93654b75-600a-43ad-a27a-a44dc9edc358&pf_rd_r=4VW5WCT9P1Q3RFPKMAZ1&pd_rd_wg=3V0jR&pd_rd_r=e0b302d2-8f7c-404e-9650-84b53be9a39b"> <img src="./image/mainpage1.jpg" alt="mainimg" class="slide active"></a>
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img26/Consumables/Grocery/PC-Hero_1500x600._CB782932305_.jpg" alt="" class="slide">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Beauty/GW/yesbank/makeup_PC._CB796616147_.png" alt="" class="slide">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Media/MayART/toys/Category-Hero_Asin-PC_2._CB780919410_.jpg" alt="" class="slide">
+
+
+
+     </div>
         <div class="overlay">
             <div class="inner1">
                 <h3>Revamp Your Home in Style.</h3>
@@ -881,7 +902,7 @@
     <div class="amz-logo">amazon</div>
 
     <div class="amz-options">
-      <button>🌐 English</button>
+      <button> English</button>
       <button>🇮🇳 India</button>
     </div>
   </div>
@@ -944,8 +965,34 @@
 </footer>
 
 
+<script>
+function toggleMenu(){
+  const menu = document.getElementById("navLinks");
+  menu.classList.toggle("show");
+}
+</script>
 
 
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(){
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+
+  slides[index].classList.add("active");
+
+  index++;
+  if(index === slides.length){
+    index = 0;
+  }
+}
+
+setInterval(showSlide, 2500); 
+</script>
 
 
 

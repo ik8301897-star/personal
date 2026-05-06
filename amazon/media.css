@@ -1,0 +1,541 @@
+@media (max-width: 600px){
+
+  header{
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px;
+  }
+  .logo{
+    width: 25%;
+    background: none;
+  }
+
+  .signin{
+    display: block;
+    margin-left: 15px;
+  }
+
+  .signin p{
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .signin h5{
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .return{
+    display: block;
+    margin-left: 30px;
+  }
+
+  .return p{
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .cart{
+    align-items: center;
+  }
+  .cart i{
+    margin-top: 0;
+  }
+
+  .cart h5{
+    display: none;
+  }
+  .input{
+    width: 100%;
+    order: 2;
+    margin-top: 4px;
+  }
+
+  .input input{
+    height: 40px;
+    border-radius: 6px;
+    padding-left: 10px;
+  }
+
+  #Search{
+    background: #febd69;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    margin-left: -45px;
+  }
+  .input span,
+  .input h5{
+    display: none;
+  }
+  
+
+  .location{
+    width: 100%;
+    order: 3;
+    margin: 5px 0 0 0;
+    padding-left: 5px;
+  }
+
+
+  .location p{
+    font-size: 16px;
+    display: inline;
+  }
+
+  .location h5{
+    font-size: 12px;
+    display: inline;
+    margin-left: 5px;
+  }
+/* nav bar  */
+
+.nav-links{
+    position: absolute;
+    top: 110px; 
+    left: 0;
+    width: 100%;
+    background: #232F3E;
+    flex-direction: column;
+    display: none;  
+    padding: 10px;
+  }
+
+  .nav-links a{
+    padding: 10px;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav-links.show{
+    display: flex;  
+  }
+
+
+   .menu-offer-full{
+    display: block;
+    flex: 1;  
+    background:#232F3E;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+
+  /* main  */
+
+   .main img{
+    height: 26vh;
+    
+  }
+  .slider{
+  position: relative;
+  width: 100%;
+  height: 30vh; 
+  overflow: hidden;
+}
+.slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+  .overlay{
+    position: relative;
+    margin-top: -30px;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .overlay::-webkit-scrollbar{
+    display: none;
+  }
+
+  .inner1{
+    min-width: 85%;
+    height: auto;
+    border-radius: 8px;
+    padding-bottom: 10px;
+  }
+
+  .inner1 h3{
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .bedsheet{
+    flex-wrap: wrap;
+  }
+
+  .bedsheet1{
+    width: 50%;
+  }
+
+
+  .bedsheet img{
+    width: 90%;
+    height: 90px;
+    margin-left: 5%;
+  }
+
+
+  .bedsheet p{
+    font-size: 12px;
+  }
+
+  .Explorep{
+    font-size: 13px;
+    margin-left: 10px;
+  }
+
+  /* up to 60% off  */
+
+  .launchpadmain{
+    margin-top: 1.3rem;
+  }
+  .launchpadmain h3{
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+  }
+
+  .launchpad{
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+
+  }
+  .launchpad img{
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+  }
+  .launchpad::-webkit-scrollbar{
+    display: none;
+  }
+
+  /* starting rs 999  */
+  .launchpadmain1{
+    margin-top: 0.6rem;
+  }
+  .launchpadmain1 h3{
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+  }
+
+  /* selling  */
+  .sellingmain{
+    overflow-x: auto;        
+    display: flex;
+    flex-wrap: nowrap;      
+    gap: 12px;
+    padding: 10px;
+    margin-top: 1rem;
+  }
+
+
+  .sellingmain::-webkit-scrollbar{
+    display: none;
+  }
+  .beeps{
+    min-width: 85%;         
+    width: auto;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    padding-bottom: 10px;
+  }
+
+  .beeps h3{
+    font-size: 16px;
+    padding: 6px;
+  }
+  .mainimg img{
+    width: 90%;
+    height: 140px;
+    object-fit: contain;  
+  }
+
+  .beeps h5{
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .sp1{
+    font-size: 17px;
+  }
+
+  .sp2{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .imgwala{
+    gap: 6px;
+    padding: 0 5px;
+  }
+
+  .imgwala img{
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+  }
+  .youlovedimg{
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 10px;
+    margin-top: 8px;
+  }
+  .youlovedimg img{
+    width: 48%;       
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  /* Related to items you've viewed  */
+  .launchpadmain1{
+    margin-top: 2rem;
+  }
+
+  .launchpadmain1 h3{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .launchpad1{
+    display: flex;
+    overflow-x: auto;        
+    gap: 10px;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .launchpad1::-webkit-scrollbar{
+    display: none;
+  }
+
+  .launchpad1 a{
+    min-width: 140px;      
+    flex-shrink: 0;        
+  }
+
+  .launchpad1 img{
+    width: 100%;
+    height: 140px;
+    object-fit: contain;     
+    border-radius: 6px;
+  }
+
+  /* Introduction what's new  */
+
+  .cricket-section{
+    padding: 15px 10px;
+  }
+
+  .cricket-section h2{
+    font-size: 22px;
+  }
+
+  .teams{
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+
+  .teams::-webkit-scrollbar{
+    display: none;
+  }
+
+  .teams button{
+    flex-shrink: 0;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .card-container{
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 10px;
+  }
+
+  .card-container::-webkit-scrollbar{
+    display: none;
+  }
+
+  .card{
+    width: 160px;          
+    flex-shrink: 0;
+    padding: 8px;
+  }
+
+  .img-box{
+    height: 180px;
+  }
+
+  .img-box img{
+    height: 100%;
+    object-fit: contain;  
+  }
+
+  .card h4{
+    font-size: 14px;
+  }
+
+  .card p{
+    font-size: 13px;
+  }
+
+  .price{
+    font-size: 15px;
+  }
+
+
+  /* product row  */
+  .live-products-section{
+    display: flex;
+    overflow-x: auto;     
+    gap: 12px;
+    padding: 10px;
+  }
+
+  /* scrollbar hide */
+  .live-products-section::-webkit-scrollbar{
+    display: none;
+  }
+
+  .live-product-card{
+    min-width: 160px;     
+    flex-shrink: 0;       
+    padding: 10px;
+  }
+
+  .live-img-box{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .live-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+  }
+
+  .live-title{
+    font-size: 14px;
+  }
+
+  .live-price{
+    font-size: 15px;
+  }
+
+  .live-old-price{
+    font-size: 12px;
+  }
+/* Mother day  */
+
+ .mother{
+    display: flex;
+    overflow-x: auto;      /* 🔥 scroll enable */
+    gap: 12px;
+    padding: 10px;
+  }
+
+  /* scrollbar hide */
+  .mother::-webkit-scrollbar{
+    display: none;
+  }
+
+  .mother .beeps{
+    min-width: 85%;        /* 🔥 ek card screen ka 80-85% lega */
+    flex-shrink: 0;        /* 🔥 compress nahi hoga */
+  }
+
+  /* images adjust */
+  .youlovedimg{
+    gap: 4px;
+  }
+
+  .youlovedimg img{
+    width: 48%;           
+    height: 100px;
+    object-fit: contain;   
+  }
+
+  .beeps h3{
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .morespan{
+    font-size: 14px;
+  }
+
+
+  /* footer  */
+  .amz-footer-top {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .amz-footer-col {
+    width: 100%;
+  }
+
+  .amz-footer-col h4 {
+    font-size: 15px;
+  }
+
+  .amz-footer-col a {
+    font-size: 13px;
+  }
+
+  .amz-footer-middle {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .amz-logo {
+    font-size: 22px;
+  }
+
+  .amz-options button {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .amz-bottom-footer {
+    padding: 20px;
+  }
+
+  .amz-bottom-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .amz-bottom-grid h5 {
+    font-size: 12px;
+  }
+
+  .amz-bottom-grid p {
+    font-size: 11px;
+  }
+
+  .amz-copy {
+    font-size: 11px;
+    padding: 10px;
+  }
+}
