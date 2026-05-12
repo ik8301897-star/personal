@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mithila Painting</title>
+  <title>Mithila Wear</title>
   <link rel="stylesheet" href="./men.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <!-- <link rel="stylesheet" href="./MEDIA.CSS"> -->
+ <link rel="stylesheet" href="./MEDIA.CSS">
 </head>
 <body>
   <header>
@@ -16,12 +16,12 @@
     </div>
     <nav>
       <ul class="nav">
-        <li><a href="./home.html">HOME</a></li>
-        <li><a href="./saree.html">SAREE</a></li>
-        <li><a href="./blouses.html">BLOUSES</a></li>
-        <li><a href="./Home_decor.html">HOME DECOR</a></li>
-        <li><a href="./kurtas.html">KURTAS</a></li>
-        <li><a href="./men.html">MENS</a></li>
+        <a href="./home.html">HOME</a>
+        <a href="./saree.html">SAREE</a>
+        <a href="./blouses.html">BLOUSES</a>
+        <a href="./Home_decor.html">HOME DECOR</a>
+        <a href="./kurtas.html">KURTAS</a>
+        <a href="./men.html">MENS</a>
        
       </ul>
     </nav>
@@ -394,7 +394,7 @@
          <i class="fa-solid fa-star" id="star1"></i>
          <i class="fa-solid fa-star" id="star1"></i>
          <i class="fa-solid fa-star" id="star1"></i>
-      <p>Rs. 5,100.00</p>
+      <p>Rs.00.00</p>
     </div>
 
   </div>
@@ -427,6 +427,59 @@
         <a href="" class="footera">Contact Us</a></div> 
     </div>
    </footer>
+
+
+
+
+
+   <script>
+
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.querySelector("nav");
+
+menuToggle.addEventListener("click", () => {
+
+    nav.classList.toggle("active");
+
+    // icon change
+
+    if(menuToggle.innerHTML === "☰"){
+        menuToggle.innerHTML = "✖";
+    }
+    else{
+        menuToggle.innerHTML = "☰";
+    }
+
+});
+
+</script>
+
+
+<script>
+
+let images = document.querySelectorAll(".posterimg");
+
+let index = 0;
+
+setInterval(() => {
+
+    // current image remove
+    images[index].classList.remove("active");
+
+    // next image
+    index++;
+
+    // last ke baad fir first image
+    if(index >= images.length){
+        index = 0;
+    }
+
+    // new image active
+    images[index].classList.add("active");
+
+}, 2500);
+
+</script>
 </body>
 </html>
 

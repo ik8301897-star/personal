@@ -21,39 +21,39 @@
 }
 
 body {
-    background-color:#f5e6bd
+    background-color: #f5e6bd
 }
 
 header {
     width: 100%;
     display: flex;
     align-items: center;
-     /* background-color: #2C1810; */
-} 
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+    background-color: #F5E6CC;
+}
+
+/* LOGO */
 
 .logo {
     width: 18%;
-    display: flex;
 }
 
 .logoimg {
     width: 50%;
-    margin-left: 3rem;
+    margin-left: 1rem;
     transition: all 0.3s ease;
 }
 
 .logoimg:hover {
     transform: translateY(-0.2rem);
-
 }
+
 
 .nav {
     display: flex;
     gap: 30px;
-}
-
-li {
-    color: #F8E2BE;
 }
 
 .nav a {
@@ -64,7 +64,6 @@ li {
     padding-bottom: 5px;
     font-family: bold;
 }
-
 
 .nav a::after {
     content: "";
@@ -77,15 +76,14 @@ li {
     transition: 0.4s ease;
 }
 
-
 .nav a:hover::after {
     width: 100%;
 }
 
-.icon {
-    width: 20%;
 
-    margin-left: 4rem;
+
+.icon {
+    width: 15%;
     display: flex;
     justify-content: space-around;
 }
@@ -93,20 +91,26 @@ li {
 #search {
     font-size: 1.3rem;
     color: #64200a;
-    padding-left: 2rem;
     opacity: 0.7;
+}
 
-}
-#menuToggle{
+
+
+.menu-toggle {
     display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #64200a;
 }
+
 /* mainsection  */
-.mainh1{
+.mainh1 {
     font-family: man;
     font-weight: 100;
     margin-left: 2rem;
     margin-top: 2rem;
 }
+
 .featureh1 {
     font-size: 2.2rem;
     text-align: center;
@@ -115,7 +119,6 @@ li {
     font-weight: 100;
 }
 
-/* FIRST ROW */
 .featuremain {
     width: 100%;
     display: flex;
@@ -123,7 +126,8 @@ li {
     margin-top: 2rem;
     gap: 20px;
 }
-#star1{
+
+#star1 {
     margin-top: 0.5rem;
     color: rgb(22, 22, 22);
     font-size: 0.7rem;
@@ -138,13 +142,12 @@ li {
     gap: 20px;
 }
 
-/* CARD */
+
 .feature1 {
     width: 22%;
     margin-top: 2rem;
 }
 
-/* IMAGE BOX */
 .imgbox {
     position: relative;
     width: 100%;
@@ -152,7 +155,7 @@ li {
     overflow: hidden;
 }
 
-/* BOTH IMAGES */
+
 .featurecard1img {
     width: 100%;
     height: 100%;
@@ -161,7 +164,6 @@ li {
     transition: opacity 0.4s ease;
 }
 
-/* HOVER IMAGE */
 .hoverimg {
     position: absolute;
     top: 0;
@@ -169,7 +171,6 @@ li {
     opacity: 0;
 }
 
-/* HOVER EFFECT */
 .imgbox:hover .hoverimg {
     opacity: 1;
 }
@@ -178,7 +179,6 @@ li {
     opacity: 0;
 }
 
-/* TEXT */
 .feature1 a {
     text-decoration: none;
     color: #0f0f0f;
@@ -204,89 +204,103 @@ li {
     font-family: new;
 }
 
-/* IMPORTANT */
 .featuremain,
 .card {
     align-items: flex-start;
 }
+
 /* feature card3 */
-.feature{
+.feature {
     width: 100%;
     display: flex;
 }
-.feature1{
+
+.feature1 {
     width: 22%;
     height: 69vh;
 }
-.featureimg{
+
+.featureimg {
     width: 100%;
 }
+
 /* footer  */
-footer{
+footer {
     width: 100%;
     background-color: #F3D8AC;
     height: 80vh;
     margin-top: 6rem;
     display: flex;
 }
-.footer1{
+
+.footer1 {
     width: 50%;
 }
-.footerp{
+
+.footerp {
     font-size: 1.8rem;
     margin-left: 3rem;
     padding-top: 4rem;
-    font-family: man ;
+    font-family: man;
 }
-.footerp1{
+
+.footerp1 {
     font-size: 1.1rem;
     font-family: man;
-     margin-left: 3rem;
+    margin-left: 3rem;
     padding-top: 2rem;
     color: #857e73;
 }
-.footerp2{
+
+.footerp2 {
     font-size: 1.1rem;
     font-family: man;
-     margin-left: 3rem;
+    margin-left: 3rem;
     padding-top: 1rem;
     color: #857e73;
 }
-input{
+
+input {
     padding: 8px 17px;
     width: 50%;
     margin-left: 3rem;
     margin-top: 1rem;
 }
-#fb{
+
+#fb {
     font-size: 1.3rem;
     margin-left: 3rem;
     margin-top: 2rem;
     cursor: pointer;
 }
-#fb1{
+
+#fb1 {
     font-size: 1.3rem;
     margin-left: 1rem;
     margin-top: 2rem;
     cursor: pointer;
 }
-.aboutus{
+
+.aboutus {
     width: 50%;
     /* border: 1px solid black; */
 }
-.anchorfooter{
+
+.anchorfooter {
     margin-top: 2rem;
 }
-.footera{
-     font-size: 1rem;
+
+.footera {
+    font-size: 1rem;
     font-family: man;
-     margin-left: 3rem;
+    margin-left: 3rem;
     padding-top: 2rem;
     color: #857e73;
     text-decoration: none;
     padding-top: 2rem;
     line-height: 2;
 }
-.footera:hover{
-text-decoration: underline;
+
+.footera:hover {
+    text-decoration: underline;
 }
