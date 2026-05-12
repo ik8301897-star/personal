@@ -1,73 +1,124 @@
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
+
     header {
-        padding: 1rem;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 40%;
     }
 
     .logoimg {
-        width: 70px;
+        width: 100%;
         margin-left: 0;
     }
 
-    /* Hide nav by default */
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
     nav {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        display: none;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #F5E6CC;
+        transition: 0.4s ease;
+        z-index: 1000;
+        padding-top: 80px;
+    }
+
+    nav.active {
+        right: 0;
     }
 
     .nav {
         flex-direction: column;
-        align-items: end;
-        padding: 1rem 0;
-        gap: 20px;
+        align-items: center;
+        gap: 35px;
     }
 
-    nav.active {
-        display: block;
+    .nav a {
+        font-size: 1.2rem;
     }
+
 
     .icon {
         display: none;
     }
 
-    .menu-toggle {
-        display: block;
-       margin-left: 25rem;
-        font-size: 2rem;
-    }
-    /* mainsection */
+
+    /* main section */
+
     .poster{
-        width: 100%;
+        height: 40vh;
     }
+
+    .posterimg{
+        height: 40vh;
+    }
+
+    .overlay{
+        padding: 0 15px;
+        text-align: center;
+    }
+
     .posterh1{
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
+
     .button{
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
+
     .shopbutton{
-        width: 40%;
+        padding: 10px 20px;
+        font-size: 1rem;
     }
-    /* mithila */
+    /* mithila  */
+
     .mithila{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
+
     .mithila1{
-        width:100%;
-    }
-    .mithila2 h1{
-        margin-top: 2rem;
-    }
-    .mithila2 {
         width: 100%;
+        margin-left: 0;
+        margin-top: 1.5rem;
+
+        display: flex;
+        justify-content: center;
     }
+
+    .mithila1img{
+        width: 92%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .mithila2{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .mithila2 h1{
+        font-size: 2rem;
+        margin-top: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .mithila2 p{
+        margin-top: 1.3rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
     /* heart of mithila  */
+
     .heart{
         flex-direction: column;
         margin-top: 2rem;
@@ -75,208 +126,241 @@
 
     .heartimg1{
         width: 100%;
-        height: 500px;   /* 100vh hata diya */
+        height: 50vh;
     }
 
     .overlayheart{
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-        text-align: center;
+        padding: 0 15px;
     }
 
     .overlayp{
-        font-size: 1rem;
-        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .button1{
+        padding-bottom: 0;
     }
 
     .shopbutton1{
         width: auto;
-        padding: 12px 20px;
-        font-size: 14px;
+        padding: 12px 28px;
+        font-size: 1rem;
     }
 
-    /* featurecard  */
-    .featureh1{
-        font-size: 2.5rem;
+    /* feature card  */
+
+     .featuremain,
+    .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 0 12px;
+    }
+
+    .feature1 {
+        width: 100%;
+        height: 350px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .imgbox {
+        width: 100%;
+        height: 70%;
+        aspect-ratio: 1/1.2;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .featurecard1img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .price {
+        margin-top: 0.8rem;
+    }
+
+    .price a {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .price p {
+        font-size: 1rem;
+        padding-top: 0.4rem;
+    }
+
+    /* hand made love  */
+
+     .handh1 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+    }
+
+    .handmademain {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 0 12px;
+    }
+
+    .handmade {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .handmadeimg {
+        width: 100%;
+        height: 60vh;
+        border-radius: 10px;
+    }
+
+    .handoverlay {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .handmadea {
+        font-size: 1rem;
+        padding: 0.9rem;
+    }
+
+    .button2 {
         margin-top: 2rem;
+        padding: 0 12px;
     }
 
-    .featuremain{
-        flex-direction: column;
-        align-items: center;
-        height: auto;           /* 80vh remove */
-        gap: 2rem;
-        padding: 0 1rem;
-    }
-
-    .feature1{
-        width: 100%;            /* full width */
-        height: auto;           /* 50vh remove */
-    }
-
-    .featurecard1img{
+    .shopbutton2 {
         width: 100%;
-        height: auto;
-    }
-
-    .price{
-        text-align: center;
-    }
-
-    .price a{
+        padding: 14px 20px;
         font-size: 1rem;
+        border-radius: 8px;
     }
 
-    .price p{
-        font-size: 1rem;
-    }
-    /* feature card 2nd  */
-    .card{
-        flex-direction: column;
-        align-items: center;
-        height: auto;          /* 80vh remove */
-        gap: 2rem;
-        padding: 0 1rem;
+    /* comment  */
+
+    .leth1 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+        line-height: 1.4;
     }
 
-    .card .feature1{
-        width: 100%;           /* full width */
-        height: auto;          /* 50vh remove */
+    .star {
+        margin-top: 0.6rem;
     }
 
-    .card .featurecard1img{
-        width: 100%;
-        height: auto;
-    }
-    /* hand painted */
-    .handh1{
-        font-size: 2.6rem;
-        margin-top: 1.5rem;
-    }
-
-    .handmademain{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .handmade{
-        width: 100%;
-        margin-top: 1.5rem;
-    }
-
-    .handmadeimg{
-        height: 600px;   
-    }
-
-    .handmadea{
-        font-size: 1rem;
-        padding: 0.8rem;
-    }
-
-    .button2{
-        margin-top: 2rem;
-    }
-
-    .shopbutton2{
-        width: auto;     
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-    /* let customers speak for us  */
-    .leth1{
-        font-size: 2.6rem;
-        margin-top: 1.5rem;
-        padding: 0 1rem;
-    }
-
-    .star{
-        margin-top: 0.5rem;
-    }
-
-    #star{
+    #star {
         font-size: 1.2rem;
     }
 
-    .commentmain{
+    .commentmain {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
-        padding: 0 1rem;
+        gap: 20px;
+        padding: 0 12px;
     }
 
-    .comment1{
-        width: 100%;      /* full width */
+    .comment1 {
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 16px 14px;
+        background-color: #fff;
     }
 
-    .comment1 p{
+    .review {
+        margin-bottom: 0.5rem;
+    }
+
+    #star1 {
+        font-size: 1rem;
+    }
+
+    .comment1 p {
         font-size: 1rem;
         margin-top: 0.8rem;
     }
 
-    .p1{
-        font-size: 0.9rem;   /* readable */
-        line-height: 1.6;
+    .p1 {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-top: 0.8rem;
     }
 
-    .p11{
+    .p11 {
         font-size: 0.95rem;
+        margin-top: 1rem;
     }
 
-    .smallimg img{
-        width: 70px;
-        height: 70px;
+    .smallimg {
+        margin-top: 1rem;
+    }
+
+    .smallimg img {
+        width: 80px;
+        height: 80px;
         object-fit: cover;
         border-radius: 50%;
     }
+
     /* footer  */
-    {
+
+    footer {
         flex-direction: column;
-        height: auto;              /* 80vh remove */
-        padding-bottom: 2rem;
+        height: auto;
+        padding: 2rem 0;
     }
 
     .footer1,
-    .aboutus{
+    .aboutus {
         width: 100%;
     }
 
-    .footerp{
-        font-size: 1.4rem;
-        margin-left: 1.5rem;
-        padding-top: 2rem;
+    .footerp {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        padding-top: 1.5rem;
     }
 
     .footerp1,
-    .footerp2{
+    .footerp2 {
         font-size: 0.95rem;
-        margin-left: 1.5rem;
-    }
-
-    input{
-        width: 85%;               /* full width feel */
-        margin-left: 1.5rem;
-    }
-
-    #fb{
-        margin-left: 1.5rem;
-        margin-top: 1.5rem;
-    }
-
-    #fb1{
         margin-left: 1rem;
+        padding-top: 1rem;
+        line-height: 1.6;
+        padding-right: 1rem;
     }
 
-    .anchorfooter{
+    input {
+        width: 85%;
+        margin-left: 1rem;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    #fb,
+    #fb1 {
+        margin-left: 1rem;
         margin-top: 1.5rem;
+        font-size: 1.4rem;
     }
 
-    .footera{
-        margin-left: 1.5rem;
+    .anchorfooter {
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .footera {
+        margin-left: 1rem;
         font-size: 0.95rem;
-        line-height: 2;
+        line-height: 2.2;
     }
-
-
-
 }

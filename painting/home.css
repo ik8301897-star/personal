@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: bold;
-    src: url(./);
+    src: url(./Absans-Regular.otf);
 }
 
 
@@ -22,48 +22,50 @@
 }
 
 body {
-    background-color: #F8E2BE;
+    background-color:#f5e6bd
 }
 
 header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+    background-color: #F5E6CC;
 }
+
+/* LOGO */
 
 .logo {
     width: 18%;
-    display: flex;
 }
 
 .logoimg {
     width: 50%;
-    margin-left: 3rem;
+    margin-left: 1rem;
     transition: all 0.3s ease;
 }
 
 .logoimg:hover {
     transform: translateY(-0.2rem);
-
 }
+
+/* NAVBAR */
 
 .nav {
     display: flex;
     gap: 30px;
 }
 
-li {
-    color: #F8E2BE;
-}
-
 .nav a {
     position: relative;
     text-decoration: none;
-    color: black;
-    font-weight: 600;
+    color: #64200a;
+    font-weight: 200;
     padding-bottom: 5px;
+    font-family: bold;
 }
-
 
 .nav a::after {
     content: "";
@@ -76,52 +78,74 @@ li {
     transition: 0.4s ease;
 }
 
-
 .nav a:hover::after {
     width: 100%;
 }
 
-.icon {
-    width: 20%;
+/* ICONS */
 
-    margin-left: 4rem;
+.icon {
+    width: 15%;
     display: flex;
     justify-content: space-around;
 }
 
 #search {
     font-size: 1.3rem;
-    color: rgb(12, 12, 12);
-    padding-left: 2rem;
+    color: #64200a;
     opacity: 0.7;
-
 }
-#menuToggle{
+
+/* MENU ICON */
+
+.menu-toggle {
     display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #64200a;
 }
 
 /* mainsection */
 .poster {
     position: relative;
     width: 100%;
+    height: 90vh;
+    overflow: hidden;
 }
 
+/* ALL IMAGES */
 .posterimg {
+    position: absolute;
     width: 100%;
     height: 90vh;
     object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
+/* ACTIVE IMAGE */
+.posterimg.active {
+    opacity: 1;
+}
+
+/* OVERLAY */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+
+    background-color: rgba(0,0,0,0.4);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    z-index: 2;
 }
 
 .posterh1 {
@@ -133,21 +157,19 @@ li {
 }
 
 .button {
-    text-align: center;
     margin-top: 1rem;
 }
 
 .shopbutton {
-    width: 10%;
-    padding: 12px 19px;
-    font-weight: 100;
+    padding: 12px 25px;
     border: none;
-    transition: all 0.2s ease-in;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
 }
 
 .shopbutton:hover {
     transform: translateY(-0.2rem);
-
 }
 
 /* mithila */
@@ -181,7 +203,7 @@ li {
 .mithila2 h1 {
     font-size: 2.5rem;
     color: rgb(12, 12, 12);
-    font-family: man;
+    font-family: bold;
     font-weight: 100;
     margin-top: 4rem;
     text-align: center;
@@ -189,7 +211,7 @@ li {
 
 .mithila2 p {
     text-align: center;
-    color: rgb(14, 13, 13);
+   color: #471301;
     font-family: new;
     margin-top: 2rem;
     opacity: 0.7;
@@ -253,30 +275,72 @@ li {
     font-size: 2.2rem;
     text-align: center;
     margin-top: 3rem;
-    font-family: man;
+    font-family: bold;
     font-weight: 100;
 }
 
+/* FIRST ROW */
 .featuremain {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
     margin-top: 2rem;
-    height: 80vh;
-
+    gap: 20px;
+}
+#star1{
+    margin-top: 0.5rem;
+    color: rgb(22, 22, 22);
 }
 
-.featurecard1img {
+/* SECOND ROW */
+.card {
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    gap: 20px;
 }
 
+/* CARD */
 .feature1 {
     width: 22%;
-    height: 50vh;
-
 }
 
+/* IMAGE BOX */
+.imgbox {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1.2;
+    overflow: hidden;
+}
+
+/* BOTH IMAGES */
+.featurecard1img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.4s ease;
+}
+
+/* HOVER IMAGE */
+.hoverimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* HOVER EFFECT */
+.imgbox:hover .hoverimg {
+    opacity: 1;
+}
+
+.imgbox:hover .frontimg {
+    opacity: 0;
+}
+
+/* TEXT */
 .feature1 a {
     text-decoration: none;
     color: #0f0f0f;
@@ -287,37 +351,25 @@ li {
 }
 
 .price {
-    margin-top: 1.2rem;
+    margin-top: 1rem;
 }
 
 .price a {
     font-size: 1.1rem;
     font-family: new;
+    line-height: 1.5rem;
 }
 
 .price p {
-    padding-top: 1rem;
+    padding-top: 0.7rem;
     font-size: 1.1rem;
     font-family: new;
 }
 
-/* featurecard2 */
+/* IMPORTANT */
+.featuremain,
 .card {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-      margin-top: 2rem;
-    height: 80vh;
-
-}
-
-.card1 {
-    width: 22%;
-    height: 50vh;
-}
-
-.cardimg {
-    width: 100%;
+    align-items: flex-start;
 }
 /* feature card3 */
 .feature{
@@ -326,7 +378,7 @@ li {
 }
 .feature1{
     width: 22%;
-    height: 50vh;
+    height: 69vh;
 }
 .featureimg{
     width: 100%;
@@ -357,7 +409,8 @@ width: 100%;
   
 }
 .handmade:hover{
-    transform: translatey(-0.3rem)
+    transform: scale(1.02);
+    cursor: pointer;
 }
 .handoverlay{
   position: absolute;
