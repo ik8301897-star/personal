@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    overflow-x: hidden;
+}
+
+body {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: header;
+    src: url(./font/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: para;
+    src: url(./font/Poppins-ThinItalic.ttf);
+}
+
+#nav {
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 0 7%;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#nav img {
+    width: 58px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+}
+
+#nav a {
+    text-decoration: none;
+    color: #d8d8d8;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.4s;
+}
+
+#nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0%;
+    height: 1px;
+    background: #D4AF37;
+    transition: 0.4s;
+}
+
+#nav a:hover {
+    color: #D4AF37;
+}
+
+#nav a:hover::after {
+    width: 100%;
+}
+
+#nav .active {
+    color: #D4AF37;
+}
+
+
+
+
+
+/* --- From Farms to Patna --- */
+.origin-story-section {
+    background-color: #0b0b0b; 
+    padding: 100px 6%;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+   
+}
+
+.story-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; 
+    gap: 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.story-mini-badge {
+    color: #cda250; 
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-family: header;
+}
+
+.story-main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #ffffff 60%, #a6a6a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: header;
+}
+
+.story-tagline {
+    font-size: 18px;
+    color: #cda250;
+    font-style: italic;
+    margin-bottom: 50px;
+    opacity: 0.95;
+    border-left: 2px solid #cda250;
+    padding-left: 15px;
+    font-family: para;
+    font-weight: 700;
+}
+
+.story-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.story-card {
+    display: flex;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(205, 162, 80, 0.08); 
+    padding: 25px;
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.story-card:hover {
+    background: rgba(205, 162, 80, 0.04);
+    border-color: rgba(205, 162, 80, 0.3);
+    transform: translateX(8px);
+}
+
+.card-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda250;
+    opacity: 0.6;
+    font-family: header;
+}
+
+.card-text-block h4 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: header;
+}
+
+.card-text-block p {
+    font-size: 15px;
+    color: #b3b3b3;
+    line-height: 1.6;
+    font-family: para;
+    font-weight: 700;
+}
+
+.story-visual-side {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+  
+}
+
+.visual-wrapper {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #161513 0%, #090908 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+      background-image: url(https://images.pexels.com/photos/8828586/pexels-photo-8828586.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.route-map-graphic {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    
+}
+
+.map-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ec9f0f;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 20px #966203;
+}
+
+.map-dot::after {
+    content: attr(data-label);
+    position: absolute;
+    color: #ffffff;
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,0.6);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(241, 157, 0, 0.829);
+}
+
+.south-dot {
+    bottom: 15%;
+    left: 20%;
+}
+.south-dot::after {
+    top: 20px;
+    left: -20px;
+}
+
+.patna-dot {
+    top: 15%;
+    right: 20%;
+}
+.patna-dot::after {
+    bottom: 20px;
+    right: -20px;
+}
+
+.connecting-glow-line {
+    position: absolute;
+    top: calc(15% + 6px);
+    right: calc(20% + 6px);
+    width: 65%;
+    height: 65%;
+    border-right: 2px dashed rgba(205, 162, 80, 0.4);
+    border-bottom: 2px dashed rgba(205, 162, 80, 0.4);
+    border-radius: 0 0 40px 0; 
+}
+
+
+
+
+
+
+
+/* --- Local Soul "Why Patna" Section Style --- */
+.local-soul-section {
+    background-color: #0b0b0b; 
+    padding: 120px 6%;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    position: relative;
+}
+
+/* Premium Minimal Quote Styling */
+.soul-quote-wrapper {
+    max-width: 900px;
+    margin: 0 auto 90px auto;
+    text-align: center;
+    position: relative;
+}
+
+.quote-line-accent {
+    width: 40px;
+    height: 1px;
+    background-color: #cda250; /* Gold Accent Line */
+    margin: 0 auto 25px auto;
+}
+
+.soul-manifesto {
+    font-family: header;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #f5f5f5;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+/* Unique Asymmetric Grid Architecture */
+.soul-asymmetric-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr; 
+    grid-auto-rows: minmax(280px, auto);
+    gap: 24px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.soul-grid-item {
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 0px; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    overflow: hidden;
+  
+}
+
+.soul-grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    border: 1px solid #cda250;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.soul-grid-item:hover::before {
+    opacity: 0.3;
+}
+
+.soul-grid-item:hover {
+    background: #141414;
+    transform: translateY(-4px);
+}
+
+.item-hero {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; 
+    background: linear-gradient(180deg, rgba(17,17,17,0.8) 0%, #111111 100%), 
+                radial-gradient(circle at top right, rgba(205,162,80,0.05) 0%, transparent 60%);
+    justify-content: center;
+      background-image: url(https://images.pexels.com/photos/36925835/pexels-photo-36925835.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.item-medium {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+       background-image: url(https://images.pexels.com/photos/33286187/pexels-photo-33286187.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.item-tall {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: linear-gradient(135deg, #111111 0%, #151412 100%);
+      background-image: url(https://images.pexels.com/photos/7259029/pexels-photo-7259029.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.item-tag {
+    color: #cda250;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: para;
+    display: inline-block;
+}
+
+.item-title {
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    font-family: header;
+}
+
+.item-desc {
+    font-size: 14.5px;
+    color: #a3a3a3;
+    line-height: 1.65;
+    font-weight: 700;
+    font-family: para;
+}
+
+.item-signature-note {
+    margin-top: 30px;
+    font-size: 12px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 15px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.tall-accent-icon {
+    font-size: 22px;
+    color: #cda250;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    opacity: 0.5;
+}
+
+
+
+
+
+/* --- Barista's Craft Section Style --- */
+.barista-craft-section {
+    background-color: #0b0b0b; /* Seamless Dark Background */
+    padding: 120px 6%;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    position: relative;
+}
+
+.craft-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Luxury Header Layout */
+.craft-header {
+    margin-bottom: 80px;
+    max-width: 650px;
+}
+
+.craft-subtitle {
+    color: #cda250; /* Signature Gold */
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.craft-title {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.craft-lead {
+    font-size: 16px;
+    color: #8c8c8c;
+    line-height: 1.6;
+}
+
+/* Premium Horizontal Metric Rows */
+.craft-metrics-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.08); /* Top Border Line */
+}
+
+.craft-metric-row {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr; /* Split between metric figure and description */
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Elegant row separator */
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+/* Soft Row Glow Hover Effect */
+.craft-metric-row:hover {
+    background: linear-gradient(90deg, rgba(205, 162, 80, 0.02) 0%, transparent 100%);
+    padding-left: 15px; /* Subtle human-made interactive shift */
+}
+
+/* Metric Digits Typography */
+.metric-visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.metric-number {
+    font-size: 56px;
+    font-weight: 800;
+    color: #cda250; /* Elegant Luxury Gold */
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.metric-dot-indicator {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #cda250;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+.metric-unit {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8c8c8c;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* Details and Copy Block */
+.metric-header-inline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.metric-icon {
+    color: #cda250;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.metric-details h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.metric-details p {
+    font-size: 15px;
+    color: #b3b3b3;
+    line-height: 1.65;
+    max-width: 800px;
+}
+
+/* Responsive Fluid Adjustments for Mobile Screens */
+@media (max-width: 768px) {
+    .craft-header {
+        margin-bottom: 50px;
+    }
+    .craft-title {
+        font-size: 32px;
+    }
+    .craft-metric-row {
+        grid-template-columns: 1fr; /* Stacks vertically on smaller screens */
+        gap: 25px;
+        padding: 40px 0;
+    }
+    .craft-metric-row:hover {
+        padding-left: 0px;
+    }
+    .metric-number {
+        font-size: 46px;
+    }
+}
