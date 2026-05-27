@@ -1,0 +1,325 @@
+@media (max-width: 600px) {
+     html, body {
+          overflow-x: hidden ;
+          width: 100vw;
+          margin: 0;
+          padding: 0;
+     }
+     #nav {
+          height: 70px;
+          width: 100%;
+          padding: 0 20px;
+          position: fixed; 
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          z-index: 999999; 
+          background: transparent;
+          box-sizing: border-box; 
+     }
+
+     #nav img {
+          width: 60px;
+          height: auto;
+          object-fit: contain;
+          z-index: 1000000;
+     }
+
+     #menu {
+          display: block ;
+          font-size: 26px;
+          color: white;
+          z-index: 1000000;
+          cursor: pointer;
+          margin-right: 0; 
+     }
+     #nav a {
+          display: none;
+     }
+
+     #nav.active {
+          background: rgba(0, 0, 0, 0.95);
+          flex-direction: column;
+          align-items: center;
+          height: 100vh;
+          justify-content: center;
+          gap: 20px;
+     }
+
+     #nav.active img {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+     }
+
+     #nav.active #menu {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+     }
+
+     #nav.active a {
+          display: block;
+          font-size: 18px;
+          text-transform: uppercase;
+     }
+
+     .origin-story-section {
+          padding: 4rem 20px;         
+     }
+
+     .story-container {
+          grid-template-columns: 1fr;  
+          gap: 2.5rem;                
+          width: 100%;
+     }
+
+     .story-content-side {
+          width: 100%;
+          text-align: center;         
+     }
+
+     .story-main-heading {
+          font-size: 2.2rem;          
+          line-height: 1.2;
+     }
+
+     .story-tagline {
+          font-size: 1rem;
+          margin-bottom: 2.5rem;
+          border-left: none;          
+          border-top: 1px solid #cda250; 
+          border-bottom: 1px solid #cda250;
+          padding: 12px 0;            
+          max-width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+     }
+
+     .story-cards-wrapper {
+          gap: 15px;                  
+     }
+
+     .story-card {
+          flex-direction: column;    
+          gap: 10px;
+          padding: 20px;
+          text-align: center;          
+     }
+
+     .story-card:hover {
+          transform: none ;  
+     }
+
+     .card-number {
+          font-size: 24px;
+          opacity: 0.8;
+     }
+
+     .card-text-block h4 {
+          font-size: 1.25rem;
+          margin-bottom: 6px;
+     }
+
+     .card-text-block p {
+          font-size: 0.9rem;
+          line-height: 1.5;
+     }
+
+     .story-visual-side {
+          min-height: 320px;        
+          height: 320px;
+     }
+
+     .visual-wrapper {
+          border-radius: 12px;         
+     }
+
+     .route-map-graphic {
+          width: 90%;
+          height: 80%;
+     }
+
+     .map-dot::after {
+          font-size: 10px;             
+          padding: 3px 6px;
+     }
+
+     .south-dot {
+          bottom: 10%;
+          left: 10%;
+     }
+     .south-dot::after {
+          top: 18px;
+          left: -10px;
+     }
+
+     .patna-dot {
+          top: 10%;
+          right: 10%;
+     }
+     .patna-dot::after {
+          bottom: 18px;
+          right: -10px;
+     }
+
+     .connecting-glow-line {
+          top: calc(10% + 6px);
+          right: calc(10% + 6px);
+          width: 80%;                 
+          height: 80%;
+          border-radius: 0 0 30px 0;
+     }
+
+
+     .local-soul-section {
+          padding: 4rem 20px;          
+     }
+
+     .soul-quote-wrapper {
+          margin-bottom: 3rem;       
+          max-width: 100%;
+     }
+
+     .soul-manifesto {
+          font-size: 1.4rem;          
+          line-height: 1.5;
+     }
+
+     .soul-asymmetric-grid {
+          grid-template-columns: 1fr;  
+          grid-auto-rows: auto;        
+          gap: 20px;
+          width: 100%;
+     }
+
+     .soul-grid-item {
+          grid-column: auto ; 
+          grid-row: auto ;
+          padding: 30px 20px;         
+          min-height: 340px;          
+          justify-content: flex-end;
+          border-radius: 8px;         
+     }
+
+     .soul-grid-item::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.65); 
+          z-index: 1;
+     }
+     .item-inner {
+          position: relative;
+          z-index: 2;
+     }
+
+     .item-title {
+          font-size: 1.4rem;          
+          margin-bottom: 10px;
+     }
+
+     .item-desc {
+          font-size: 0.88rem;         
+          line-height: 1.6;
+          color: #e0e0e0;
+     }
+
+     .item-signature-note {
+          margin-top: 20px;
+          padding-top: 10px;
+     }
+
+     .tall-accent-icon {
+          top: 20px;
+          right: 20px;
+          z-index: 2;              
+     }
+
+     .barista-craft-section {
+          padding: 4rem 20px;          
+     }
+
+     .craft-header {
+          margin-bottom: 3rem;        
+          text-align: center;         
+          max-width: 100%;
+     }
+
+     .craft-title {
+          font-size: 2.2rem;          
+          line-height: 1.2;
+     }
+
+     .craft-lead {
+          font-size: 0.95rem;         
+          line-height: 1.6;
+     }
+
+     .craft-metrics-wrapper {
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+     }
+
+     .craft-metric-row {
+          grid-template-columns: 1fr; 
+          padding: 2.5rem 0;          
+          align-items: flex-start;
+          gap: 1.5rem;                
+     }
+
+     .craft-metric-row:hover {
+          padding-left: 0 ; 
+          background: transparent ;
+     }
+
+     .metric-visual {
+          flex-direction: row;        
+          align-items: baseline;
+          gap: 12px;                   
+          text-align: left;
+     }
+
+     .metric-number {
+          font-size: 3.2rem;          
+          letter-spacing: -1px;
+     }
+
+     .metric-dot-indicator {
+          margin-top: 0;
+          font-size: 16px;            
+     }
+
+     .metric-unit {
+          margin-top: 0;
+          font-size: 0.85rem;
+          color: #cda250;              
+     }
+
+     .metric-details {
+          width: 100%;
+          text-align: left;
+     }
+
+     .metric-header-inline {
+          margin-bottom: 8px;
+          gap: 8px;
+     }
+
+     .metric-icon {
+          font-size: 12px;
+     }
+
+     .metric-details h3 {
+          font-size: 1.35rem;         
+          line-height: 1.3;
+     }
+
+     .metric-details p {
+          font-size: 0.9rem;          
+          line-height: 1.6;
+          max-width: 100%;
+     }
+
+    }

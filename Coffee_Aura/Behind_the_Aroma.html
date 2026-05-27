@@ -6,15 +6,24 @@
     <title>Coffee Aura</title>
     <link rel="stylesheet" href="./Behind_the_Aroma.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="./Behind_media.css">
 </head>
 <body>
-     <div id="nav">
-        <img src="https://www.starbucks.in/assets/icon/logo.png" alt="Logo">
-        <a href="./index.html">Aura Experience</a>
-        <a href="./The BrewCollection.html" class="active">The Brew Collection</a>
-        <a href="#">Behind The Aroma</a>
-        <a href="#">Visit The Lounge</a>
-    </div>
+    <div id="nav">
+
+    <img src="./logoimage/ChatGPT Image May 25, 2026, 01_54_43 AM.png" alt="">
+
+    <!-- ADD ONLY THIS ICON -->
+    <i class="fa-solid fa-bars" id="menu"></i>
+
+    <a href="./index.html">Aura Experience</a>
+    <a href="./The BrewCollection.html">The Brew Collection</a>
+    <a href="./Behind_the_Aroma.html">Behind The Aroma</a>
+    <a href="./Visit_the_lounge.html">Visit The Lounge</a>
+
+</div>
+
+
 
 <!-- From Farms to Patna -->
 
@@ -110,7 +119,7 @@
 </section>
 
 
-
+<!-- The Barista’s Craft -->
 
 <section class="barista-craft-section">
     <div class="craft-container">
@@ -169,5 +178,78 @@
 
     </div>
 </section>
+
+<!-- footer  -->
+
+    <footer class="aura-footer">
+    <div class="footer-top">
+        <div class="footer-col brand-col">
+            <h2 class="footer-logo">COFFEE AURA</h2>
+            <p class="footer-desc">Crafting a profound aura of coffee perfection, rooted in the heart of tradition and delivered with passion.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>THE EXPERIENCE</h3>
+            <ul>
+                <li><a href="#">The Brew Collection</a></li>
+                <li><a href="#">Behind The Aroma</a></li>
+                <li><a href="#">Signature Blends</a></li>
+                <li><a href="#">Visit The Lounge</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>THE LOUNGE</h3>
+            <p class="info-text">Boring Road, Patna, Bihar</p>
+            <p class="info-text highlight">Mon - Sun: 08:00 AM - 11:00 PM</p>
+            <p class="info-text">connect@coffeeaura.com</p>
+        </div>
+
+        <div class="footer-col newsletter-col">
+            <h3>JOIN THE CLUB</h3>
+            <p class="info-text">Subscribe to receive exclusive access to limited-batch roasts and private lounge events.</p>
+            <div class="footer-input-box">
+                <input type="email" placeholder="Your email address">
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Coffee Aura. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Ritual</a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    let menu = document.querySelector("#menu");
+let nav = document.querySelector("#nav");
+
+menu.addEventListener("click", ()=>{
+
+    nav.classList.toggle("active");
+
+    // ICON CHANGE
+
+    if(nav.classList.contains("active")){
+        menu.classList.remove("fa-bars");
+        menu.classList.add("fa-xmark");
+    }
+    else{
+        menu.classList.remove("fa-xmark");
+        menu.classList.add("fa-bars");
+    }
+
+});
+</script>
 </body>
 </html>

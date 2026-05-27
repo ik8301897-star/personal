@@ -27,62 +27,45 @@ body {
     src: url(./font/Poppins-ThinItalic.ttf);
 }
 
-#nav {
+#nav{
+    height: 145px;
     width: 100%;
-    height: 95px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
+    z-index: 999;
+    
     display: flex;
     align-items: center;
-    gap: 45px;
-    padding: 0 7%;
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0 150px;
+    gap: 50px;
+    justify-content: flex-start;
+    position: fixed;
+  
 }
-
-#nav img {
-    width: 58px;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
-}
-
-#nav a {
+#nav a{
     text-decoration: none;
-    color: #d8d8d8;
-    font-size: 14px;
-    letter-spacing: 2px;
     text-transform: uppercase;
-    position: relative;
-    transition: 0.4s;
+    font-weight: 200;
+    color: white;
+}
+video {
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1; 
+}
+#nav img{
+    width: 10%;
 }
 
-#nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0%;
-    height: 1px;
-    background: #D4AF37;
-    transition: 0.4s;
+#menu{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
 }
-
-#nav a:hover {
-    color: #D4AF37;
-}
-
-#nav a:hover::after {
-    width: 100%;
-}
-
-#nav .active {
-    color: #D4AF37;
-}
-
-
-
 
 
 /* --- From Farms to Patna --- */
@@ -295,7 +278,7 @@ body {
 .quote-line-accent {
     width: 40px;
     height: 1px;
-    background-color: #cda250; /* Gold Accent Line */
+    background-color: #cda250; 
     margin: 0 auto 25px auto;
 }
 
@@ -436,7 +419,7 @@ body {
 
 /* --- Barista's Craft Section Style --- */
 .barista-craft-section {
-    background-color: #0b0b0b; /* Seamless Dark Background */
+    background-color: #0b0b0b; 
     padding: 120px 6%;
     font-family: 'Inter', sans-serif;
     color: #ffffff;
@@ -448,20 +431,20 @@ body {
     margin: 0 auto;
 }
 
-/* Luxury Header Layout */
 .craft-header {
     margin-bottom: 80px;
     max-width: 650px;
 }
 
 .craft-subtitle {
-    color: #cda250; /* Signature Gold */
-    font-size: 13px;
+    color: #cda250; 
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 600;
     display: block;
     margin-bottom: 12px;
+    font-family: para;
 }
 
 .craft-title {
@@ -469,37 +452,37 @@ body {
     font-weight: 700;
     letter-spacing: -1px;
     margin-bottom: 20px;
+    font-family: header;
 }
 
 .craft-lead {
     font-size: 16px;
     color: #8c8c8c;
     line-height: 1.6;
+    font-family: para;
+    font-weight: 700;
 }
 
-/* Premium Horizontal Metric Rows */
 .craft-metrics-wrapper {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid rgba(255, 255, 255, 0.08); /* Top Border Line */
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .craft-metric-row {
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr; /* Split between metric figure and description */
+    grid-template-columns: 0.5fr 1.5fr; 
     padding: 50px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Elegant row separator */
     align-items: center;
     transition: all 0.4s ease;
 }
 
-/* Soft Row Glow Hover Effect */
 .craft-metric-row:hover {
     background: linear-gradient(90deg, rgba(205, 162, 80, 0.02) 0%, transparent 100%);
-    padding-left: 15px; /* Subtle human-made interactive shift */
+    padding-left: 15px; 
 }
 
-/* Metric Digits Typography */
 .metric-visual {
     display: flex;
     flex-direction: column;
@@ -509,9 +492,10 @@ body {
 .metric-number {
     font-size: 56px;
     font-weight: 800;
-    color: #cda250; /* Elegant Luxury Gold */
+    color: #cda250; 
     line-height: 1;
     letter-spacing: -2px;
+    font-family: header;
 }
 
 .metric-dot-indicator {
@@ -531,7 +515,6 @@ body {
     font-weight: 500;
 }
 
-/* Details and Copy Block */
 .metric-header-inline {
     display: flex;
     align-items: center;
@@ -546,36 +529,219 @@ body {
 }
 
 .metric-details h3 {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
     color: #ffffff;
     letter-spacing: -0.5px;
+    font-family: header;
 }
 
 .metric-details p {
-    font-size: 15px;
+    font-size: 17px;
     color: #b3b3b3;
     line-height: 1.65;
     max-width: 800px;
+    font-family: para;
+    font-weight: 700;
 }
 
-/* Responsive Fluid Adjustments for Mobile Screens */
-@media (max-width: 768px) {
-    .craft-header {
-        margin-bottom: 50px;
-    }
-    .craft-title {
-        font-size: 32px;
-    }
-    .craft-metric-row {
-        grid-template-columns: 1fr; /* Stacks vertically on smaller screens */
-        gap: 25px;
-        padding: 40px 0;
-    }
-    .craft-metric-row:hover {
-        padding-left: 0px;
-    }
-    .metric-number {
-        font-size: 46px;
-    }
+
+
+/* footer  */
+
+.aura-footer {
+    width: 100%;
+    background: #050505; 
+    padding: 5rem 6% 2rem 6%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.brand-col {
+    flex: 1.5; 
+}
+
+/* Typography styles */
+.footer-logo {
+    color: #ffffff;
+    font-family: header;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.footer-desc {
+    color: #777777;
+    font-family: para;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 1.2rem;
+    max-width: 320px;
+    font-weight: 600;
+}
+
+.footer-col h3 {
+    color: #D4AF37; 
+    font-family: header;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+    color: #888888;
+    text-decoration: none;
+    font-family: para;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+.info-text {
+    color: #888888;
+    font-family: para;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 0.8rem 0;
+    font-weight: 600;
+}
+
+.info-text.highlight {
+    color: #FCF6BA; 
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.footer-socials a {
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888888;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background: rgba(212, 175, 55, 0.05);
+    color: #FCF6BA;
+    border-color: #D4AF37;
+    transform: translateY(-2px);
+}
+
+.footer-input-box {
+    display: flex;
+    position: relative;
+    margin-top: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+
+.footer-input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: para;
+    font-size: 0.95rem;
+    padding: 8px 40px 8px 0;
+}
+
+.footer-input-box input::placeholder {
+    color: #555555;
+}
+
+.footer-input-box button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #D4AF37;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-input-box button:hover {
+    transform: translateY(-50%) translateX(3px);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    color: #555555;
+    font-family: para;
+    font-size: 0.85rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-links a {
+    color: #555555;
+    text-decoration: none;
+    font-family: para;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+     font-weight: 600;
+}
+
+.footer-bottom-links a:hover {
+    color: #888888;
+}
+

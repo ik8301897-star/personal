@@ -1,0 +1,325 @@
+@media (max-width: 600px) {
+
+     html, body {
+          overflow-x: hidden ;
+          width: 100vw;
+          margin: 0;
+          padding: 0;
+     }
+
+     #nav {
+          height: 70px;
+          width: 100%;
+          padding: 0 20px;
+          position: fixed; 
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          z-index: 999999; 
+          background: transparent;
+          box-sizing: border-box; 
+     }
+
+     /* LOGO */
+     #nav img {
+          width: 60px;
+          height: auto;
+          object-fit: contain;
+          z-index: 1000000;
+     }
+
+     
+     #menu {
+          display: block ;
+          font-size: 26px;
+          color: white;
+          z-index: 1000000;
+          cursor: pointer;
+          margin-right: 0; 
+     }
+
+ 
+     #nav a {
+          display: none;
+     }
+
+     #nav.active {
+          background: rgba(0, 0, 0, 0.95);
+          flex-direction: column;
+          align-items: center;
+          height: 100vh;
+          justify-content: center;
+          gap: 20px;
+     }
+
+     #nav.active img {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+     }
+
+     #nav.active #menu {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+     }
+
+     #nav.active a {
+          display: block;
+          font-size: 18px;
+          text-transform: uppercase;
+     }
+
+
+     /* The Atmosphere */
+
+     .lounge-vibe-section {
+          padding: 4rem 20px 5rem;    
+          min-height: auto;
+     }
+
+  
+     .vibe-outer-container {
+          grid-template-columns: 1fr;  
+          gap: 3rem;                   
+          width: 100%;
+     }
+
+  
+     .vibe-text-left {
+          padding-right: 0;
+          text-align: center;         
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .vibe-heading {
+          font-size: 2.2rem;          
+          line-height: 1.2;
+     }
+
+     .vibe-divider-line {
+          margin: 20px 0;            
+     }
+
+     .vibe-description {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          max-width: 100%;
+     }
+
+   
+     .vibe-center-canvas {
+          width: 100%;
+          order: 2;                   
+     }
+
+     .canvas-image-wrapper {
+          height: 380px;             
+          border-radius: 8px;        
+     }
+
+   
+     .canvas-floating-tagline {
+          position: absolute;
+          bottom: -25px;              
+          width: 85%;
+          padding: 18px 20px;        
+     }
+
+     .canvas-floating-tagline p {
+          font-size: 0.9rem;
+          line-height: 1.4;
+     }
+
+     .vibe-text-right {
+          padding-left: 0;
+          gap: 30px;                   
+          width: 100%;
+          order: 3;                    
+          margin-top: 1.5rem;        
+     }
+
+     .sensory-node {
+          text-align: center;          
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .node-number {
+          font-size: 14px;
+          margin-bottom: 8px;
+     }
+
+     .sensory-node h4 {
+          font-size: 1.3rem;
+          margin-bottom: 6px;
+     }
+
+     .sensory-node p {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          max-width: 90%;
+     }
+
+
+     .corner-experience-section {
+          padding: 4rem 20px;        
+     }
+
+     .corner-section-header {
+          margin-bottom: 2.5rem;
+     }
+
+     .corner-main-title {
+          font-size: 2.2rem;          
+          line-height: 1.2;
+     }
+
+   
+     .corner-accordion-container {
+          flex-direction: column;      
+          height: auto;              
+          gap: 20px;
+          width: 100%;
+     }
+
+     .corner-strip {
+          flex: none ;       
+          width: 100%;
+          height: 320px;             
+          padding: 30px 20px;         
+          border-radius: 8px;        
+          align-items: flex-end;      
+     }
+
+    
+     .strip-bg-image {
+          opacity: 0.35;   
+          filter: saturation(50%) grayscale(20%);
+     }
+
+     .strip-bg-overlay {
+          background: linear-gradient(to top, #0b0b0b 35%, rgba(11, 11, 11, 0.5) 100%); 
+     }
+
+    
+     .corner-strip:hover {
+          flex: none ;
+          border-color: rgba(205, 162, 80, 0.3);
+     }
+     
+     .corner-strip:hover .strip-bg-image {
+          transform: none ;  
+     }
+
+     /* Card Content Alignment */
+     .strip-content {
+          text-align: left;
+     }
+
+     .strip-meta {
+          gap: 10px;
+          margin-bottom: 8px;
+     }
+
+     .strip-number {
+          font-size: 18px;
+     }
+
+     .strip-title {
+          font-size: 1.4rem;
+          margin-bottom: 8px;
+     }
+
+     .strip-description {
+          font-size: 0.88rem;
+          line-height: 1.5;
+          max-width: 100%;
+          opacity: 0.9;               
+     }
+
+     .strip-footer-badge {
+          margin-top: 15px;
+          padding: 4px 10px;
+          font-size: 10px;
+          background: rgba(255, 255, 255, 0.03); 
+     }
+
+     .aura-code-section {
+          padding: 4rem 20px;         
+     }
+
+   
+     .aura-code-container {
+          grid-template-columns: 1fr;  
+          gap: 3.5rem;                 
+          width: 100%;
+     }
+
+    
+     .aura-sticky-panel {
+          position: relative; 
+          top: 0 ;
+          text-align: center;          
+          width: 100%;
+     }
+
+     .aura-main-heading {
+          font-size: 2.2rem;          
+          line-height: 1.2;
+          margin-bottom: 12px;
+     }
+
+     .aura-subtext {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          max-width: 100%;           
+          margin: 0 auto;
+     }
+
+  
+     .aura-manifesto-timeline {
+          padding-left: 25px;         
+          gap: 45px;                  
+          width: 100%;
+     }
+
+     .timeline-spine-line {
+          left: 0;                    
+          height: 100%;              
+     }
+
+   
+     .item-bullet-gold {
+          left: -29px;                
+          top: 6px;
+          width: 8px;
+          height: 8px;
+     }
+
+     .manifesto-item:hover .manifesto-content-block {
+          transform: translateX(4px);  
+     }
+
+     .manifesto-number {
+          font-size: 11px;
+          margin-bottom: 4px;
+     }
+
+     .manifesto-content-block h3 {
+          font-size: 1.35rem;         
+          margin-bottom: 8px;
+          line-height: 1.3;
+     }
+
+     .manifesto-content-block p {
+          font-size: 0.9rem;          
+          line-height: 1.6;
+          max-width: 100%;
+     }
+    }

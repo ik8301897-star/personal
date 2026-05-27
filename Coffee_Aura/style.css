@@ -35,17 +35,24 @@ html,body{
     text-transform: uppercase;
     font-weight: 200;
 }
-video{
- width: 100%;
- object-fit: cover;
- position: fixed;
-
-  
+video {
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1; 
+}
+#nav img{
+    width: 10%;
 }
 
-#main{
-position: relative;
-background-color: rgba(0, 0, 0, 0.37);
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 1; 
+  overflow-x: hidden;
 }
 #page1{
     height: 100vh;
@@ -84,7 +91,6 @@ background-color: rgba(0, 0, 0, 0.37);
     width: 100%;
 }
 #scroller{
-    /* background-color: red; */
     white-space: nowrap;
     overflow-y: auto;
     overflow-x: hidden;
@@ -122,6 +128,14 @@ background-color: rgba(0, 0, 0, 0.37);
 }
 #scroller h4:hover{
     color: #46160a;
+}
+
+#menu{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
 }
 .our-story {
     min-height: 60vh; 
@@ -739,7 +753,7 @@ background-color: rgba(0, 0, 0, 0.37);
 
 .aura-footer {
     width: 100%;
-    background: #050505; /* Deepest black for final grounding */
+    background: #050505; 
     padding: 5rem 6% 2rem 6%;
     box-sizing: border-box;
     position: relative;
@@ -762,10 +776,9 @@ background-color: rgba(0, 0, 0, 0.37);
 }
 
 .brand-col {
-    flex: 1.5; /* Gives brand section more breathing room */
+    flex: 1.5; 
 }
 
-/* Typography styles */
 .footer-logo {
     color: #ffffff;
     font-family: header;

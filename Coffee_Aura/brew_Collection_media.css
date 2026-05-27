@@ -1,0 +1,181 @@
+@media (max-width: 600px) {
+     /* Global Body Fix to completely block side scroll */
+     html, body {
+          overflow-x: hidden ;
+          width: 100vw;
+          margin: 0;
+          padding: 0;
+     }
+
+     /* ================= NAVBAR & MENU FIX ================= */
+     #nav {
+          height: 70px;
+          width: 100%;
+          padding: 0 20px;
+          position: fixed; 
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          z-index: 999999; /* Isse sabse upar rakha hai */
+          background: transparent;
+          box-sizing: border-box; /* Padding ko andar lock karne ke liye */
+     }
+
+     /* LOGO */
+     #nav img {
+          width: 60px;
+          height: auto;
+          object-fit: contain;
+          z-index: 1000000;
+     }
+
+     /* MENU ICON (Hamesha front mein aur right side padding ke andar) */
+     #menu {
+          display: block !important;
+          font-size: 26px;
+          color: white;
+          z-index: 1000000;
+          cursor: pointer;
+          margin-right: 0; /* Baahar bhagne se rokega */
+     }
+
+     /* LINKS HIDE INITIALLY */
+     #nav a {
+          display: none;
+     }
+
+     /* MENU OPEN STATE */
+     #nav.active {
+          background: rgba(0, 0, 0, 0.95);
+          flex-direction: column;
+          align-items: center;
+          height: 100vh;
+          justify-content: center;
+          gap: 20px;
+     }
+
+     #nav.active img {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+     }
+
+     #nav.active #menu {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+     }
+
+     #nav.active a {
+          display: block;
+          font-size: 18px;
+          text-transform: uppercase;
+     }
+
+
+
+     /* ================= LUXURY BREW CANVAS RESPONSIVE ================= */
+     .luxury-brew-canvas {
+          padding: 100px 20px 4rem;    /* Mobile navbar height ke hisab se top padding adjust ki */
+          min-height: auto;
+     }
+
+     /* Decorative border lines ko mobile view par hide kiya taaki clean space mile */
+     .canvas-border {
+          display: none !important;
+     }
+
+     .canvas-grid {
+          flex-direction: column;      /* Side-by-side display ko vertical stack banaya */
+          gap: 3.5rem;                 /* Text block aur Image frame ke beech ka gap */
+          width: 100%;
+     }
+
+     .canvas-text-block {
+          width: 100%;
+          text-align: center;          /* Text elements ko mobile standard par center kiya */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .canvas-serial {
+          font-size: 11px;
+          letter-spacing: 4px;
+          margin-bottom: 15px;
+     }
+
+     .canvas-main-title {
+          font-size: 2.5rem;           /* Viewport width (vw) se hata kar static readable size diya */
+          line-height: 1.1;
+          letter-spacing: -1px;
+          width: 100%;
+     }
+
+     .canvas-divider {
+          margin: 20px 0;
+          background: linear-gradient(to right, transparent, #D4AF37, transparent); /* Divider ko center aligned fade look diya */
+     }
+
+     .canvas-tagline {
+          font-size: 1.2rem;
+          letter-spacing: 2px;
+     }
+
+     .canvas-para {
+          margin-top: 15px;
+          font-size: 0.95rem;
+          line-height: 1.7;
+          max-width: 100%;
+     }
+
+     .matrix-action-btn {
+          margin-top: 2rem;
+          width: 100%;                 /* Touch compliance ke liye responsive block behavior */
+          justify-content: center;
+     }
+     
+     .btn-text {
+          padding: 15px 25px;
+          font-size: 11px;
+          letter-spacing: 2px;
+          flex: 1;                     /* Button text area scales elegantly */
+     }
+
+     .btn-target-icon {
+          padding: 15px 20px;
+     }
+
+     /* Visual Frame Adjustments */
+     .canvas-visual-block {
+          width: 100%;
+          padding: 0 10px;             /* Negative absolute badge padding fallback safety zone */
+          box-sizing: border-box;
+     }
+
+     .main-image-frame {
+          width: 100%;
+          max-width: 100%;
+          height: 380px;               /* Mobile framework standard height setup */
+     }
+
+     /* Floating badge position fix inside screen safe zone */
+     .floating-meta-badge {
+          bottom: 15px;                /* Negative boundaries se hata kar image frame ke andar bottom-left pe secure kiya */
+          left: 15px;
+          padding: 12px 20px;          /* Clean micro typography space layout */
+          background: rgba(12, 12, 12, 0.95);
+     }
+
+     .meta-title {
+          font-size: 9px;
+          letter-spacing: 2px;
+     }
+
+     .meta-value {
+          font-size: 12px;
+          margin-top: 2px;
+     }
+    }
