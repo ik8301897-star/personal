@@ -1,13 +1,12 @@
-
-
-
 class Event {
     static weddingPrice = 500000; // isko class ke help se access kar sakte hai ku ki ye static hai
     static birthdayPrice = 50000;// isko class ke help se access kar sakte hai  ku ki ye static hai
+    static corporatePrice = 800000; // isko class ke help se access kar sakte hai  ku ki ye static hai
     constructor(name, date, location) {
         this.name = name;
         this.date = date;
         this.location = location
+        this.status = "open"
     }
     getDetails() {
         return `${this.name} will take place on ${this.location}.`
@@ -17,14 +16,28 @@ class Event {
             return Event.weddingPrice
         } else if (this.name.toLowerCase() === "birthday") {
             return Event.birthdayPrice
-        } else {
+        } else if(this.name.toLowerCase() ==="corporate"){
+            return Event.corporatePrice
+        }
+        else {
             return "Price not available for this event type."
         }
+    }
+       applyDiscount(percentage){
+        let originalPrice = this.getPrice;
+        let discountAmount = (originalPrice * percentage)/100;
+        let finalPrice = originalPrice - discountAmount
+        return finalPrice
     }
     bookEvent(guest) {
         console.log(`${guest.name} has booked for ${this.name}`);
 
 
+    }
+    completeEvent(){
+        this.status = "completed"
+        console.log(`${this.name} event is now completed!`);
+        
     }
 }
 class Person {
@@ -52,25 +65,22 @@ class booking {
     constructor(Person) {
         this.Person = Person
         this.booking = []
-        this.location = ["kankarbagh", "boring road"]
-
+        this.location = ["kankarbagh","boring road"]
+        this.totalBookingsCount = 0;
+      
     }
 
     addBooking(event, guest) {
-        let conflicts = require("readline").createInterface({
-            input: process.stdin,
-            output: process.stdout,
-        });
+     let conflicts = require("readline").createInterface({
+        input:process.stdin,
+        output:process.stdout,
+     });
         if (this.booking.some(b => b.event.date === event.date && b.event.location === event.location)) {
 
             console.log(`Cannot Book ${event.name} for ${guest.name} due to date and location conflicts`);
-            let availableLocations =
-                this.location.filter(
-                    location => location.toLowerCase() !== event.location.toLowerCase()
-                );
 
             conflicts.question(
-                `Location ${event.location} is not available.\nWould you like to shift to ${availableLocations[0]}? (yes/no): `,
+                `Location ${event.location} is not available.\nWould you like to shift to boring road? (yes/no): `,
                 (answer) => {
 
                     if (answer.toLowerCase() === "yes") {
@@ -80,13 +90,14 @@ class booking {
                         this.booking.push({ event, guest });
 
                         event.bookEvent(guest);
+                        this.totalBookingsCount++;
 
                         console.log(
                             `Booking added : ${guest.name} for ${event.name} at ${event.location}`
                         );
 
                     } else {
-                        console.log(`Booking cancelled by ${guest.name} at ${event.location}.`);
+                        console.log(`Booking cancelled by ${guest.name } at ${event.location}.`);
                     }
 
                     conflicts.close();
@@ -97,17 +108,18 @@ class booking {
         }
         this.booking.push({ event, guest })
         event.bookEvent(guest)
+        
         console.log(`Booking added : ${guest.name} for ${event.name}`);
 
     }
 }
 
-let weddingEvent = new Event("Wedding", "2026-06-11", "boring Road")
+let weddingEvent = new Event("Wedding", "2026-06-11", "kankarbagh")
 // console.log(weddingEvent);
 // console.log(weddingEvent.getDetails());
 // console.log(typeof(weddingEvent));
 // console.log(weddingEvent instanceof Event); // instancesof batata hai aap jo object banaye ho wo kis class ka hai
-let birthdayEvent = new Event("birthday", "2026-06-11", "boring Road")
+let birthdayEvent = new Event("birthday", "2026-06-11", "kankarbagh")
 // console.log(birthdayEvent);
 // console.log(birthdayEvent.getDetails());
 // console.log(Event.weddingPrice);
@@ -128,6 +140,3 @@ bookings.addBooking(birthdayEvent, client2)
 // guest2.updatersvpStatus("Declined")
 // console.log(guest1);
 // console.log(guest2);
-
-
-
