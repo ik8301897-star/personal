@@ -138,3 +138,33 @@ button:hover{
 cursor: pointer;
 }
 
+.card{
+    width: 350px;
+    border: 2px solid black;
+    height: 380px;
+    margin-left: 1rem;
+    z-index: 10;
+}
+ h1{
+    font-family: header;
+    color: rgb(247, 45, 10);
+    text-align: center;
+}
+h2{
+     color: white;
+    font-family: header;
+    text-align: center;
+}
+h3{
+    margin-left: 10px;
+    color: white;
+    font-family: header;
+    font-weight: 100;
+}
+
+
+
+
+
+
+

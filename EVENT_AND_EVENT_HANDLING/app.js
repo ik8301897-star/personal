@@ -47,15 +47,42 @@
 // })
 
 // #window
-let h1 = document.querySelector("h1")
- window.addEventListener("keydown",function(details){
-  if(details.key === "Backspace"){
-    h1.textContent = "SPC"
-  }
-  else{
-    h1.textContent = details.key
-  }
+// let h1 = document.querySelector("h1")
+//  window.addEventListener("keydown",function(details){
+//   if(details.key === "Backspace"){
+//     h1.textContent = "SPC"
+//   }
+//   else{
+//     h1.textContent = details.key
+//   }
   
     
-})
+// })
 
+// btn wala part 
+
+// let btn = document.querySelector("#btn");
+// let input = document.querySelector("input")
+// btn.addEventListener("click",function(){
+//   input.click()
+
+// })
+
+// input.addEventListener("change",function(details){
+//  btn.textContent = details.target.files[0].name
+  
+// })
+
+
+
+
+// # SUBMIT
+
+let form = document.querySelector("form")
+let inputs = document.querySelectorAll("input")
+
+form.addEventListener("submit",function(details){
+  details.preventDefault()
+ 
+  
+})
