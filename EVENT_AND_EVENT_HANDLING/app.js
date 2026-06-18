@@ -8,6 +8,8 @@
 
 // const { createElement } = require("react")
 
+// const { createElement } = require("react")
+
 // #dblclick
 // let p = document.querySelector("p");
 // p.addEventListener("dblclick",function(){
@@ -244,20 +246,278 @@
 
 // practice question 8
 
-let button = document.querySelector("button")
-let para = document.querySelector("p")
+// let button = document.querySelector("button")
+// let para = document.querySelector("p")
 
-button.addEventListener("click",function(){
-    if(button.textContent == "Hide"){
-         para.style.display = "none"
-        button.textContent = "Show"
+// button.addEventListener("click",function(){
+//     if(button.textContent == "Hide"){
+//          para.style.display = "none"
+//         button.textContent = "Show"
 
-    }
+//     }
    
- else{
-       button.textContent = "Hide"
-       para.style.display = "block"
-    }
+//  else{
+//        button.textContent = "Hide"
+//        para.style.display = "block"
+//     }
+  
+// })
+ 
+// practice question 9
+
+// let button = document.querySelector("button")
+// let body = document.querySelector("body")
+
+// button.addEventListener("click",function(){
+//    if(button.textContent ==="Dark Mode"){
+//      body.style.backgroundColor = "black"
+//      button.textContent = "Light Mode"
+//    }else{
+//     body.style.backgroundColor = "white"
+//     button.textContent = "Dark Mode"
+//    }
+// })
+
+
+// practice question 10 
+
+// let img = document.querySelector("img")
+// img.addEventListener("mouseenter",function(){
+//     img.src = "https://images.pexels.com/photos/34145802/pexels-photo-34145802.jpeg"
+// })
+// img.addEventListener("mouseleave",function(){
+//     img.src = "https://images.pexels.com/photos/38101841/pexels-photo-38101841.jpeg"
+// })
+
+
+// practice question 11
+
+// let input = document.querySelector("input")
+
+// input.addEventListener("keydown", function(details){
+//     console.log(details.key)
+// })
+
+// practice question 12
+
+// let input = document.querySelector("input")
+// let ul = document.querySelector("ul")
+
+// input.addEventListener("keydown",function(details){
+//     if(details.key == "Enter"){
+//         let li = document.createElement("li")
+//         let button = document.createElement("button")
+//         button.textContent = "delete"
+//         li.textContent = input.value
+//         ul.appendChild(li)
+//         li.appendChild(button)
+//         input.value = ""
+
+
+//           button.addEventListener("click",function(){
+//         li.remove()
+//     })
+//     }
+  
+// })
+
+
+
+// practice question 13
+
+// let input = document.querySelector("input")
+// let ul = document.querySelector("ul")
+
+// input.addEventListener("keydown",function(details){
+//     if(details.key ==="Enter"){
+//         if(input.value.trim() === ""){
+//     return;
+// }
+//         let li = document.createElement("li")
+//         let button = document.createElement("button")
+//         let delbutton = document.createElement("button")
+//         let editbutton = document.createElement("button")
+       
+//         button.textContent = "Complete"
+       
+       
+//         li.textContent = input.value
+//         ul.appendChild(li)
+//         li.appendChild(button)
+//           delbutton.textContent = "Delete"
+//         li.appendChild(delbutton)
+//          editbutton.textContent = "Edit"
+//          li.appendChild(editbutton)
+        
+//         input.value = ''
+
+//         delbutton.addEventListener("click",function(){
+//             li.remove()
+//         })
+
+//         button.addEventListener("click",function(){
+//            if(button.textContent == "Complete"){
+//              li.style.textDecoration = "line-through"
+//              button.textContent = "Incomplete"
+//            }
+//            else{
+//             li.style.textDecoration = ""
+//             button.textContent = "Complete"
+//            }
+//         })
+//     }
+
+// })
+
+
+// practice question 14
+
+// let button = document.querySelector("button")
+// let h2 = document.querySelector("h2")
+// let count  = 0
+
+// button.addEventListener("click",function(details){
+// count++
+   
+//    h2.textContent = "Likes:"+ count
+
+//    if(count== 10){
+//     h2.textContent = "Likes:"+ count+"🎉"
+//    }
+
+  
+    
+// })
+
+// practice question 15
+
+// let img = document.querySelector("img")
+// let button = document.querySelector("button")
+
+// button.addEventListener("click",function(){
+//     if(button.textContent == "Turn On"){
+//         img.src = "https://images.pexels.com/photos/34923543/pexels-photo-34923543.jpeg"
+//         button.textContent = "Turn Off"
+//     }else{
+//         img.src = "https://images.pexels.com/photos/577514/pexels-photo-577514.jpeg"
+//         button.textContent = "Turn On"
+//     }
+   
+// })
+
+// practice question 16
+
+// let textarea = document.querySelector("textarea")
+// let h2 = document.querySelector("h2")
+
+// textarea.addEventListener("input",function(details){
+//    console.log(details);
+//    h2.textContent = "Characters:"+ textarea.value.length
+   
+   
+// })
+
+// practice question 17
+
+// let input = document.querySelector("input")
+// let h2 = document.querySelector("h2")
+
+// input.addEventListener("input",function(details){
+//    if(input.value.length===0){
+//       h2.textContent = ""
+//    }
+//   else if(input.value.length>0 && input.value.length<=4){
+//       h2.textContent = "Weak Password"
+//    }else if(input.value.length>4 && input.value.length<=8){
+//       h2.textContent = "Medium Password"
+//    }else if(input.value.length>=9){
+//       h2.textContent = "Strong Password"
+//    }
+// })
+
+// practice question 18
+
+// let input = document.querySelector("input")
+// let div = document.querySelector("div")
+
+// input.addEventListener("input",function(details){
+//    div.style.backgroundColor = input.value
+  
+   
+// })
+
+
+
+
+
+
+// TO-DO-LIST 
+
+
+let input = document.querySelector("input")
+let button = document.querySelector("button")
+let ul = document.querySelector("ul")
+let h3 = document.querySelector("#total-task")
+let completeTask = document.querySelector("#Complete-task")
+
+button.addEventListener("click",function(details){
+   addtask()
   
 })
+
+function addtask(){
+    if(input.value.trim() === ""){
+    return;
+}
  
+   let li = document.createElement("li");
+   let complete = document.createElement("button");
+   let delBtn = document.createElement("button")
+   li.textContent = input.value
+   ul.appendChild(li)  
+   li.appendChild(complete)
+   complete.textContent = "Complete"
+   li.appendChild(delBtn)
+   delBtn.textContent = "Delete"
+    input.value = ''
+    h3.textContent = "Total Task:" + ul.children.length
+   complete.addEventListener("click",function(){
+           if(complete.textContent == "Complete"){
+             li.style.textDecoration = "line-through"
+             complete.textContent = "Incomplete"
+            li.classList.add("completed")
+           updateCompletedtask()
+           }
+          else{
+            li.style.textDecoration = ""
+            complete.textContent = "Complete"
+            li.classList.remove("completed")
+            updateCompletedtask()
+          }
+   })
+   delBtn.addEventListener("click",function(){
+      li.remove()
+      input.value = ''
+      h3.textContent = 'Total Task :'+ ul.children.length
+      updateCompletedtask()
+   })
+  
+  
+}
+
+
+input.addEventListener("keydown",function(det){
+   // console.log(det);
+   
+   if(det.key == "Enter"){
+      addtask()
+   }
+   
+})
+function updateCompletedtask(){
+   completeTask.textContent = "Completed Task:" + document.querySelectorAll(".completed").length
+   console.log(document.querySelectorAll(".completed").length);
+   
+}
+
+
