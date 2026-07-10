@@ -1,0 +1,68 @@
+/* input{
+    padding: 8px 10px;
+    margin-top: 10px;
+}
+select{
+    padding: 8px 10px;
+    margin-top: 10px;
+}
+textarea{
+    padding: 8px 10px;
+    margin-top: 10px;
+}
+.hide{
+    display: none;
+}
+small{
+    color:red;
+    margin-top: 1px;
+} */
+
+/* practice set 2  */
+
+
+
+.cart-card {
+  font-family: Arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.product-name { font-weight: bold; }
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.qty-btn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+}
+#qty-input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.total-section {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}

@@ -454,70 +454,157 @@
 // TO-DO-LIST 
 
 
-let input = document.querySelector("input")
-let button = document.querySelector("button")
-let ul = document.querySelector("ul")
-let h3 = document.querySelector("#total-task")
-let completeTask = document.querySelector("#Complete-task")
+let input = document.querySelector("input");
+let button = document.querySelector("button");
+let ul = document.querySelector("ul");
+let h3 = document.querySelector("#total-task");
+let completeTask = document.querySelector("#Complete-task");
+let allDelBtn = document.querySelector(".del-btn");
 
-button.addEventListener("click",function(details){
-   addtask()
-  
-})
+button.addEventListener("click", addtask);
 
-function addtask(){
-    if(input.value.trim() === ""){
-    return;
-}
- 
-   let li = document.createElement("li");
-   let complete = document.createElement("button");
-   let delBtn = document.createElement("button")
-   li.textContent = input.value
-   ul.appendChild(li)  
-   li.appendChild(complete)
-   complete.textContent = "Complete"
-   li.appendChild(delBtn)
-   delBtn.textContent = "Delete"
-    input.value = ''
-    h3.textContent = "Total Task:" + ul.children.length
-   complete.addEventListener("click",function(){
-           if(complete.textContent == "Complete"){
-             li.style.textDecoration = "line-through"
-             complete.textContent = "Incomplete"
-            li.classList.add("completed")
-           updateCompletedtask()
-           }
-          else{
-            li.style.textDecoration = ""
-            complete.textContent = "Complete"
-            li.classList.remove("completed")
-            updateCompletedtask()
-          }
-   })
-   delBtn.addEventListener("click",function(){
-      li.remove()
-      input.value = ''
-      h3.textContent = 'Total Task :'+ ul.children.length
-      updateCompletedtask()
-   })
-  
-  
+input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        addtask();
+    }
+});
+
+// Local Storage se tasks load karo
+loadTasks();
+
+function addtask() {
+    if (input.value.trim() === "") return;
+
+    createTask(input.value, false);
+
+    input.value = "";
+
+    saveTasks();
 }
 
+function createTask(taskName, isCompleted) {
+    let li = document.createElement("li");
+    li.setAttribute("class","liList")
 
-input.addEventListener("keydown",function(det){
-   // console.log(det);
-   
-   if(det.key == "Enter"){
-      addtask()
-   }
-   
-})
-function updateCompletedtask(){
-   completeTask.textContent = "Completed Task:" + document.querySelectorAll(".completed").length
-   console.log(document.querySelectorAll(".completed").length);
-   
+    let taskText = document.createElement("span");
+    taskText.textContent = taskName;
+
+    let complete = document.createElement("button");
+    complete.setAttribute("class","complete-btn")
+    
+    let edit = document.createElement("button");
+    edit.setAttribute("class","editButton")
+    
+    
+
+    // edit.style.backgroundColor = "pink"
+    let delBtn = document.createElement("button");
+    delBtn.setAttribute("class","deleteButton")
+
+    complete.textContent = isCompleted ? "Incomplete" : "Complete";
+    edit.textContent = "Edit";
+    delBtn.textContent = "Delete";
+
+    if (isCompleted) {
+        li.classList.add("completed");
+        taskText.style.textDecoration = "line-through";
+      
+    }
+
+    li.appendChild(taskText);
+    li.appendChild(complete);
+    li.appendChild(edit);
+    li.appendChild(delBtn);
+
+    ul.appendChild(li);
+
+    updateTaskCount();
+    updateCompletedtask();
+
+    // Complete Button
+    complete.addEventListener("click", function () {
+        if (complete.textContent === "Complete") {
+            taskText.style.textDecoration = "line-through";
+            complete.style.backgroundColor= "red";
+            complete.textContent = "Incomplete";
+            li.classList.add("completed");
+        } else {
+            taskText.style.textDecoration = "";
+            complete.style.backgroundColor = "green"
+            complete.textContent = "Complete";
+            li.classList.remove("completed");
+        }
+
+        updateCompletedtask();
+        saveTasks();
+    });
+
+    // Edit Button
+    edit.addEventListener("click", function () {
+        let newTask = prompt("Enter New Task", taskText.textContent);
+
+        if (newTask && newTask.trim() !== "") {
+            taskText.textContent = newTask;
+            saveTasks();
+        }
+    });
+
+    // Delete Button
+    delBtn.addEventListener("click", function () {
+        li.remove();
+
+        updateTaskCount();
+        updateCompletedtask();
+
+        saveTasks();
+    });
 }
 
+// Save Tasks
+function saveTasks() {
+    let tasks = [];
 
+    document.querySelectorAll("li").forEach((li) => {
+        tasks.push({
+            text: li.querySelector("span").textContent,
+            completed: li.classList.contains("completed")
+        });
+    });
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+// Load Tasks
+function loadTasks() {
+    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+    tasks.forEach((task) => {
+        createTask(task.text, task.completed);
+    });
+}
+
+// Total Task Counter
+function updateTaskCount() {
+    h3.textContent = "Total Task: " + ul.children.length;
+}
+
+// Completed Task Counter
+function updateCompletedtask() {
+    completeTask.textContent =
+        "Completed Task: " +
+        document.querySelectorAll(".completed").length;
+}
+
+// Delete All
+allDelBtn.addEventListener("click", function () {
+    let ans = confirm("Are you sure you want to delete all tasks?");
+
+    if (ans) {
+        ul.innerHTML = "";
+
+        updateTaskCount();
+        updateCompletedtask();
+
+        localStorage.removeItem("tasks");
+    }
+});

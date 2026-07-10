@@ -37,7 +37,7 @@ class Student{
    
 }
 
-class Admin {
+class Admin{
     constructor(){
         this.students = []
     }
@@ -65,12 +65,45 @@ class Admin {
             student.showDetails()
         }
     }
-   
+   showTopperStudent(){
+    let topper = this.students[0]
+    for(let student of this.students){
+        if(student.marks>topper.marks){
+            topper = student
+           
+        }
+    }
+     topper.showDetails()
+   }
+   countPassFailStudent(){
+    let pass = 0;
+    let fail = 0;
+
+    for(let student of this.students){
+        if(student.marks>=33){
+            pass++
+        }
+        else{
+            fail++
+        }
+    }
+    console.log(`Pass Students: ${pass}`);
+   console.log(`Fail Students: ${fail}`);
+   }
+   searchStudent(name){
+    for(let student of this.students){
+        if(student.name == name){
+            student.showDetails()
+        }
+    }
+    
+   }
 }
 
 
 let ishu = new Student("ishu",101,80)
 let aman = new Student("aman",102,87)
+let rahul = new Student("rahul",103,88)
 
 
 // ishu.showDetails()
@@ -80,11 +113,15 @@ let aman = new Student("aman",102,87)
 let admin1 = new Admin()
 admin1.addstudent(ishu)
 admin1.addstudent(aman)
+admin1.addstudent(rahul)
 // admin1.addstudent(rohit)
 admin1.admitEmergencyStudent("rohit",103,87)
 console.log(admin1.students);
+// admin1.showTopperStudent()
+admin1.countPassFailStudent()
+admin1.searchStudent("ishu")
 // admin1.showAllDetails()
-ishu.showDetails()
+// ishu.showDetails()
 
 // admin1.findStudent(101)
 // admin1.removeLastStudent()
