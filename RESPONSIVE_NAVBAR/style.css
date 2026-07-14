@@ -9,6 +9,16 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.scrolled{
+  background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 .logo img{
     width: 30%;
@@ -17,6 +27,7 @@ header{
 }
 nav{
     width: 40%;
+   
    
     
 }
@@ -39,9 +50,10 @@ a{
     border-radius: 50px; 
     padding: 6px 15px;
     width: 190px; 
-    transition: all 0.3s ease; 
+    transition: width 0.3s ease; 
     margin-right: 30px;
 }
+
 
 
 .search-input {
@@ -52,6 +64,10 @@ a{
     font-size: 15px;
     color: #333;
     padding-left: 10px;
+}
+.search-box.expanded{
+    width: 800px;
+    transition: width 0.3s ease;
 }
 
 .search-input::placeholder {
@@ -91,4 +107,7 @@ a{
 }
 .hamburger-btn{
     display: none;
+}
+.herosection{
+    margin-top: 9rem;
 }
