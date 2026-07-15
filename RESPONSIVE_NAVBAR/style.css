@@ -38,6 +38,9 @@ a{
     font-size: 20px;
     padding-left: 20px;
 }
+a.active-anchor{
+    text-decoration: underline;
+}
 .right-section{
     display: flex;
     align-items: center;

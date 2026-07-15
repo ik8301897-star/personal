@@ -4,6 +4,7 @@ let para = document.querySelector(".para")
 let header = document.querySelector("header")
 let input = document.querySelector(".search-input")
 let searchContainer = document.querySelector(".search-box")
+let anchorTag = document.querySelectorAll("nav a")
 menuIcon.addEventListener("click",function(){
     navBar.classList.toggle("active")
   
